@@ -10,8 +10,8 @@
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/../AirClass/src/main/java" />
-          <root url="file://$MODULE_DIR$/../AirClass/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -20,8 +20,8 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output url="file://$MODULE_DIR$/../AirClass/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../AirClass/target/test-classes" />
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$/../AirClass">
       <sourceFolder url="file://$MODULE_DIR$/../AirClass/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../AirClass/src/main/resources" type="java-resource" />

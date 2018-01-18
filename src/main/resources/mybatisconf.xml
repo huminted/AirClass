@@ -9,7 +9,7 @@
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://localhost:3306/airclass?serverTimezone=GMT&amp;autoReconnect=true"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/airclass?serverTimezone=GMT&amp;autoReconnect=true&amp;useSSL=true"/>
                 <property name="username" value="root" />
                 <property name="password" value="humin147" />
             </dataSource>
@@ -19,6 +19,7 @@
     <mappers>
         <mapper resource="userMapper.xml" />
         <mapper resource="videoMapper.xml" />
+        <mapper resource="paperMapper.xml" />
     </mappers>
 
 </configuration>

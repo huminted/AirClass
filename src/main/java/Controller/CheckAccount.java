@@ -4,11 +4,14 @@ package Controller;
 import Bean.UserBean;
 import Service.UserService;
 import Service.UserServiceImpl;
+import com.alibaba.fastjson.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class CheckAccount {
@@ -36,8 +39,17 @@ public class CheckAccount {
 
             if (InputUserID.equals(ID) && InputUserPW.equals(PW)){
 
-                System.out.println("登陆成功");
 
+                Map<String ,Object> userMap=new HashMap<String ,Object>();
+
+                userMap.put("state",200);
+                userMap.put("msg","成功");
+                userMap.put("code",1);
+                userMap.put("result",User);
+
+
+                String jsonText= JSONArray.toJSONString(userMap,true);
+                System.out.println("登陆成功"+jsonText);
 
 //                LoadData loadData =new LoadData();
 //                loadData.Load(modelMap);

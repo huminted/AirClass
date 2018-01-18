@@ -100,6 +100,59 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
             console.log(error);
         });
 
+
+    fly.get('/doc')
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            var text= JSON.stringify(response.data);
+            var json = JSON.parse(text);
+
+
+            if (json!==""){
+
+                for (var i = 0; i <json.length; i++) {
+
+                    var parent = document.getElementById("docul");
+                    var li = document.createElement("li");
+                    li.setAttribute("class", "collection-item");
+                    li.innerHTML =
+                        " <div>" + json[i].filename + "\n" +
+
+
+
+                        " <a  class=\"secondary-content \" href=\"/deleteFileCenter?objectid=" + json[i].objectid + "\">\n" +
+                        " <i class=\"material-icons\">clear</i>\n" +
+                        " </a>\n" +
+
+                        " <a  class=\"secondary-content\" href=\"/download?filepath=" + json[i].fileurl + "&filename=" + json[i].filename + "\">\n" +
+                        " <i class=\"material-icons\">arrow_downward</i>\n" +
+                        " </a>\n" +
+
+                        " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(json[i].fileurl) + "&filename=" + json[i].filename + "\">\n" +
+                        " <i class=\"material-icons\">visibility</i>\n" +
+                        " </a>\n" +
+
+                        " </div>";
+
+                    parent.appendChild(li);
+                }
+
+            }
+
+
+
+
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+
+
+
+
+
 });
 
 

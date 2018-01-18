@@ -20,6 +20,7 @@
         <mapper resource="userMapper.xml" />
         <mapper resource="videoMapper.xml" />
         <mapper resource="paperMapper.xml" />
+        <mapper resource="docMapper.xml" />
     </mappers>
 
 </configuration>

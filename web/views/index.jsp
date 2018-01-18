@@ -35,7 +35,7 @@
         <ul class="tabs">
             <li class="tab col s3"><a class="active" href="#itemVideo">在线视频</a></li>
             <li class="tab col s3"><a  href="#itemPaper">在线答题</a></li>
-            <li class="tab col s3"><a href="#test3">文档提交</a></li>
+            <li class="tab col s3"><a href="#itemUpload">文档提交</a></li>
             <li class="tab col s3"><a href="#test4">学习讨论</a></li>
         </ul>
     </div>
@@ -47,7 +47,6 @@
 
 
     <div id="itemPaper" class="col s12">
-
         <%--试卷卡片区域--%>
         <div id="row1" class="row"></div>
 
@@ -56,8 +55,51 @@
 
 
 
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
+    <div id="itemUpload" class="col s12">
+
+        <div class="card col s12 m12 l12" >
+            <p class="flow-text">&nbsp;最新通知</p>
+            <blockquote>
+                1.在「我的信息」填写个人资料 &nbsp;&nbsp;2.编辑模板文件 &nbsp;&nbsp;3.导出格式为XML模板 &nbsp;&nbsp;4.上传到「我的文档」&nbsp;&nbsp;5.生成最终文档
+            </blockquote>
+            <div class="col s6 m6  left">
+
+
+                <div class="card col offset-s12 m12 l12" id="first">
+                    <p class="flow-text">&nbsp;最近上传</p>
+
+
+                    <ul class="collection with-header" id="docul">
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div class="col s6 m6 left">
+
+                <div class="card col s12 m12 l12" id="tow">
+                    <p class="flow-text">&nbsp;已批该文档</p>
+                    <ul class="collection with-header" id="modifydocul">
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="test4" class="col s12">
+        <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fc.iwakeup.cn%2Fdownload%3Ffilepath%3DC%3A%2FFiles%2F1516272605215mujiang.docx%26filename%3Dmujiang.docx' width='800px' height='800px' frameborder='0'>这是嵌入 <a target='_blank' href='https://office.com'>Microsoft Office</a> 文档，由 <a target='_blank' href='https://office.com/webapps'>Office Online</a> 支持。</iframe>
+
+
+
+    </div>
 
 
 
@@ -78,7 +120,6 @@
         var instance = M.Tabs.init(elem, 4);
 
 
-
     }
 
 </script>
@@ -86,9 +127,7 @@
 <script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
 <script type="text/javascript" src="../js/require.js"></script>
 
-<script type="text/javascript" src="../js/loadVideo.js">
-</script>
-
+<script type="text/javascript" src="../js/loadData.js"></script>
 
 <!--JavaScript at end of body for optimized loading-->
 <script type="text/javascript" src="../js/materialize.js"></script>

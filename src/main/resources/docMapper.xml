@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="docMapper">
+
+    <!--根据Username获取对应的值  -->
+    <select id="findFileByUserId" parameterType="String" resultType="Bean.DocBean">
+        select * from doc where userid= #{userid}
+    </select>
+
+    <select id="findAllFile" parameterType="String" resultType="Bean.DocBean">
+        select * from doc
+    </select>
+
+
+    <insert id="addFile" parameterType="Bean.DocBean">
+        insert into doc(userid,username,filename,fileurl,filenametime)  values(#{userid},#{username},#{filename},#{fileurl},#{filenametime})
+    </insert>
+
+    <!--<insert id="addFileToCenter" parameterType="Bean.DocBean>-->
+        <!--insert into filecenter(id,username,filename,fileurl,filenametime)  values(#{id},#{username},#{filename},#{fileurl},#{filenametime})-->
+    <!--</insert>-->
+
+
+
+    <delete id="delFileByObjId" parameterType="String" >
+
+        delete from doc where  objectid=#{objectid}
+    </delete>
+
+
+    <!--<delete id="delCenterFileByObjId" parameterType="String" >-->
+
+        <!--delete from filecenter where  objectid=#{objectid}-->
+    <!--</delete>-->
+
+
+
+</mapper>
+

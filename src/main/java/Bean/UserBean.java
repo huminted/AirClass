@@ -2,12 +2,12 @@ package Bean;
 
 public class UserBean {
     int objectid;
-    String username;
-    String userid;
-    String password;
-    String school;
-    String major;
-    String classes;
+    public static String username;
+    public static String userid;
+    public static String password;
+    public static String school;
+    public static String major;
+    public static String classes;
 
     public String getPassword() {
         return password;

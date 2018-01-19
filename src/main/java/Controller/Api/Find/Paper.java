@@ -1,11 +1,8 @@
-package Controller.Find;
+package Controller.Api.Find;
 
 import Bean.PaperBean;
-import Bean.VideoBean;
 import Service.PaperService;
 import Service.PaperServiceImpl;
-import Service.VideoService;
-import Service.VideoServiceImpl;
 import com.alibaba.fastjson.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,9 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 public class Paper {

@@ -1,4 +1,4 @@
-
+// var path=window.location.pathname;
 
 var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],function getVideo () {
 
@@ -20,8 +20,8 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
                     //设置 div 属性，如 id
                     div.setAttribute("id", "newDiv");
 
-                    div.innerHTML = "<div id=\"card\" class=\"col s3\">\n" +
-                        "            <div class=\"card medium \">\n" +
+                    div.innerHTML = "<div id=\"card   \" class=\"col s3 medium\">\n" +
+                        "            <div class=\"card \">\n" +
                         "                <div class=\"card-image small\">\n" +
                         "                    <video class=\"responsive-video \" controls=\"controls\" poster=\"http://chart.iwakeup.cn/Main.png\">\n" +
                         "                     <source src=\" "+json[i].url+"\" type=\"video/mp4\">\n" +
@@ -81,7 +81,7 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
                         "                        <p>"+json[i].content+" </p>\n" +
                         "                    </div>\n" +
                         "                    <div class=\"card-action\">\n" +
-                        "                        <a href=\"#\">答题</a>\n" +
+                        "                        <a href=\"/text\">答题</a>\n" +
                         "                    </div>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
@@ -124,7 +124,7 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
                         " <i class=\"material-icons\">clear</i>\n" +
                         " </a>\n" +
 
-                        " <a  class=\"secondary-content\" href=\"/download?filepath=" + json[i].fileurl + "&filename=" + json[i].filename + "\">\n" +
+                        " <a download class=\"secondary-content\"   href=\"" + json[i].fileurl + "\">\n" +
                         " <i class=\"material-icons\">arrow_downward</i>\n" +
                         " </a>\n" +
 

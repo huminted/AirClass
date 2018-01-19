@@ -57,7 +57,7 @@ public class CheckAccount {
 //                LoadFiles loadFiles =new LoadFiles();
 //                request.setAttribute("Userfilesmap", loadFiles.loadUser());
 //                request.setAttribute("Centerfilesmap",loadFiles.loadCenter());
-//                request.setAttribute("permission",UserModel.permission);
+//                request.setAttribute("permission",UserBean.permission);
 //                request.setAttribute("setmap",loadFiles.loadSet());
 
 

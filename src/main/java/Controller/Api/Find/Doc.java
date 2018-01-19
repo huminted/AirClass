@@ -1,12 +1,8 @@
-package Controller.Find;
+package Controller.Api.Find;
 
 import Bean.DocBean;
-import Bean.PaperBean;
-import Bean.UserBean;
 import Service.DocService;
 import Service.DocServiceImpl;
-import Service.PaperService;
-import Service.PaperServiceImpl;
 import com.alibaba.fastjson.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

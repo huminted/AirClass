@@ -4,11 +4,10 @@ package Bean;
 
 public class DocBean {
     public  String username;
-    public  String id;
+    public  String userid;
     public  String filename;
     public  String fileurl;
     public  String filesNum;
-    public  String objectid;
     public  String filenametime;
 
     public String getUsername() {
@@ -20,11 +19,11 @@ public class DocBean {
     }
 
     public String getId() {
-        return id;
+        return userid;
     }
 
     public void setId(String id) {
-        this.id = id;
+        this.userid = id;
     }
 
     public String getFilename() {
@@ -51,13 +50,6 @@ public class DocBean {
         this.filesNum = filesNum;
     }
 
-    public String getObjectid() {
-        return objectid;
-    }
-
-    public void setObjectid(String objectid) {
-        this.objectid = objectid;
-    }
 
     public String getFilenametime() {
         return filenametime;

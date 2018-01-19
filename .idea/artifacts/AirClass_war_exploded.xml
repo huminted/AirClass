@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="AirClass:war exploded">
-    <output-path>$PROJECT_DIR$/../AirClass/out/artifacts/AirClass_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/AirClass_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="AirClass/web/Web" />
       <element id="directory" name="WEB-INF">
@@ -24,9 +24,6 @@
           <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:1.0.0" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.3.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.3.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.2.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.3.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.3.0.RELEASE" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.3" />
@@ -56,6 +53,9 @@
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.35" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.2.RELEASE" />
         </element>
       </element>
     </root>

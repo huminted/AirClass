@@ -8,10 +8,11 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/materialize.min.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>在线学习平台</title>
 </head>
 
 <body onload="lo();">
@@ -89,6 +90,50 @@
             </div>
 
         </div>
+
+
+
+
+
+        <div class=" container  ">
+
+            <!--悬浮按钮-->
+            <div class="fixed-action-btn toolbar ">
+                <a class="btn-floating btn-large pulse" onclick="showdiv('uploaddiv')">
+                    <i class="large material-icons">arrow_upward</i>
+                </a>
+                <ul>
+                    <li class="waves-effect waves-light"  onclick="closediv('uploaddiv')"><a><i class="material-icons">close</i></a></li>
+                    <li class="waves-effect waves-light"  onclick="showdiv('uploaddiv')"><a><i class="material-icons">expand_less</i></a></li>
+
+                </ul>
+            </div>
+            <div class="container" id="uploaddiv" style="display: none;">
+                <form action="fileupload" name="fileupload" id="fileupload"   onsubmit=form("userrow","file"); enctype="multipart/form-data" method="post"  >
+                    <div class="file-field input-field"  >
+                        <div class="btn tooltipped"   data-position="left" data-delay="50" data-tooltip="选择模板文件">
+                            <span>选择</span>
+                            <input type="file" name="file"  id="file">
+                        </div>
+
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                    <center>
+
+                        <button class="btn tooltipped" form="fileupload" type="submit" name="action"  style="float: left"
+                                data-position="left" data-delay="50" data-tooltip="确认上传">确认
+
+
+                        </button>
+
+                    </center>
+                </form>
+
+            </div>
+        </div>
+
     </div>
 
 
@@ -125,13 +170,10 @@
 </script>
 
 <script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
-<script type="text/javascript" src="../js/require.js"></script>
-
-<script type="text/javascript" src="../js/loadData.js"></script>
-
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="../js/materialize.js"></script>
-
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/loadData.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/utils.js"></script>
 
 </body>
 </html>

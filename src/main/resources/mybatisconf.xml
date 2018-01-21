@@ -21,6 +21,8 @@
         <mapper resource="videoMapper.xml" />
         <mapper resource="paperMapper.xml" />
         <mapper resource="docMapper.xml" />
+        <mapper resource="questionsMapper.xml" />
+
     </mappers>
 
 </configuration>

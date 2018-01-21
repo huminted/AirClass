@@ -1,10 +1,9 @@
 package Bean.Questions;
 
-public class SingleChoice {
+public class FillBlank {
     int objectid;
     int paperid;
-    String score,topic,answer1,answer2,answer3,answer4,rightanswer;
-
+    String score,topic,answer,rightanswer;
 
     public int getObjectid() {
         return objectid;
@@ -38,36 +37,12 @@ public class SingleChoice {
         this.topic = topic;
     }
 
-    public String getAnswer1() {
-        return answer1;
+    public String getAnswer() {
+        return answer;
     }
 
-    public void setAnswer1(String answer1) {
-        this.answer1 = answer1;
-    }
-
-    public String getAnswer2() {
-        return answer2;
-    }
-
-    public void setAnswer2(String answer2) {
-        this.answer2 = answer2;
-    }
-
-    public String getAnswer3() {
-        return answer3;
-    }
-
-    public void setAnswer3(String answer3) {
-        this.answer3 = answer3;
-    }
-
-    public String getAnswer4() {
-        return answer4;
-    }
-
-    public void setAnswer4(String answer4) {
-        this.answer4 = answer4;
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public String getRightanswer() {

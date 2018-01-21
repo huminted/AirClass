@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="questionsMapper">
+
+
+
+    <select id="findScById" parameterType="int" resultType="Bean.Questions.SingleChoice">
+        select * from singlechoice where paperid =${#paperid}
+    </select>
+
+    <delete id="delScById" parameterType="int" >
+        DELETE * FROM singlechoice WHERE objectid=${objectid}
+
+    </delete>
+
+
+    <select id="findFbById" parameterType="int" resultType="Bean.Questions.SingleChoice">
+        select * from fillblank where paperid =${#paperid}
+    </select>
+
+
+    <delete id="delFbById" parameterType="int" >
+        DELETE * FROM fillblank WHERE objectid=${objectid}
+
+    </delete>
+
+
+    <select id="findTofById" parameterType="int" resultType="Bean.Questions.SingleChoice">
+        select * from tof where paperid =${#paperid}
+    </select>
+
+    <delete id="delTofById" parameterType="int" >
+        DELETE * FROM tof WHERE objectid=${objectid}
+
+    </delete>
+
+</mapper>

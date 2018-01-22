@@ -11,4 +11,9 @@
         select * from paper
     </select>
 
+
+    <select id="findPaperById" parameterType="int" resultType="Bean.PaperBean">
+        select * from paper where objectid=#{objectid}
+    </select>
+
 </mapper>

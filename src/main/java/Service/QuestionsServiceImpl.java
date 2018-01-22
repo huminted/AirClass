@@ -40,7 +40,7 @@ public class QuestionsServiceImpl implements  QuestionsService {
 
     @Override
     public void delFbById(int objectid) {
-        questionsDao.delScById(objectid);
+        questionsDao.delFbById(objectid);
 
     }
 

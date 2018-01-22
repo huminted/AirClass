@@ -22,5 +22,10 @@ public class PaperServiceImpl implements PaperService {
         return paperDao.findAllPaper();
     }
 
+    @Override
+    public PaperBean findPaperById(int objectid) {
+        return paperDao.findPaperById(objectid);
+    }
+
 
 }

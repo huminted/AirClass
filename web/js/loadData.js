@@ -59,10 +59,17 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
+            var papers=eval(json.paper);
+
+
+
+
 
             if (json!==""){
 
-                for (var i = 0; i <json.length; i++) {
+                for (var i = 0; i <json.total; i++) {
+
+
 
                     var parent = document.getElementById("row1");
                     var div = document.createElement("div");
@@ -77,11 +84,11 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
                         "                </div>\n" +
                         "                <div class=\"card-stacked\">\n" +
                         "                    <div class=\"card-content\">\n" +
-                        "                        <p>"+ json[i].title+"</p>\n" +
-                        "                        <p>"+json[i].content+" </p>\n" +
+                        "                        <p>"+ papers[i].title+"</p>\n" +
+                        "                        <p>"+papers[i].content+" </p>\n" +
                         "                    </div>\n" +
                         "                    <div class=\"card-action\">\n" +
-                        "                        <a href=\"/text\">答题</a>\n" +
+                        "                        <a href=\"/text?paperid="+papers[i].objectid+"\">答题</a>\n" +
                         "                    </div>\n" +
                         "                </div>\n" +
                         "            </div>\n" +

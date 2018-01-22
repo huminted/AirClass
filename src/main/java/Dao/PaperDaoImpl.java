@@ -40,5 +40,14 @@ public class PaperDaoImpl implements PaperDao {
 
 
 
+    public PaperBean findPaperById(int objectid) {
+        String statement = "paperMapper.findPaperById";
+        PaperBean paper = session.selectOne(statement,objectid);
+
+
+
+        return paper;
+    }
+
 
 }

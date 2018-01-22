@@ -7,32 +7,33 @@
 
 
     <select id="findScById" parameterType="int" resultType="Bean.Questions.SingleChoice">
-        select * from singlechoice where paperid =${#paperid}
+        select * from singlechoice where paperid =#{paperid}
+
     </select>
 
     <delete id="delScById" parameterType="int" >
-        DELETE * FROM singlechoice WHERE objectid=${objectid}
+        delete from singlechoice where  objectid=#{objectid}
 
     </delete>
 
 
-    <select id="findFbById" parameterType="int" resultType="Bean.Questions.SingleChoice">
-        select * from fillblank where paperid =${#paperid}
+    <select id="findFbById" parameterType="int" resultType="Bean.Questions.FillBlank">
+        select * from fillblank where paperid =#{paperid}
     </select>
 
 
     <delete id="delFbById" parameterType="int" >
-        DELETE * FROM fillblank WHERE objectid=${objectid}
+         delete from fillblank where  objectid=#{objectid}
 
     </delete>
 
 
-    <select id="findTofById" parameterType="int" resultType="Bean.Questions.SingleChoice">
-        select * from tof where paperid =${#paperid}
+    <select id="findTofById" parameterType="int" resultType="Bean.Questions.Tof">
+        select * from tof where paperid =#{paperid}
     </select>
 
     <delete id="delTofById" parameterType="int" >
-        DELETE * FROM tof WHERE objectid=${objectid}
+       delete from tof where  objectid=#{objectid}
 
     </delete>
 

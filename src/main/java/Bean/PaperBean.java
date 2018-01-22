@@ -5,6 +5,8 @@ public class PaperBean {
     String title;
     String content;
 
+    int singlechoice,fillblank,tof;
+
     public int getObjectid() {
         return objectid;
     }
@@ -27,5 +29,29 @@ public class PaperBean {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public int getSinglechoice() {
+        return singlechoice;
+    }
+
+    public void setSinglechoice(int singlechoice) {
+        this.singlechoice = singlechoice;
+    }
+
+    public int getFillblank() {
+        return fillblank;
+    }
+
+    public void setFillblank(int fillblank) {
+        this.fillblank = fillblank;
+    }
+
+    public int getTof() {
+        return tof;
+    }
+
+    public void setTof(int tof) {
+        this.tof = tof;
     }
 }

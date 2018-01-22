@@ -8,5 +8,6 @@ import java.util.List;
 public interface    PaperService {
 
     List<PaperBean> findAllPaper();
+    PaperBean findPaperById(int objectid);
 
 }

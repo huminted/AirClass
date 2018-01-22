@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class Paper {
@@ -22,6 +24,7 @@ public class Paper {
         PaperService service =new PaperServiceImpl();
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/json; charset=UTF-8");
+        PaperAndQuestions paperAndQuestions =new PaperAndQuestions();
 
         List<PaperBean> list=service.findAllPaper();
 
@@ -43,26 +46,32 @@ public class Paper {
         else {
 
 
-//            Map<String ,Object> fileMap=new HashMap<String ,Object>();
-//            fileMap.put("state",200);
-//            fileMap.put("msg","成功");
-//            fileMap.put("code",1);
-//            fileMap.put("result",list);
-            String jsonText= JSONArray.toJSONString(list,true);
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","成功");
+            fileMap.put("code",1);
+            fileMap.put("total",list.size());
+            fileMap.put("paper",list);
+
+
+
+            String jsonText= JSONArray.toJSONString(fileMap,true);
+
+
+
+
 
             PrintWriter print=response.getWriter();
             print.print(jsonText);
+
 
         }
 
 
 
-
-
-
-
-
-
     }
+
+
+
 
 }

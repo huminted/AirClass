@@ -1,9 +1,11 @@
 package Bean.Questions;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 public class SingleChoice {
     int objectid;
     int paperid;
-    String score,topic,answer1,answer2,answer3,answer4,rightanswer;
+    String score,question,answer1,answer2,answer3,answer4,rightanswer;
 
 
     public int getObjectid() {
@@ -30,12 +32,12 @@ public class SingleChoice {
         this.score = score;
     }
 
-    public String getTopic() {
-        return topic;
+    public String getQuestion() {
+        return question;
     }
 
-    public void setTopic(String topic) {
-        this.topic = topic;
+    public void setQuestion(String question) {
+        this.question = question;
     }
 
     public String getAnswer1() {

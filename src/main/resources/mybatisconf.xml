@@ -22,7 +22,7 @@
         <mapper resource="paperMapper.xml" />
         <mapper resource="docMapper.xml" />
         <mapper resource="questionsMapper.xml" />
-
+        <mapper resource="scoreMapper.xml" />
     </mappers>
 
 </configuration>

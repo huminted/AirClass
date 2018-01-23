@@ -1,7 +1,4 @@
 package Bean.Questions;
-
-import com.alibaba.fastjson.annotation.JSONField;
-
 public class SingleChoice {
     int objectid;
     int paperid;

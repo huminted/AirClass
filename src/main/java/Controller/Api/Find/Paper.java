@@ -18,6 +18,7 @@ import java.util.Map;
 @Controller
 public class Paper {
 
+
     @RequestMapping(value = "/paper" )
     public void getPaper(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -39,6 +40,7 @@ public class Paper {
             String jsonText = JSONArray.toJSONString(list, true);
             PrintWriter print=response.getWriter();
             print.print(jsonText);
+            print.close();
 
 
         }
@@ -54,15 +56,11 @@ public class Paper {
             fileMap.put("paper",list);
 
 
-
             String jsonText= JSONArray.toJSONString(fileMap,true);
-
-
-
-
 
             PrintWriter print=response.getWriter();
             print.print(jsonText);
+            print.close();
 
 
         }
@@ -72,6 +70,17 @@ public class Paper {
     }
 
 
+    @RequestMapping(value = "/getpaperbycode")
+    public void getPaperByCode(HttpServletRequest request, HttpServletResponse response) throws  IOException{
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("type/json; charset=utf-8");
+
+
+
+
+
+
+    }
 
 
 }

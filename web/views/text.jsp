@@ -72,8 +72,7 @@
 
 
 
-
-<script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/fly.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/loadQuestions.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/getAnswer.js"></script>

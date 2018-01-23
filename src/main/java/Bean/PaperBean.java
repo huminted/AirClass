@@ -1,14 +1,23 @@
 package Bean;
 
 public class PaperBean {
-    int objectid;
-    String title;
-    String content;
+   public  int objectid;
+   public  String title;
+   public  String content;
+   public  String code;
 
     int singlechoice,fillblank,tof;
 
     public int getObjectid() {
         return objectid;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public void setObjectid(int objectid) {
@@ -54,4 +63,5 @@ public class PaperBean {
     public void setTof(int tof) {
         this.tof = tof;
     }
+
 }

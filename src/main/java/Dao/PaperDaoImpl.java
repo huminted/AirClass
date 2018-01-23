@@ -44,9 +44,27 @@ public class PaperDaoImpl implements PaperDao {
         String statement = "paperMapper.findPaperById";
         PaperBean paper = session.selectOne(statement,objectid);
 
+        return paper;
+    }
 
+    @Override
+    public PaperBean findPaperByCode(String code) {
+        String statement = "paperMapper.findPaperByCode";
+        PaperBean paper = session.selectOne(statement,code);
 
         return paper;
+
+
+    }
+
+
+    @Override
+    public void addPaper(PaperBean paper) {
+        String statement = "paperMapper.addPaper";
+        session.insert(statement,paper);
+        session.commit();
+
+
     }
 
 

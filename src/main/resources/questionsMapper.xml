@@ -13,8 +13,15 @@
 
     <delete id="delScById" parameterType="int" >
         delete from singlechoice where  objectid=#{objectid}
-
     </delete>
+
+
+    <insert id="addSingleChoice" parameterType="Bean.Questions.SingleChoice">
+        insert into singlechoice (paperid,score,question,answer1,answer2,answer3,answer4,rightanswer)
+        values(#{paperid},#{score},#{question},#{answer1},#{answer2},#{answer3},#{answer4},#{rightanswer})
+    </insert>
+
+
 
 
     <select id="findFbById" parameterType="int" resultType="Bean.Questions.FillBlank">
@@ -28,6 +35,17 @@
     </delete>
 
 
+
+    <insert id="addFillBlank" parameterType="Bean.Questions.FillBlank">
+        insert into fillblank (paperid,score,question,rightanswer)
+        values(#{paperid},#{score},#{question},#{rightanswer})
+    </insert>
+
+
+
+
+
+
     <select id="findTofById" parameterType="int" resultType="Bean.Questions.Tof">
         select * from tof where paperid =#{paperid}
     </select>
@@ -36,5 +54,11 @@
        delete from tof where  objectid=#{objectid}
 
     </delete>
+
+
+    <insert id="addTof" parameterType="Bean.Questions.Tof">
+        insert into tof (paperid,score,question,rightanswer)
+        values(#{paperid},#{score},#{question},#{rightanswer})
+    </insert>
 
 </mapper>

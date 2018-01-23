@@ -3,7 +3,7 @@ package Bean.Questions;
 public class Tof {
     int objectid;
     int paperid;
-    String score,question,answer,rightanswer;
+    String score,question,rightanswer;
 
     public int getObjectid() {
         return objectid;
@@ -35,14 +35,6 @@ public class Tof {
 
     public void setQuestion(String question) {
         this.question = question;
-    }
-
-    public String getAnswer() {
-        return answer;
-    }
-
-    public void setAnswer(String answer) {
-        this.answer = answer;
     }
 
     public String getRightanswer() {

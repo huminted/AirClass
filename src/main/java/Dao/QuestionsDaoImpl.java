@@ -51,6 +51,20 @@ public class QuestionsDaoImpl implements QuestionsDao {
     }
 
     @Override
+    public void addSingleChoice(SingleChoice singleChoice) {
+        String statement = "questionsMapper.addSingleChoice";
+        session.insert(statement,singleChoice);
+        session.commit();
+
+
+
+    }
+
+
+
+
+
+    @Override
     public List<FillBlank> findFbById(int paperid) {
         String statement = "questionsMapper.findFbById";
         List<FillBlank> fillBlanks = session.selectList(statement, paperid);
@@ -64,6 +78,14 @@ public class QuestionsDaoImpl implements QuestionsDao {
 
         String statement = "questionsMapper.delFbById";
         session.delete(statement,objectid);
+        session.commit();
+
+    }
+
+    @Override
+    public void addFillBlank(FillBlank fillBlank) {
+        String statement = "questionsMapper.addFillBlank";
+        session.insert(statement,fillBlank);
         session.commit();
 
     }
@@ -83,5 +105,12 @@ public class QuestionsDaoImpl implements QuestionsDao {
         session.delete(statement,objectid);
         session.commit();
 
+    }
+
+    @Override
+    public void addTof(Tof tof) {
+        String statement = "questionsMapper.addTof";
+        session.insert(statement,tof);
+        session.commit();
     }
 }

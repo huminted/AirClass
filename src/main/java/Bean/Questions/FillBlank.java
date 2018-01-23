@@ -3,7 +3,7 @@ package Bean.Questions;
 public class FillBlank {
     int objectid;
     int paperid;
-    String score,question,answer,rightanswer;
+    String score,question,rightanswer;
 
     public int getObjectid() {
         return objectid;
@@ -37,13 +37,6 @@ public class FillBlank {
         this.question = question;
     }
 
-    public String getAnswer() {
-        return answer;
-    }
-
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
 
     public String getRightanswer() {
         return rightanswer;

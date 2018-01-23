@@ -122,7 +122,7 @@
                     </div>
                     <center>
 
-                        <button class="btn tooltipped" form="fileupload" type="submit" name="action"  style="float: left"
+                        <button class="btn " form="fileupload" type="submit" name="action"  style="float: left"
                                 data-position="left" data-delay="50" data-tooltip="确认上传">确认
 
 

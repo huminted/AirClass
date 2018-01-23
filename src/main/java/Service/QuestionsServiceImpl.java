@@ -34,6 +34,12 @@ public class QuestionsServiceImpl implements  QuestionsService {
     }
 
     @Override
+    public void addSingleChoice(SingleChoice singleChoice) {
+        questionsDao.addSingleChoice(singleChoice);
+
+    }
+
+    @Override
     public List<FillBlank> findFbById(int paperid) {
         return questionsDao.findFbById(paperid);
     }
@@ -42,6 +48,11 @@ public class QuestionsServiceImpl implements  QuestionsService {
     public void delFbById(int objectid) {
         questionsDao.delFbById(objectid);
 
+    }
+
+    @Override
+    public void addFillBlank(FillBlank fillBlank) {
+        questionsDao.addFillBlank(fillBlank);
     }
 
     @Override
@@ -54,5 +65,10 @@ public class QuestionsServiceImpl implements  QuestionsService {
 
         questionsDao.delTofById(objectid);
 
+    }
+
+    @Override
+    public void addTof(Tof tof) {
+        questionsDao.addTof(tof);
     }
 }

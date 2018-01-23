@@ -5,15 +5,26 @@
 <mapper namespace="paperMapper">
 
 
-
-
     <select id="findAllPaper" parameterType="String" resultType="Bean.PaperBean">
         select * from paper
     </select>
 
 
+
+
     <select id="findPaperById" parameterType="int" resultType="Bean.PaperBean">
         select * from paper where objectid=#{objectid}
     </select>
+
+
+    <select id="findPaperByCode" parameterType="String" resultType="Bean.PaperBean">
+        select * from paper where code=#{code}
+    </select>
+
+
+    <insert id="addPaper" parameterType="Bean.PaperBean">
+        insert into paper (title,content,singlechoice,fillblank,tof,code)  values(#{title},#{content},#{singlechoice},#{fillblank},#{tof},#{code})
+    </insert>
+
 
 </mapper>

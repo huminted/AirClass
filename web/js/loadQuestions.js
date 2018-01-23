@@ -14,7 +14,7 @@ function GetQueryString(variable)
 }
   var paperid=GetQueryString("paperid");
 
-  var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],function getVideo () {
+  var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 
       fly.get('/getOnePaper?paperid='+paperid)

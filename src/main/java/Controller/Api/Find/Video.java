@@ -1,7 +1,10 @@
 package Controller.Api.Find;
 
 
+import Bean.PaperBean;
 import Bean.VideoBean;
+import Service.PaperService;
+import Service.PaperServiceImpl;
 import Service.VideoService;
 import Service.VideoServiceImpl;
 import com.alibaba.fastjson.JSONArray;
@@ -28,7 +31,8 @@ public class Video {
         response.setContentType("text/json; charset=UTF-8");
 
         List<VideoBean> list=service.findAllFile();
-
+//        PaperService service1=new PaperServiceImpl();
+//        List<PaperBean> list =service1.findAllPaper();
 
         if (list.isEmpty()){
 
@@ -40,6 +44,7 @@ public class Video {
             String jsonText = JSONArray.toJSONString(list, true);
             PrintWriter print=response.getWriter();
             print.print(jsonText);
+            print.close();
 
 
         }
@@ -56,13 +61,8 @@ public class Video {
 
             PrintWriter print=response.getWriter();
             print.print(jsonText);
-
+            print.close();
         }
-
-
-
-
-
 
 
 

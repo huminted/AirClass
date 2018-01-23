@@ -1,6 +1,6 @@
 // var path=window.location.pathname;
 
-var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],function getVideo () {
+var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 
     fly.get('/video')
@@ -11,10 +11,10 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
 
             if (json!==""){
 
+                var parent = document.getElementById("row");
                 for (var i = 0; i < 4; i++) {
 
 
-                    var parent = document.getElementById("row");
                     var div = document.createElement("div");
 
                     //设置 div 属性，如 id
@@ -58,20 +58,14 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
             console.log(JSON.stringify(response.data));
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
-
             var papers=eval(json.paper);
-
-
-
-
-
             if (json!==""){
+                var parent = document.getElementById("row1");
 
                 for (var i = 0; i <json.total; i++) {
 
 
 
-                    var parent = document.getElementById("row1");
                     var div = document.createElement("div");
 
                     //设置 div 属性，如 id
@@ -117,9 +111,9 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
 
             if (json!==""){
 
+                var parent = document.getElementById("docul");
                 for (var i = 0; i <json.length; i++) {
 
-                    var parent = document.getElementById("docul");
                     var li = document.createElement("li");
                     li.setAttribute("class", "collection-item");
                     li.innerHTML =
@@ -154,6 +148,10 @@ var fly=require(['https://unpkg.com/flyio/dist/fly.min.js','../js/require.js'],f
         .catch(function (error) {
             console.log(error);
         });
+
+
+
+
 
 
 

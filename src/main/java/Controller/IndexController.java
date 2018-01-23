@@ -15,18 +15,19 @@ public class IndexController {
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     public  String index(HttpServletRequest request , ModelMap modelMap){
 
-
-
-
-
-
-
-
            return "index";
 
 
+    }
+
+    @RequestMapping(value = "/admin",method = RequestMethod.GET)
+    public  String admin(HttpServletRequest request , ModelMap modelMap){
+
+        return "admin";
 
 
     }
+
+
 
 }

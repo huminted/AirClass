@@ -27,12 +27,13 @@ import java.util.Map;
 
 public class PaperAndQuestions {
 
-    private QuestionsService service =new QuestionsServiceImpl();
-    private PaperService paperService=new PaperServiceImpl();
-
     @RequestMapping(value = "/getOnePaper")
 
     public void getOnePaper(HttpServletRequest request, HttpServletResponse  response) throws IOException {
+
+     QuestionsService service =new QuestionsServiceImpl();
+     PaperService paperService=new PaperServiceImpl();
+
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json; charset=UTF-8");
 
@@ -64,6 +65,7 @@ public class PaperAndQuestions {
         String json= JSONArray.toJSONString(jsonmap,true);
         PrintWriter writer =response.getWriter();
         writer.print(json);
+        writer.close();
 
     }
 
@@ -75,15 +77,10 @@ public class PaperAndQuestions {
     public List findSc(HttpServletRequest request, HttpServletResponse  response)  throws IOException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json; charset=UTF-8");
+        QuestionsService service =new QuestionsServiceImpl();
 
         List<SingleChoice>  list= service.findScById(Integer.parseInt(request.getParameter("paperid")));
 
-
-
-
-//        String json= JSONArray.toJSONString(list,true);
-//        PrintWriter writer =response.getWriter();
-//        writer.print(json);
 
 
         return list;
@@ -93,7 +90,7 @@ public class PaperAndQuestions {
 
     @RequestMapping(value = "/delSc")
     public void delSc(HttpServletRequest request, HttpServletResponse  response) throws IOException{
-
+        QuestionsService service =new QuestionsServiceImpl();
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json; charset=UTF-8");
 
@@ -108,6 +105,7 @@ public class PaperAndQuestions {
     public List findFb(HttpServletRequest request, HttpServletResponse  response)  throws IOException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json; charset=UTF-8");
+        QuestionsService service =new QuestionsServiceImpl();
 
         List<FillBlank>  list= service.findFbById(Integer.parseInt(request.getParameter("paperid")));
 
@@ -124,6 +122,7 @@ public class PaperAndQuestions {
 
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json; charset=UTF-8");
+        QuestionsService service =new QuestionsServiceImpl();
 
         service.delFbById(Integer.parseInt(request.getParameter("objectid")));
 
@@ -135,7 +134,7 @@ public class PaperAndQuestions {
     public List findTof(HttpServletRequest request, HttpServletResponse  response)  throws IOException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json; charset=UTF-8");
-
+        QuestionsService service =new QuestionsServiceImpl();
         List<Tof>  list= service.findTofById(Integer.parseInt(request.getParameter("paperid")));
 
         return list;
@@ -149,7 +148,7 @@ public class PaperAndQuestions {
 
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json; charset=UTF-8");
-
+        QuestionsService service =new QuestionsServiceImpl();
         service.delTofById(Integer.parseInt(request.getParameter("objectid")));
 
 

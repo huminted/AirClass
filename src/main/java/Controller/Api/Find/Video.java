@@ -40,8 +40,10 @@ public class Video {
             fileMap.put("state",200);
             fileMap.put("msg","未找到文件");
             fileMap.put("code",0);
+            fileMap.put("total",list.size());
+            fileMap.put("video","null");
 
-            String jsonText = JSONArray.toJSONString(list, true);
+            String jsonText = JSONArray.toJSONString(fileMap, true);
             PrintWriter print=response.getWriter();
             print.print(jsonText);
             print.close();
@@ -56,8 +58,9 @@ public class Video {
             fileMap.put("state",200);
             fileMap.put("msg","成功");
             fileMap.put("code",1);
-            fileMap.put("result",list);
-            String jsonText= JSONArray.toJSONString(list,true);
+            fileMap.put("total",list.size());
+            fileMap.put("video",list);
+            String jsonText= JSONArray.toJSONString(fileMap,true);
 
             PrintWriter print=response.getWriter();
             print.print(jsonText);

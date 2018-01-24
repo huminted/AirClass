@@ -41,6 +41,7 @@ public class UpLoadDoc {
            File newFile=new File(path);
            //通过CommonsMultipartFile的方法直接写文件（注意这个时候）
            file.transferTo(newFile);
+
            System.out.println(path);
 
            String url= request.getScheme() +"://" + request.getServerName() + ":" +request.getServerPort();

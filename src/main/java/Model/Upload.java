@@ -15,7 +15,7 @@ public class Upload {
         DocBean DocBean =new DocBean();
 
 
-        DocBean.setId(UserBean.userid);
+        DocBean.setUserid(UserBean.userid);
         DocBean.setUsername(UserBean.username);
         DocBean.setFilename(filename);
         DocBean.setFileurl(fileurl);

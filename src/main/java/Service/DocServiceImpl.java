@@ -41,7 +41,7 @@ public class DocServiceImpl implements DocService {
 //    }
 
 
-    public void delFileByObjId(String objectid) {
+    public void delFileByObjId(int objectid) {
 
         docDao.delFileByObjId(objectid);
     }

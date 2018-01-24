@@ -9,7 +9,7 @@ import java.util.List;
 public class VideoServiceImpl  implements VideoService{
 
 
-    public VideoDao videoDao;
+    private VideoDao videoDao;
     public VideoServiceImpl(){
 
 
@@ -18,5 +18,15 @@ public class VideoServiceImpl  implements VideoService{
 
     public List<VideoBean> findAllFile() {
         return  videoDao.findAllFile();
+    }
+
+    @Override
+    public void addVideo(VideoBean videoBean) {
+        videoDao.addVideo(videoBean);
+    }
+
+    @Override
+    public void delVideo(int objectid) {
+        videoDao.delVideo(objectid);
     }
 }

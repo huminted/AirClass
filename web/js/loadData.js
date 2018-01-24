@@ -9,11 +9,14 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
-            if (json!==""){
+            var videos=eval(json.video);
+
+
+            if (videos!=="null"){
 
                 var parent = document.getElementById("row");
-                for (var i = 0; i < 4; i++) {
 
+                for (var i = 0; i <json.total; i++) {
 
                     var div = document.createElement("div");
 
@@ -24,17 +27,17 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                         "            <div class=\"card \">\n" +
                         "                <div class=\"card-image small\">\n" +
                         "                    <video class=\"responsive-video \" controls=\"controls\" poster=\"http://chart.iwakeup.cn/Main.png\">\n" +
-                        "                     <source src=\" "+json[i].url+"\" type=\"video/mp4\">\n" +
+                        "                     <source src=\" "+videos[i].url+"\" type=\"video/mp4\">\n" +
                         "                    </video>\n" +
                         "\n" +
                         "                </div>\n" +
                         "                <div class=\"card-content\">\n" +
-                        "                    <span class=\"card-title\">"+ json[i].title+" </span>\n" +
-                        "                    <p>" +json[i].content+ "</p>\n" +
+                        "                    <span class=\"card-title\">"+ videos[i].title+" </span>\n" +
+                        "                    <p>" +videos[i].content+ "</p>\n" +
                         "                </div>\n" +
                         "                <div class=\"card-action\">\n" +
-                        "                    <a href=\"/genExcel?filename="+json[i].objectid+"\">下载</a>\n" +
-                        "                    <a href=\"/delete?objectid="+json[i].objectid+"\">收藏</a>\n" +
+                        "                    <a href=\"/genExcel?filename="+videos[i].objectid+"\">下载</a>\n" +
+                        "                    <a href=\"/delete?objectid="+videos[i].objectid+"\">收藏</a>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
                         "        </div>";
@@ -59,12 +62,11 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
             var papers=eval(json.paper);
-            if (json!==""){
+
+            if (papers!=="null"){
                 var parent = document.getElementById("row1");
 
                 for (var i = 0; i <json.total; i++) {
-
-
 
                     var div = document.createElement("div");
 
@@ -102,63 +104,73 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
         });
 
 
-    fly.get('/doc')
-        .then(function (response) {
-            console.log(JSON.stringify(response.data));
-            var text= JSON.stringify(response.data);
-            var json = JSON.parse(text);
-
-
-            if (json!==""){
-
-                var parent = document.getElementById("docul");
-                for (var i = 0; i <json.length; i++) {
-
-                    var li = document.createElement("li");
-                    li.setAttribute("class", "collection-item");
-                    li.innerHTML =
-                        " <div>" + json[i].filename + "\n" +
-
-
-
-                        " <a  class=\"secondary-content \" href=\"/deleteFileCenter?objectid=" + json[i].objectid + "\">\n" +
-                        " <i class=\"material-icons\">clear</i>\n" +
-                        " </a>\n" +
-
-                        " <a download class=\"secondary-content\"   href=\"" + json[i].fileurl + "\">\n" +
-                        " <i class=\"material-icons\">arrow_downward</i>\n" +
-                        " </a>\n" +
-
-                        " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(json[i].fileurl) + "&filename=" + json[i].filename + "\">\n" +
-                        " <i class=\"material-icons\">visibility</i>\n" +
-                        " </a>\n" +
-
-                        " </div>";
-
-                    parent.appendChild(li);
-                }
-
-            }
-
-
-
-
-
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-
-
-
-
-
-
-
-
+    getAllDoc();
 
 
 });
+
+
+function getAllDoc() {
+
+
+    setTimeout(function () {
+
+        fly.get('/doc')
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                var text= JSON.stringify(response.data);
+                var json = JSON.parse(text);
+                var docs=eval(json.doc);
+
+
+                if (docs!=="null"){
+
+                    var parent = document.getElementById("docul");
+                    parent.innerHTML=" ";
+
+                    for (var i = 0; i <json.total; i++) {
+
+                        var li = document.createElement("li");
+                        li.setAttribute("class", "collection-item");
+                        li.innerHTML =
+                            " <div>" + docs[i].filename +"\n" +
+
+
+
+                            " <a  class=\"secondary-content \"   target='iframe'  onclick='getAllDoc();'   href=\"/deldoc?objectid=" + docs[i].objectid + "\">\n" +
+                            " <i class=\"\">&nbsp;删除 &nbsp;</i>\n" +
+                            " </a>\n" +
+
+                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
+                            " <i class=\"\">&nbsp;下载&nbsp;</i>\n" +
+                            " </a>\n" +
+
+                            " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
+                            " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                            " </a>\n" +
+
+                            " </div>";
+
+                        parent.appendChild(li);
+                    }
+
+                }
+
+
+
+
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    },500);
+
+
+
+
+
+}
 
 
 

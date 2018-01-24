@@ -60,7 +60,7 @@ public class DocDapImpl implements DocDao {
 //    }
 
 
-    public void delFileByObjId(String objectid) {
+    public void delFileByObjId(int objectid) {
         String statement = "docMapper.delFileByObjId";
         session.delete(statement,objectid);
         session.commit();

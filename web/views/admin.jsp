@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>管理页面</title>
 </head>
-<body onload="lo();">
+<body onload="initAdmin();">
 <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 <nav>
     <div class="nav-wrapper ">
@@ -47,7 +47,7 @@
         <%--视频卡片区域--%>
         <div id="row" class="col s12">
 
-            <div class="card  col m12 l12" id="doc">
+            <div class="card  col m12 l12 hoverable" id="doc">
                 <p class="flow-text">&nbsp;学生文档</p>
 
                 <ul class="collection with-header" id="docul">
@@ -65,13 +65,11 @@
     <div id="itemPaper" class="col s12" >
         <ul class="collapsible popout" data-collapsible="accordion">
 
-
-
             <li>
                 <div class="collapsible-header"><i class="material-icons">assignment</i>新增试卷</div>
                 <div class="collapsible-body">
 
-                    <form id="paperform"  action="/addpaper"  method="get" target="iframe">
+                    <form id="paperform"   action="addpaper" method="get" target="iframe" >
                         <div class="row" >
 
                             <div class="input-field col s12">
@@ -85,7 +83,7 @@
                             </div>
 
                         </div>
-                        <button class="btn " form="paperform" type="submit" name="action" >生成一张试卷</button>
+                        <button class="btn"  type="submit" name="genpaper" onclick="getAllPaper();">生成一张试卷</button>
                     </form>
                 </div>
             </li>
@@ -129,7 +127,7 @@
                             <label for="scrightanswer">正确答案</label>
                         </div>
                     </div>
-                        <button class="btn " form="scform" type="submit" name="action" >发布该试题</button>
+                        <button   class="btn " form="scform" type="submit" name="gensc"  >发布该试题</button>
                     </form>
                 </div>
             </li>
@@ -155,7 +153,7 @@
                             </div>
 
                         </div>
-                        <button class="btn " form="fbform" type="submit" name="action" >发布该试题</button>
+                        <button class="btn " form="fbform" type="submit" name="genfb" >发布该试题</button>
                     </form>
                 </div>
             </li>
@@ -183,20 +181,37 @@
                             </div>
 
                         </div>
-                        <button class="btn " form="tofform" type="submit" name="action" >发布该试题</button>
+                        <button class="btn " form="tofform" type="submit" name="gentof" >发布该试题</button>
                     </form>
                 </div>
             </li>
-
-
         </ul>
+
+
+
+        <div class="card col m12 l12 hoverable" id="paperadmin">
+            <p class="flow-text">试卷管理</p>
+            <a onclick="getAllPaper()"  >&nbsp;&nbsp;刷新</a>
+            <ul class="collection with-header" id="paperul">
+
+
+            </ul>
+
+
+        </div>
+
+
+
+
+
+
 
     </div>
 
 
     <div id="itemGrades" class="col s12">
 
-        <div class="card  col m12 l12" id="grades">
+        <div class="card  col m12 l12 hoverable" id="grades">
             <p class="flow-text">&nbsp;学生成绩</p>
             <a class='dropdown-button' href='#' data-activates='dropdown1' onclick="getScoreByPaperId();">&nbsp;选择试卷</a>
             <ul id='dropdown1' class='dropdown-content'>
@@ -219,7 +234,7 @@
         <div class="card  hoverable col s12">
             <p class="flow-text">视频发布</p>
             <center>
-                <form id="videoform">
+                <form id="videoform" action="/addvideo" target="iframe" method="get">
 
                     <div class="row">
                         <div class="input-field col s6 offset-l3 ">
@@ -237,11 +252,11 @@
 
                     <div class="row ">
                         <div class="input-field col s6 offset-l3">
-                            <input id="videolink"  name="videolink" type="text" class="validate">
-                            <label for="videolink">视频链接</label>
+                            <input id="videourl"  name="videourl" type="text" class="validate">
+                            <label for="videourl">视频链接</label>
                         </div>
                     </div>
-                    <button class="btn   " form="videoform" type="submit" name="action" >发布视频</button>
+                    <button class="btn" form="videoform" type="submit" name="action" onclick="getAllVideo();" >发布视频</button>
 
                 </form>
             </center>
@@ -252,68 +267,11 @@
 
         <ul class="collection with-header" id="videoul">
 
-            <li class="collection-item">
-                <div>视频1
-                    <a class="secondary-content " href="/deleteFileCenter?objectid=undefined">
-                        <i class="material-icons">clear</i>
-                    </a>
-                    <a download="" class="secondary-content" href="https://c.iwakeup.cn/download?filepath=C:/Files/1516272605215mujiang.docx&amp;filename=mujiang.docx">
-                        <i class="material-icons">arrow_downward</i>
-                    </a>
-                    <a target="_blank" class="secondary-content" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fc.iwakeup.cn%2Fdownload%3Ffilepath%3DC%3A%2FFiles%2F1516272605215mujiang.docx%26filename%3Dmujiang.docx&amp;filename=文档1">
-                        <i class="material-icons">visibility</i>
-                    </a>
-                </div>
-            </li>
-            <li class="collection-item">
-                <div>视频1
-                    <a class="secondary-content " href="/deleteFileCenter?objectid=undefined">
-                        <i class="material-icons">clear</i>
-                    </a>
-                    <a download="" class="secondary-content" href="https://c.iwakeup.cn/download?filepath=C:/Files/1516272605215mujiang.docx&amp;filename=mujiang.docx">
-                        <i class="material-icons">arrow_downward</i>
-                    </a>
-                    <a target="_blank" class="secondary-content" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fc.iwakeup.cn%2Fdownload%3Ffilepath%3DC%3A%2FFiles%2F1516272605215mujiang.docx%26filename%3Dmujiang.docx&amp;filename=文档1">
-                        <i class="material-icons">visibility</i>
-                    </a>
-                </div>
-            </li>
-            <li class="collection-item">
-                <div>视频1
-                    <a class="secondary-content " href="/deleteFileCenter?objectid=undefined">
-                        <i class="material-icons">clear</i>
-                    </a>
-                    <a download="" class="secondary-content" href="https://c.iwakeup.cn/download?filepath=C:/Files/1516272605215mujiang.docx&amp;filename=mujiang.docx">
-                        <i class="material-icons">arrow_downward</i>
-                    </a>
-                    <a target="_blank" class="secondary-content" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fc.iwakeup.cn%2Fdownload%3Ffilepath%3DC%3A%2FFiles%2F1516272605215mujiang.docx%26filename%3Dmujiang.docx&amp;filename=文档1">
-                        <i class="material-icons">visibility</i>
-                    </a>
-                </div>
-            </li>
-
         </ul>
         </div>
 
 
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -322,27 +280,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/loadAdminData.js"></script>
-
-<script>
-
-    function lo() {
-        var elem = document.querySelector('.tabs');
-        var instance = M.Tabs.init(elem, 4);
-
-
-        var elem2 = document.querySelector('.collapsible');
-        var instance = M.Collapsible.init(elem2,4);
-
-        //
-        // var elem3 = document.querySelector('.dropdown-content');
-        // var instance = M.Dropdown.init(elem3,4);
-
-
-
-    }
-
-</script>
-
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/utils.js"></script>
 
 </body>
 </html>

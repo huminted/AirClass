@@ -38,5 +38,10 @@ public class PaperServiceImpl implements PaperService {
         paperDao.addPaper(paper);
     }
 
+    @Override
+    public void delPaperById(int objectid) {
+        paperDao.delPaperById(objectid);
+    }
+
 
 }

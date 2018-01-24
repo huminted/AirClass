@@ -32,12 +32,14 @@ public class Paper {
 
         if (list.isEmpty()){
 
-//            Map<String ,Object> fileMap=new HashMap<String ,Object>();
-//            fileMap.put("state",200);
-//            fileMap.put("msg","未找到文件");
-//            fileMap.put("code",0);
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","未找到文件");
+            fileMap.put("code",0);
+            fileMap.put("total",list.size());
+            fileMap.put("paper","null");
 
-            String jsonText = JSONArray.toJSONString(list, true);
+            String jsonText = JSONArray.toJSONString(fileMap, true);
             PrintWriter print=response.getWriter();
             print.print(jsonText);
             print.close();

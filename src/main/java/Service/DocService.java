@@ -14,7 +14,7 @@ public interface DocService {
     void addFile(DocBean file);
 //    void addFileToCenter(DocBean file);
 
-    void delFileByObjId(String objectid);
+    void delFileByObjId(int objectid);
 //    void delCenterFileByObjId(String objectid);
 
 }

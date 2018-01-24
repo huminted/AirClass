@@ -67,5 +67,14 @@ public class PaperDaoImpl implements PaperDao {
 
     }
 
+    @Override
+    public void delPaperById(int objectid) {
+        String statement="paperMapper.delPaperById";
+        session.delete(statement,objectid);
+        session.commit();
+
+
+    }
+
 
 }

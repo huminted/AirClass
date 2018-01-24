@@ -17,12 +17,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>答题</title>
 </head>
-<body >
+<body  >
 
 <div class="container">
     <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
+
     <div class="row" id="row">
-        <form  id="form" target="iframe">
+
+
+
+        <form  id="form" target="iframe" method="get" action="#">
         <div class="card col  s12 m12 l12" id="SingleChoice">
         <h3>单项选择</h3>
             <div  id="scform">
@@ -58,9 +62,10 @@
         </form>
 
         <center>
-        <button class="btn waves-effect waves-light "  type="submit" name="action" form="form" onclick="getAll();">提交
+        <button class="btn"  type="submit" name="action"  onclick="getAllAnswer();">提交
             <i class="material-icons right">send</i>
-        </button><br>
+        </button>
+
         <span>&nbsp;</span>
         </center>
     </div>

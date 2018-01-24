@@ -10,8 +10,6 @@
     </select>
 
 
-
-
     <select id="findPaperById" parameterType="int" resultType="Bean.PaperBean">
         select * from paper where objectid=#{objectid}
     </select>
@@ -25,6 +23,13 @@
     <insert id="addPaper" parameterType="Bean.PaperBean">
         insert into paper (title,content,singlechoice,fillblank,tof,code)  values(#{title},#{content},#{singlechoice},#{fillblank},#{tof},#{code})
     </insert>
+
+
+
+    <delete id="delPaperById" parameterType="int" >
+        delete from paper where  objectid=#{objectid}
+    </delete>
+
 
 
 </mapper>

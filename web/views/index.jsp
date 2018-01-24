@@ -15,14 +15,16 @@
     <title>在线学习平台</title>
 </head>
 
-<body onload="lo();">
+<body onload="initIndex();">
+<iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
+
 
 <nav>
     <div class="nav-wrapper ">
 
         &nbsp;<a href="#!" class="brand-logo"><i class="large material-icons">import_contacts</i>DIST在线学习平台</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+            <li><a href="/admin"><i class="material-icons">search</i></a></li>
             <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
             <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
             <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
@@ -52,8 +54,6 @@
         <div id="row1" class="row"></div>
 
     </div>
-
-
 
 
     <div id="itemUpload" class="col s12">
@@ -157,17 +157,6 @@
 
 
 
-<script>
-
-    function lo() {
-        var elem = document.querySelector('.tabs');
-
-        var instance = M.Tabs.init(elem, 4);
-
-
-    }
-
-</script>
 
 <script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>

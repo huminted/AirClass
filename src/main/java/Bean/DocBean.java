@@ -3,12 +3,19 @@ package Bean;
 
 
 public class DocBean {
+    public int objectid;
     public  String username;
     public  String userid;
     public  String filename;
     public  String fileurl;
-    public  String filesNum;
-    public  String filenametime;
+
+    public int getObjectid() {
+        return objectid;
+    }
+
+    public void setObjectid(int objectid) {
+        this.objectid = objectid;
+    }
 
     public String getUsername() {
         return username;
@@ -18,12 +25,12 @@ public class DocBean {
         this.username = username;
     }
 
-    public String getId() {
+    public String getUserid() {
         return userid;
     }
 
-    public void setId(String id) {
-        this.userid = id;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
     public String getFilename() {
@@ -42,15 +49,6 @@ public class DocBean {
         this.fileurl = fileurl;
     }
 
-    public String getFilesNum() {
-        return filesNum;
-    }
-
-    public void setFilesNum(String filesNum) {
-        this.filesNum = filesNum;
-    }
-
-
     public String getFilenametime() {
         return filenametime;
     }
@@ -58,4 +56,10 @@ public class DocBean {
     public void setFilenametime(String filenametime) {
         this.filenametime = filenametime;
     }
+
+    public  String filenametime;
+
+
+
+
 }

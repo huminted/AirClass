@@ -13,6 +13,8 @@ public interface PaperDao {
 
     void addPaper(PaperBean paper);
 
+    void delPaperById(int objectid);
+
 
 
 }

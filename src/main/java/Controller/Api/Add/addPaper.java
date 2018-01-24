@@ -2,6 +2,7 @@ package Controller.Api.Add;
 
 import Bean.ObjectidBean;
 import Bean.PaperBean;
+import Model.ShowResponse;
 import Service.PaperService;
 import Service.PaperServiceImpl;
 import org.springframework.stereotype.Controller;
@@ -34,8 +35,8 @@ public class addPaper {
         paperBean=service.findPaperByCode(code);
         ObjectidBean.objectid=paperBean.objectid;
 
-
-
+        ShowResponse show=new ShowResponse();
+        show.show(response,request);
 
 
 

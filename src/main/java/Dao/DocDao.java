@@ -15,7 +15,7 @@ public interface DocDao {
      void addFile(DocBean file); //添加
 //     void addFileToCenter(DocBean file);
 
-     void delFileByObjId(String objectid);
+     void delFileByObjId(int objectid);
 //     void delCenterFileByObjId(String objectid);
 
 }

@@ -1,6 +1,6 @@
 
 
-function getAll() {
+function getAllAnswer() {
     var  scnum=document.getElementById("scform").getElementsByTagName("div").length;
     var  fbnum=  document.getElementById("fbform").getElementsByTagName("div").length;
     var  tofnum = document.getElementById("tofform").getElementsByTagName("div").length;

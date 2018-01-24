@@ -12,4 +12,18 @@
 
     </select>
 
+    <delete id="delVideoById" parameterType="int">
+        delete  from video where objectid=#{objectid}
+    </delete>
+
+
+
+    <insert id="addVideo" parameterType="Bean.VideoBean">
+
+      insert into video (title,url,content)  values(#{title},#{url},#{content})
+
+    </insert>
+
+
+
 </mapper>

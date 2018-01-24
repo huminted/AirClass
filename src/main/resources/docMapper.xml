@@ -24,7 +24,7 @@
 
 
 
-    <delete id="delFileByObjId" parameterType="String" >
+    <delete id="delFileByObjId" parameterType="int" >
 
         delete from doc where  objectid=#{objectid}
     </delete>

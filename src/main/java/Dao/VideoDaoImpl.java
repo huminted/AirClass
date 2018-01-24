@@ -37,4 +37,21 @@ public class VideoDaoImpl  implements  VideoDao{
 
         return videos;
     }
+
+    @Override
+    public void addVideo(VideoBean videoBean) {
+        String statement="videoMapper.addVideo";
+        session.insert(statement,videoBean);
+        session.commit();
+    }
+
+
+    @Override
+    public void delVideo(int objectid) {
+        String delVideo="videoMapper.delVideoById";
+        session.delete(delVideo,objectid);
+        session.commit();
+
+
+    }
 }

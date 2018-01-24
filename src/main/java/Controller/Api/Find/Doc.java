@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class Doc {
@@ -31,7 +33,15 @@ public class Doc {
         if (list.isEmpty()){
 
 
-            String jsonText = JSONArray.toJSONString(list, true);
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","未找到文件");
+            fileMap.put("code",0);
+            fileMap.put("total",list.size());
+            fileMap.put("doc","null");
+
+
+            String jsonText = JSONArray.toJSONString(fileMap, true);
             PrintWriter print=response.getWriter();
             print.print(jsonText);
             print.close();
@@ -41,8 +51,15 @@ public class Doc {
 
         else {
 
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","成功");
+            fileMap.put("code",1);
+            fileMap.put("total",list.size());
+            fileMap.put("doc",list);
 
-            String jsonText= JSONArray.toJSONString(list,true);
+
+            String jsonText= JSONArray.toJSONString(fileMap,true);
 
             PrintWriter print=response.getWriter();
             print.print(jsonText);
@@ -60,10 +77,43 @@ public class Doc {
         DocService service =new DocServiceImpl();
         List<DocBean> list =service.findAllFile();
 
-        String jsonText= JSONArray.toJSONString(list,true);
-        PrintWriter writer=response.getWriter();
-        writer.print(jsonText);
-        writer.close();
+
+        if (list.isEmpty()){
+
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","未找到文件");
+            fileMap.put("code",0);
+            fileMap.put("total",list.size());
+            fileMap.put("doc","null");
+
+
+            String jsonText = JSONArray.toJSONString(fileMap, true);
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+
+
+        }
+
+        else {
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","成功");
+            fileMap.put("code",1);
+            fileMap.put("total",list.size());
+            fileMap.put("doc",list);
+
+
+            String jsonText= JSONArray.toJSONString(fileMap,true);
+
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+        }
+
 
 
 

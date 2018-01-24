@@ -13,4 +13,7 @@ public interface    PaperService {
 
     void addPaper(PaperBean paper);
 
+    void delPaperById(int objectid);
+
+
 }

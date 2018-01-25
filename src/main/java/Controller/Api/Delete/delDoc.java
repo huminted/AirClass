@@ -28,6 +28,22 @@ public class delDoc {
 
     }
 
+    @RequestMapping(value = "/deldocgroup")
+    public void delDocGroup(HttpServletRequest request , HttpServletResponse response) throws IOException {
+        request.setCharacterEncoding("utf-8");
+
+
+        DocService service =new DocServiceImpl();
+
+        service.delDocGroupById(Integer.parseInt(request.getParameter("objectid")));
+
+        ShowResponse showResponse =new ShowResponse();
+        showResponse.show(response,request);
+
+
+
+    }
+
 
 
 }

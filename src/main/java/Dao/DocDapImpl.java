@@ -1,6 +1,7 @@
 package Dao;
 
 import Bean.DocBean;
+import Bean.DocGroupBean;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -44,6 +45,15 @@ public class DocDapImpl implements DocDao {
         return file;
     }
 
+    @Override
+    public List<DocBean> findFileByDocGroupid(int groupid) {
+        String find="docMapper.findFileByDocGroupid";
+        List<DocBean> file = session.selectList(find,groupid);
+
+        return file;
+
+    }
+
     public void addFile(DocBean file) {
         String statement = "docMapper.addFile";
         session.insert(statement, file);
@@ -63,6 +73,31 @@ public class DocDapImpl implements DocDao {
     public void delFileByObjId(int objectid) {
         String statement = "docMapper.delFileByObjId";
         session.delete(statement,objectid);
+        session.commit();
+
+    }
+
+    @Override
+    public List<DocGroupBean> findAllDocGroup() {
+
+        String find="docMapper.findAllDocGroup";
+        List<DocGroupBean> list=   session.selectList(find);
+
+        return list;
+    }
+
+    @Override
+    public void addDocGroup(DocGroupBean docGroupBean) {
+        String add="docMapper.addDocGroup";
+        session.insert(add,docGroupBean);
+        session.commit();
+
+    }
+
+    @Override
+    public void delDocGroupById(int objectid) {
+        String del="docMapper.delDocGroupById";
+        session.delete(del,objectid);
         session.commit();
 
     }

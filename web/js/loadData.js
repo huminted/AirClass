@@ -84,7 +84,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                         "                        <p>"+papers[i].content+" </p>\n" +
                         "                    </div>\n" +
                         "                    <div class=\"card-action\">\n" +
-                        "                        <a href=\"/text?paperid="+papers[i].objectid+"\">答题</a>\n" +
+                        "                        <a target='_blank' href=\"/text?paperid="+papers[i].objectid+"\">答题</a>\n" +
                         "                    </div>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
@@ -103,6 +103,52 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
             console.log(error);
         });
 
+    fly.get('/alldocgroup')
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            var text= JSON.stringify(response.data);
+            var json = JSON.parse(text);
+            var docgroups=eval(json.docgroup);
+
+
+            if (docgroups!=="null"){
+
+                var dropdown = document.getElementById("docGroupDropdown");
+                dropdown.innerHTML=" ";
+
+                var dropdownLiGetAll=document.createElement("li");
+                dropdownLiGetAll.innerHTML="<a onclick=\"getAllDoc();\">"+"查看全部"+"</a>";
+                dropdown.appendChild(dropdownLiGetAll);
+
+
+
+
+
+                for (var i = json.total-1 ; i>=0; i--) {
+
+
+
+                    var dropdownLi=document.createElement("li");
+                    dropdownLi.innerHTML="    <a onclick=\"getDocByGroupId("+ docgroups[i].objectid+",'"+ docgroups[i].groupname+"')\"> "+ docgroups[i].groupname  +"      </a>                                                                    ";
+                    dropdown.appendChild(dropdownLi);
+
+
+
+
+
+
+                }
+
+            }
+
+
+
+
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 
     getAllDoc();
 
@@ -111,7 +157,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 
 function getAllDoc() {
-
+    setBadge("selectedgroupid","全部分组");
 
     setTimeout(function () {
 
@@ -173,4 +219,65 @@ function getAllDoc() {
 }
 
 
+
+
+function getDocByGroupId(groupid,groupname) {
+
+
+    setTimeout(function sleep () {
+
+        fly.get('/getdocbygroupid?groupid='+groupid)
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                var text= JSON.stringify(response.data);
+                var json = JSON.parse(text);
+                var docs=eval(json.doc);
+
+                setBadge("selectedgroupid","当前分组为:"+groupname);
+
+                if (docs!=="null"){
+
+                    var parent = document.getElementById("docul");
+                    parent.innerHTML=" ";
+                    for (var i = 0; i <json.total; i++) {
+
+                        var li = document.createElement("li");
+                        li.setAttribute("class", "collection-item");
+                        li.innerHTML =
+                            " <div>" + docs[i].filename +"&nbsp;&nbsp;|&nbsp;&nbsp;"+docs[i].username +"\n" +
+
+
+                            " <a  class=\"secondary-content \"   target='iframe'   onclick=\" getDocByGroupId("+ docs[i].objectid+",'"+ groupname+"');  \"   href=\"/deldoc?objectid=" + docs[i].objectid + "\">\n" +
+                            " <i class=\"\">&nbsp;删除 &nbsp;</i>\n" +
+                            " </a>\n" +
+
+                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
+                            " <i class=\"\">&nbsp;下载&nbsp;</i>\n" +
+                            " </a>\n" +
+
+                            " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
+                            " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                            " </a>\n" +
+
+                            " </div>";
+
+                        parent.appendChild(li);
+                    }
+
+                }
+
+
+
+
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    },500);
+
+
+
+}
 

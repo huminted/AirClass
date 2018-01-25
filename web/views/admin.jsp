@@ -44,18 +44,58 @@
 
 
     <div id="itemDoc" class="col s12" >
-        <%--视频卡片区域--%>
+
         <div id="row" class="col s12">
 
             <div class="card  col m12 l12 hoverable" id="doc">
                 <p class="flow-text">&nbsp;学生文档</p>
+                <span class="new badge red"  id="selectedgroupid" ></span>
 
-                <ul class="collection with-header" id="docul">
+                <!-- 选择文档分组 -->
+                <a class='dropdown-trigger btn  ' href='#' data-target='docGroupDropdown'>选择文档分组</a>
+                <ul id='docGroupDropdown' class='dropdown-content'>
 
 
                 </ul>
 
+                <ul class="collection with-header" id="docul">
+
+                </ul>
             </div>
+
+
+            <div class="card  hoverable col s12">
+                <p class="flow-text">文档需求发布</p>
+                <center>
+                    <form id="docgroupform" action="/adddocgroup" target="iframe" method="get">
+
+                        <div class="row">
+                            <div class="input-field col s6 offset-l3 ">
+                                <input id="docgroupname"  name="docgroupname" type="text" class="validate">
+                                <label for="docgroupname">分组名称</label>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="input-field col s6 offset-l3">
+                                <input id="notification"  name="notification" type="text" class="validate">
+                                <label for="notification">分组说明</label>
+                            </div>
+                        </div>
+
+
+                        <button class="btn" form="docgroupform" type="submit" name="action" onclick="getAllDocGroup();showToast('发布成功');" >发布分组</button>
+
+                    </form>
+                </center>
+
+                    <ul class="collection with-header" id="docgroupul">
+
+                    </ul>
+            </div>
+
+
         </div>
 
 
@@ -66,7 +106,12 @@
         <ul class="collapsible popout" data-collapsible="accordion">
 
             <li>
-                <div class="collapsible-header"><i class="material-icons">assignment</i>新增试卷</div>
+                <div class="collapsible-header">
+
+                    <i class="material-icons">assignment</i>新增试卷
+                    <span class=" new badge" data-badge-caption="新增试卷后再出题"></span>
+
+                </div>
                 <div class="collapsible-body">
 
                     <form id="paperform"   action="addpaper" method="get" target="iframe" >
@@ -83,7 +128,7 @@
                             </div>
 
                         </div>
-                        <button class="btn"  type="submit" name="genpaper" onclick="getAllPaper();">生成一张试卷</button>
+                        <button class="btn"  type="submit" name="genpaper" onclick="getAllPaper();showToast('出卷成功');">生成一张试卷</button>
                     </form>
                 </div>
             </li>
@@ -127,7 +172,7 @@
                             <label for="scrightanswer">正确答案</label>
                         </div>
                     </div>
-                        <button   class="btn " form="scform" type="submit" name="gensc"  >发布该试题</button>
+                        <button   class="btn " form="scform" type="submit" name="gensc"  onclick="showToast('发布成功');">发布该试题</button>
                     </form>
                 </div>
             </li>
@@ -153,7 +198,7 @@
                             </div>
 
                         </div>
-                        <button class="btn " form="fbform" type="submit" name="genfb" >发布该试题</button>
+                        <button class="btn " form="fbform" type="submit" name="genfb" onclick="showToast('发布成功');">发布该试题</button>
                     </form>
                 </div>
             </li>
@@ -181,7 +226,7 @@
                             </div>
 
                         </div>
-                        <button class="btn " form="tofform" type="submit" name="gentof" >发布该试题</button>
+                        <button class="btn " form="tofform" type="submit" name="gentof" onclick="showToast('发布成功');">发布该试题</button>
                     </form>
                 </div>
             </li>
@@ -193,7 +238,6 @@
             <p class="flow-text">试卷管理</p>
             <a onclick="getAllPaper()"  >&nbsp;&nbsp;刷新</a>
             <ul class="collection with-header" id="paperul">
-
 
             </ul>
 
@@ -213,17 +257,17 @@
 
         <div class="card  col m12 l12 hoverable" id="grades">
             <p class="flow-text">&nbsp;学生成绩</p>
-            <a class='dropdown-button' href='#' data-activates='dropdown1' onclick="getScoreByPaperId();">&nbsp;选择试卷</a>
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="/">试卷1</a></li>
-                <li><a href="/">试卷2</a></li>
-                <li><a href="/">试卷3</a></li>
-                <li><a href="/">试卷4</a></li>
+            <span class="new badge  red"  id="paperidtotal" ></span>
+
+            <!-- 试卷选择 -->
+            <a class='dropdown-trigger btn  ' href='#' data-target='dropdown' id="choosepaperbtn">选择试卷</a>
+            <ul id='dropdown' class='dropdown-content'>
+
 
             </ul>
 
-            <ul class="collection with-header" id="gradesul">
 
+            <ul class="collection with-header" id="gradesul">
 
             </ul>
         </div>
@@ -256,7 +300,7 @@
                             <label for="videourl">视频链接</label>
                         </div>
                     </div>
-                    <button class="btn" form="videoform" type="submit" name="action" onclick="getAllVideo();" >发布视频</button>
+                    <button class="btn" form="videoform" type="submit" name="action" onclick="getAllVideo();showToast('发布成功');" >发布视频</button>
 
                 </form>
             </center>

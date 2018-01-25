@@ -14,8 +14,14 @@
     </select>
 
 
+    <select id="findFileByDocGroupid" parameterType="int" resultType="Bean.DocBean">
+        select * from doc where groupid =#{groupid}
+
+    </select>
+
+
     <insert id="addFile" parameterType="Bean.DocBean">
-        insert into doc(userid,username,filename,fileurl,filenametime)  values(#{userid},#{username},#{filename},#{fileurl},#{filenametime})
+        insert into doc(userid,username,filename,fileurl,filenametime,groupid)  values(#{userid},#{username},#{filename},#{fileurl},#{filenametime},#{groupid})
     </insert>
 
     <!--<insert id="addFileToCenter" parameterType="Bean.DocBean>-->
@@ -30,10 +36,20 @@
     </delete>
 
 
-    <!--<delete id="delCenterFileByObjId" parameterType="String" >-->
+    <select id="findAllDocGroup" parameterType="String" resultType="Bean.DocGroupBean">
 
-        <!--delete from filecenter where  objectid=#{objectid}-->
-    <!--</delete>-->
+    select * from docgroup
+
+    </select>
+
+    <insert id="addDocGroup" parameterType="Bean.DocGroupBean">
+        insert into  docgroup (groupname,notification) values (#{groupname},#{notification})
+    </insert>
+
+    <delete id="delDocGroupById" parameterType="int">
+        delete from docgroup where objectid = #{ objectid}
+
+    </delete>
 
 
 

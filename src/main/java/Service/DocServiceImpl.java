@@ -1,6 +1,7 @@
 package Service;
 
 import Bean.DocBean;
+import Bean.DocGroupBean;
 import Dao.DocDao;
 import Dao.DocDapImpl;
 
@@ -28,6 +29,11 @@ public class DocServiceImpl implements DocService {
         return docDao.findAllFile();
     }
 
+    @Override
+    public List<DocBean> findFileByDocGroupid(int groupid) {
+        return docDao.findFileByDocGroupid(groupid);
+    }
+
 
     public void addFile(DocBean file) {
 
@@ -44,6 +50,21 @@ public class DocServiceImpl implements DocService {
     public void delFileByObjId(int objectid) {
 
         docDao.delFileByObjId(objectid);
+    }
+
+    @Override
+    public List<DocGroupBean> findAllDocGroup() {
+        return docDao.findAllDocGroup();
+    }
+
+    @Override
+    public void addDocGroup(DocGroupBean docGroupBean) {
+        docDao.addDocGroup(docGroupBean);
+    }
+
+    @Override
+    public void delDocGroupById(int objectid) {
+        docDao.delDocGroupById(objectid);
     }
 
 //    @Override

@@ -67,7 +67,17 @@
 
 
                 <div class="card col offset-s12 m12 l12" id="first">
-                    <p class="flow-text">&nbsp;最近上传</p>
+                    <p class="flow-text">&nbsp;我的文档</p>
+                    <span class="new badge red"  id="selectedgroupid" ></span>
+
+                    <!-- 选择文档分组 -->
+                    <a class='dropdown-trigger btn  ' href='#' data-target='docGroupDropdown'>选择文档分组</a>
+                    <ul id='docGroupDropdown' class='dropdown-content'>
+
+
+
+
+                    </ul>
 
 
                     <ul class="collection with-header" id="docul">

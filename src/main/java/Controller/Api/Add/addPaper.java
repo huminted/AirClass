@@ -1,6 +1,6 @@
 package Controller.Api.Add;
 
-import Bean.ObjectidBean;
+import Bean.CodeBean;
 import Bean.PaperBean;
 import Model.ShowResponse;
 import Service.PaperService;
@@ -33,7 +33,7 @@ public class addPaper {
 
 
         paperBean=service.findPaperByCode(code);
-        ObjectidBean.objectid=paperBean.objectid;
+        CodeBean.objectid=paperBean.objectid;
 
         ShowResponse show=new ShowResponse();
         show.show(response,request);

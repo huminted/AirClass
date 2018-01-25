@@ -1,5 +1,6 @@
 package Model;
 
+import Bean.CodeBean;
 import Bean.DocBean;
 import Bean.UserBean;
 import Service.DocService;
@@ -16,6 +17,7 @@ public class Upload {
 
 
         DocBean.setUserid(UserBean.userid);
+        DocBean.setGroupid(CodeBean.docGroupId);
         DocBean.setUsername(UserBean.username);
         DocBean.setFilename(filename);
         DocBean.setFileurl(fileurl);

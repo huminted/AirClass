@@ -4,10 +4,19 @@ package Bean;
 
 public class DocBean {
     public int objectid;
+    public int groupid;
     public  String username;
     public  String userid;
     public  String filename;
     public  String fileurl;
+
+    public int getGroupid() {
+        return groupid;
+    }
+
+    public void setGroupid(int groupid) {
+        this.groupid = groupid;
+    }
 
     public int getObjectid() {
         return objectid;

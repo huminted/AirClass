@@ -2,8 +2,8 @@ package Bean;
 
 public class ScoreBean {
 
-    int objectid,paperid;
-    String  papertitle,userid,username,score;
+    int objectid,paperid,userid;
+    String  papertitle,username,score;
 
 
     public int getObjectid() {
@@ -30,11 +30,11 @@ public class ScoreBean {
         this.papertitle = papertitle;
     }
 
-    public String getUserid() {
+    public int getUserid() {
         return userid;
     }
 
-    public void setUserid(String userid) {
+    public void setUserid(int userid) {
         this.userid = userid;
     }
 

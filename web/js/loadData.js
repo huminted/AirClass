@@ -129,7 +129,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 
                     var dropdownLi=document.createElement("li");
-                    dropdownLi.innerHTML="    <a onclick=\"getDocByGroupId("+ docgroups[i].objectid+",'"+ docgroups[i].groupname+"')\"> "+ docgroups[i].groupname  +"      </a>                                                                    ";
+                    dropdownLi.innerHTML="    <a onclick=\"getDocByUserIdAndGroupId("+ docgroups[i].objectid+",'"+ docgroups[i].groupname+"');\"> "+ docgroups[i].groupname  +"      </a>                                                                    ";
                     dropdown.appendChild(dropdownLi);
 
 
@@ -161,7 +161,7 @@ function getAllDoc() {
 
     setTimeout(function () {
 
-        fly.get('/doc')
+        fly.get('/docbyuserid')
             .then(function (response) {
                 console.log(JSON.stringify(response.data));
                 var text= JSON.stringify(response.data);
@@ -181,18 +181,16 @@ function getAllDoc() {
                         li.innerHTML =
                             " <div>" + docs[i].filename +"\n" +
 
-
-
                             " <a  class=\"secondary-content \"   target='iframe'  onclick='getAllDoc();'   href=\"/deldoc?objectid=" + docs[i].objectid + "\">\n" +
-                            " <i class=\"\">&nbsp;删除 &nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
-                            " <i class=\"\">&nbsp;下载&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
-                            " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " </div>";
@@ -218,15 +216,12 @@ function getAllDoc() {
 
 }
 
-
-
-
-function getDocByGroupId(groupid,groupname) {
+function getDocByUserIdAndGroupId(groupid,groupname) {
 
 
     setTimeout(function sleep () {
 
-        fly.get('/getdocbygroupid?groupid='+groupid)
+        fly.get('/getdocbyuseridandgroupid?groupid='+groupid)
             .then(function (response) {
                 console.log(JSON.stringify(response.data));
                 var text= JSON.stringify(response.data);
@@ -280,4 +275,7 @@ function getDocByGroupId(groupid,groupname) {
 
 
 }
+
+
+
 

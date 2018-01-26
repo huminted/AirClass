@@ -44,7 +44,7 @@ public class Score {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/json; charset=UTF-8");
 
-        List<ScoreBean> list =scoreService.findScoreById("1");
+        List<ScoreBean> list =scoreService.findScoreById(1);
 
         String jsonText= JSONArray.toJSONString(list,true);
 

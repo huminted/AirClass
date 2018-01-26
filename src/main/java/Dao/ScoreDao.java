@@ -10,7 +10,7 @@ import java.util.List;
 public interface ScoreDao {
 
      List<ScoreBean> findAllScore();
-     List<ScoreBean> findScoreById(String userid);
+     List<ScoreBean> findScoreById(int userid);
      List<ScoreBean> findScoreByPaperId(int paperid);
 
 

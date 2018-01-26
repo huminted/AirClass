@@ -44,7 +44,7 @@ public class LoginAndRegisterController {
 
         UserBean user=new UserBean();
         user.setUsername( request.getParameter("username"));
-        user.setUserid(  request.getParameter("userid"));
+        user.setUserid(Integer.parseInt(request.getParameter("userid")));
         user.setPassword( request.getParameter("password"));
         user.setSchool(request.getParameter("school"));
         user.setMajor(request.getParameter("major"));

@@ -3,7 +3,7 @@ package Bean;
 public class UserBean {
     int objectid;
     public static String username;
-    public static String userid;
+    public static int userid;
     public static String password;
     public static String school;
     public static String major;
@@ -33,12 +33,12 @@ public class UserBean {
         this.username = username;
     }
 
-    public String getUserid() {
+    public  int getUserid() {
         return userid;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setUserid(int userid) {
+        UserBean.userid = userid;
     }
 
     public String getSchool() {

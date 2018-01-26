@@ -22,7 +22,7 @@ public class ScoreServiceImpl implements ScoreService {
     }
 
     @Override
-    public List<ScoreBean> findScoreById(String userid) {
+    public List<ScoreBean> findScoreById(int userid) {
         return scoreDao.findScoreById(userid);
     }
 

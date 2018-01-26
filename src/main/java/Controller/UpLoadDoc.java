@@ -2,6 +2,14 @@ package Controller;
 
 
 import Model.Upload;
+import com.google.gson.Gson;
+import com.qiniu.common.QiniuException;
+import com.qiniu.common.Zone;
+import com.qiniu.http.Response;
+import com.qiniu.storage.Configuration;
+import com.qiniu.storage.UploadManager;
+import com.qiniu.storage.model.DefaultPutRet;
+import com.qiniu.util.Auth;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -35,12 +43,21 @@ public class UpLoadDoc {
 
 
 
+
+
+
+
+
+
+
+
            //服务器编译路径
            String path= "C:/Files/"+fileNametime;
 
            File newFile=new File(path);
            //通过CommonsMultipartFile的方法直接写文件（注意这个时候）
            file.transferTo(newFile);
+
 
            System.out.println(path);
 

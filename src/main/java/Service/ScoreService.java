@@ -8,7 +8,7 @@ public interface ScoreService {
 
 
     List<ScoreBean> findAllScore();
-    List<ScoreBean> findScoreById(String userid);
+    List<ScoreBean> findScoreById(int userid);
     List<ScoreBean> findScoreByPaperId(int paperid);
 
 }

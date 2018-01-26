@@ -6,7 +6,7 @@ public class DocBean {
     public int objectid;
     public int groupid;
     public  String username;
-    public  String userid;
+    public  int userid;
     public  String filename;
     public  String fileurl;
 
@@ -34,11 +34,11 @@ public class DocBean {
         this.username = username;
     }
 
-    public String getUserid() {
+    public int getUserid() {
         return userid;
     }
 
-    public void setUserid(String userid) {
+    public void setUserid(int userid) {
         this.userid = userid;
     }
 

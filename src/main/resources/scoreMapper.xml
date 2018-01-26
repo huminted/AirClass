@@ -12,8 +12,8 @@
     </select>
 
 
-    <select id="findScoreById" parameterType="String" resultType="Bean.ScoreBean">
-        select * from score where userid=#{userid}
+    <select id="findScoreById" parameterType="int" resultType="Bean.ScoreBean">
+        select *  from score where userid=#{userid}
     </select>
 
 

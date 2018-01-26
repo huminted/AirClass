@@ -5,6 +5,7 @@ import Bean.DocGroupBean;
 import Dao.DocDao;
 import Dao.DocDapImpl;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class DocServiceImpl implements DocService {
@@ -17,7 +18,7 @@ public class DocServiceImpl implements DocService {
     }
 
 
-    public List<DocBean> findFileByUserId(String userid) {
+    public List<DocBean> findFileByUserId(int userid) {
 
 
         return docDao.findFileByUserId(userid);
@@ -32,6 +33,12 @@ public class DocServiceImpl implements DocService {
     @Override
     public List<DocBean> findFileByDocGroupid(int groupid) {
         return docDao.findFileByDocGroupid(groupid);
+    }
+
+    @Override
+    public List<DocBean> findFileByUserIdAndGroupId(HashMap map) {
+
+        return docDao.findFileByUserIdAndGroupId(map);
     }
 
 

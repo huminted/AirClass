@@ -5,8 +5,16 @@
 <mapper namespace="docMapper">
 
     <!--根据Username获取对应的值  -->
-    <select id="findFileByUserId" parameterType="String" resultType="Bean.DocBean">
+    <select id="findFileByUserId" parameterType="int" resultType="Bean.DocBean">
         select * from doc where userid= #{userid}
+    </select>
+
+
+    <select id="findFileByUserIdAndGroupId"  parameterType="HashMap"  resultType="Bean.DocBean">
+
+        select * from doc where userid= #{userid} and groupid=#{groupid}
+
+
     </select>
 
     <select id="findAllFile" parameterType="String" resultType="Bean.DocBean">

@@ -5,7 +5,7 @@
 <mapper namespace="userMapper">
 
     <!--根据ID获取对应的值  -->
-    <select id="findUserById" parameterType="String" resultType="Bean.UserBean">
+    <select id="findUserById" parameterType="int" resultType="Bean.UserBean">
         select * from user where userid= #{userid}
     </select>
 

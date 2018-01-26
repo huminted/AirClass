@@ -9,7 +9,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DocDapImpl implements DocDao {
 
@@ -29,7 +31,7 @@ public class DocDapImpl implements DocDao {
 
 
 
-    public List<DocBean> findFileByUserId(String userid) {
+    public List<DocBean> findFileByUserId(int userid) {
         String statement = "docMapper.findFileByUserId";
         List<DocBean> file = session.selectList(statement, userid);
         return file;
@@ -50,8 +52,19 @@ public class DocDapImpl implements DocDao {
         String find="docMapper.findFileByDocGroupid";
         List<DocBean> file = session.selectList(find,groupid);
 
+
         return file;
 
+    }
+
+    @Override
+    public List<DocBean> findFileByUserIdAndGroupId(HashMap map) {
+
+
+        String find="docMapper.findFileByUserIdAndGroupId";
+        List<DocBean> file = session.selectList(find,map);
+
+        return file;
     }
 
     public void addFile(DocBean file) {

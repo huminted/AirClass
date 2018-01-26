@@ -23,8 +23,8 @@
 
         &nbsp;<a href="#!" class="brand-logo"><i class="large material-icons">import_contacts</i>管理模块</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="/admin"><i class="material-icons">search</i></a></li>
-            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="/admin"><i class="material-icons">view_module</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">search</i></a></li>
             <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
             <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
         </ul>
@@ -108,7 +108,7 @@
             <li>
                 <div class="collapsible-header">
 
-                    <i class="material-icons">assignment</i>新增试卷
+                    <i class="material-icons">insert_drive_file</i>新增试卷
                     <span class=" new badge" data-badge-caption="新增试卷后再出题"></span>
 
                 </div>
@@ -136,7 +136,7 @@
 
 
             <li>
-                <div class="collapsible-header"><i class="material-icons">assignment</i>选择题</div>
+                <div class="collapsible-header"><i class="material-icons">assignment_turned_in</i>选择题</div>
                 <div class="collapsible-body">
                     <!--TEST1表单-->
                     <form id="scform" action="/addsc" method="get" target="iframe">
@@ -180,7 +180,7 @@
 
 
             <li>
-                <div class="collapsible-header"><i class="material-icons">assignment</i>填空题</div>
+                <div class="collapsible-header"><i class="material-icons">create</i>填空题</div>
                 <div class="collapsible-body">
 
                     <form id="fbform" action="/addfb" method="get" target="iframe">
@@ -208,7 +208,7 @@
 
 
             <li>
-                <div class="collapsible-header"><i class="material-icons">assignment</i>判断题</div>
+                <div class="collapsible-header"><i class="material-icons">done_all</i>判断题</div>
                 <div class="collapsible-body">
 
                     <form id="tofform" action="/addtof" method="get" target="iframe">

@@ -2,7 +2,17 @@
 var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 
+    getAllScore();
+    getAllDoc();
+    getAllDocGroup();
+    getAllPaper();
+    getAllVideo();
 
+
+});
+
+
+function  getAllScore() {
 
 
     fly.get('/allscore')
@@ -16,6 +26,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
             if (json!==""){
 
                 var parent = document.getElementById("gradesul");
+                parent.innerHTML=" ";
 
                 var badge=document.getElementById("paperidtotal");
                 badge.setAttribute("data-badge-caption","共有 "+json.length+" 人的成绩");
@@ -53,14 +64,8 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 
 
-    getAllDoc();
-    getAllDocGroup();
-    getAllPaper();
-    getAllVideo();
 
-
-});
-
+}
 
 
 
@@ -88,11 +93,11 @@ function getAllDoc() {
                         li.innerHTML =
                             " <div>" + docs[i].filename +"&nbsp;&nbsp;|&nbsp;&nbsp;"+docs[i].username +"\n" +
                             " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
-                            " <i class=\"\">&nbsp;下载&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
-                            " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " </div>";
@@ -150,7 +155,7 @@ function getAllDocGroup() {
                             " <div>" + docgroups[i].groupname +"&nbsp;&nbsp;|&nbsp;&nbsp;"+docgroups[i].notification +"\n" +
 
                             " <a  class=\"secondary-content \"   target='iframe' onclick='getAllDocGroup();' href=\"/deldocgroup?objectid=" + docgroups[i].objectid + "\">\n" +
-                            " <i class=\"\">&nbsp;删除 &nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
                             " </div>";
 
@@ -213,11 +218,11 @@ function getDocByGroupId(groupid,groupname) {
 
 
                             " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
-                            " <i class=\"\">&nbsp;下载&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
-                            " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " </div>";
@@ -267,6 +272,14 @@ function getAllPaper () {
                     dropdown.innerHTML=" ";
 
 
+                    var dropdownLiGetAll=document.createElement("li");
+                    dropdownLiGetAll.innerHTML="<a onclick=\"getAllScore();\">"+"查看全部"+"</a>";
+                    dropdown.appendChild(dropdownLiGetAll);
+
+
+
+
+
 
                     for (var i = json.total-1 ; i>=0; i--) {
                         var li = document.createElement("li");
@@ -275,11 +288,11 @@ function getAllPaper () {
                             " <div>" + papers[i].title +"&nbsp;&nbsp;|&nbsp;&nbsp;"+papers[i].content +"\n" +
 
                             " <a  class=\"secondary-content \"   target='iframe' onclick='getAllPaper();' href=\"/delpaper?objectid=" + papers[i].objectid + "\">\n" +
-                            " <i class=\"\">&nbsp;删除 &nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a  target='_blank' class=\"secondary-content\" href=\"/text?paperid="+ papers[i].objectid+" \">\n" +
-                            " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " </div>";
@@ -288,7 +301,7 @@ function getAllPaper () {
 
 
                         var dropdownLi=document.createElement("li");
-                        dropdownLi.innerHTML="<a onclick=\"getScoreByPaperId("+papers[i].objectid +");\">"+ papers[i].title+","+ papers[i].content+"</a>";
+                        dropdownLi.innerHTML="<a onclick=\"getScoreByPaperId("+ papers[i].objectid+",'"+ papers[i].title+"');\"> "+ papers[i].title+","+ papers[i].content +"      </a> ";
                         dropdown.appendChild(dropdownLi);
 
 
@@ -343,11 +356,11 @@ function getAllVideo() {
 
                         " <a  class=\"secondary-content \"  onclick='getAllVideo();' target='iframe"   +
                         "'   href=\"/delvideo?objectid=" + videos[i].objectid + "\">\n" +
-                        " <i class=\"\">&nbsp;删除 &nbsp;</i>\n" +
+                        " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
                         " </a>\n" +
 
                         "<a target=\"_blank\" class=\"secondary-content\" href=\""+ videos[i].url+"\"   onclick='getAllVideo();'>\n" +
-                        " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                        " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                         " </a>" +
 
 
@@ -424,7 +437,7 @@ function  getScoreById () {
 
 
 
-function getScoreByPaperId(paperid) {
+function getScoreByPaperId(paperid,papername) {
 
     fly.get('/getscorebypaperid?paperid='+paperid)
         .then(function (response) {
@@ -438,8 +451,7 @@ function getScoreByPaperId(paperid) {
                 var parent = document.getElementById("gradesul");
                 parent.innerHTML=" ";
 
-                var badge=document.getElementById("paperidtotal");
-                badge.setAttribute("data-badge-caption","当前试卷共有: "+json.length+" 人交卷");
+                setBadge("paperidtotal",papername+"   共有: "+json.length+" 人交卷");
 
 
                 for (var i = 0; i <json.length; i++) {

@@ -39,7 +39,7 @@ public class ScoreDaoImpl implements ScoreDao {
     }
 
     @Override
-    public List<ScoreBean> findScoreById(String userid) {
+    public List<ScoreBean> findScoreById(int userid) {
 
         String statement = "scoreMapper.findScoreById";
         List<ScoreBean> score = session.selectList(statement,userid);

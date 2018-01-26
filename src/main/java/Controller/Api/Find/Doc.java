@@ -3,6 +3,7 @@ package Controller.Api.Find;
 import Bean.CodeBean;
 import Bean.DocBean;
 import Bean.DocGroupBean;
+import Bean.UserBean;
 import Service.DocService;
 import Service.DocServiceImpl;
 import com.alibaba.fastjson.JSONArray;
@@ -22,14 +23,14 @@ import java.util.Map;
 public class Doc {
 
 
-    @RequestMapping(value = "/doc")
+    @RequestMapping(value = "/docbyuserid")
     public void getDoc(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         DocService service =new DocServiceImpl();
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/json; charset=UTF-8");
 
-        List<DocBean> list=service.findFileByUserId("1");
+        List<DocBean> list=service.findFileByUserId(2);
 
 
         if (list.isEmpty()){
@@ -229,4 +230,55 @@ public class Doc {
 
     }
 
+
+
+    @RequestMapping("/getdocbyuseridandgroupid")
+    public void getDocByUserIdAndGroupId(HttpServletRequest request,HttpServletResponse response) throws IOException {
+    request.setCharacterEncoding("UTF-8");
+    response.setContentType("text/json; charset=utf-8");
+    DocService service=new DocServiceImpl();
+
+    HashMap hashMap=new HashMap();
+    hashMap.put("userid", 2);
+    hashMap.put("groupid",request.getParameter("groupid"));
+    List<DocBean> list= service.findFileByUserIdAndGroupId(hashMap);
+
+
+        if (list.isEmpty()){
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","未找到文件");
+            fileMap.put("code",0);
+            fileMap.put("total",list.size());
+            fileMap.put("doc","null");
+
+
+            String jsonText = JSONArray.toJSONString(fileMap, true);
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+
+
+        }
+
+        else {
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","成功");
+            fileMap.put("code",1);
+            fileMap.put("total",list.size());
+            fileMap.put("doc",list);
+
+
+            String jsonText= JSONArray.toJSONString(fileMap,true);
+
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+        }
+
+
+    }
 }

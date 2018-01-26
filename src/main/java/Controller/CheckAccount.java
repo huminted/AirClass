@@ -23,7 +23,7 @@ public class CheckAccount {
         UserService service = new UserServiceImpl();
 
 
-        String InputUserID= (request.getParameter("username"));
+        int InputUserID= Integer.parseInt((request.getParameter("username")));
         String InputUserPW= request.getParameter("password");
 
 
@@ -34,10 +34,10 @@ public class CheckAccount {
 
 
 
-            String ID=User.getUserid();
+            int ID=User.getUserid();
             String PW=User.getPassword();
 
-            if (InputUserID.equals(ID) && InputUserPW.equals(PW)){
+            if (InputUserID==ID && InputUserPW.equals(PW)){
 
 
                 Map<String ,Object> userMap=new HashMap<String ,Object>();

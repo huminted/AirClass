@@ -11,8 +11,8 @@ public class UserServiceImpl implements UserService{
         userDao = new UserDaoImpl();
     }
 
-    public UserBean findUserById(String id) {
-        return userDao.findUserById(id);
+    public UserBean findUserById(int userid) {
+        return userDao.findUserById(userid);
     }
     public void addUser(UserBean user){
         userDao.addUser(user);

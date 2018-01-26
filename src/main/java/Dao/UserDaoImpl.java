@@ -23,9 +23,9 @@ public class UserDaoImpl implements UserDao{
         }
     }
 
-    public UserBean findUserById(String id) {
+    public UserBean findUserById(int userid) {
         String statement = "userMapper.findUserById";
-        UserBean user = (UserBean)session.selectOne(statement, id);
+        UserBean user = session.selectOne(statement, userid);
         return user;
     }
 

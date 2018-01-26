@@ -1,6 +1,7 @@
 package Controller;
 
 
+import Model.QiNiu;
 import Model.Upload;
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
@@ -32,43 +33,41 @@ public class UpLoadDoc {
     @RequestMapping(value = "/fileupload" ,method = RequestMethod.POST)
     public String UploadFile(@RequestParam("file") MultipartFile file , HttpServletRequest request) throws IOException {
 
-
+        QiNiu qiNiu=new QiNiu();
 
        if (!file.isEmpty()){
            System.out.println(file.isEmpty());
 
            String fileName=file.getOriginalFilename();
 
-           String fileNametime=System.currentTimeMillis()+fileName;
+           System.out.println("文件名称"+fileName);
 
-
-
-
-
-
-
-
+           String fileNametime=fileName;
 
 
 
            //服务器编译路径
-           String path= "C:/Files/"+fileNametime;
+           String path= "C:/AirClass/"+fileNametime;
 
            File newFile=new File(path);
            //通过CommonsMultipartFile的方法直接写文件（注意这个时候）
            file.transferTo(newFile);
 
+           System.out.println("路径"+path);
 
-           System.out.println(path);
-
-           String url= request.getScheme() +"://" + request.getServerName() + ":" +request.getServerPort();
+           qiNiu.upload(fileName,path);
 
 
-           path=url+"/download?filepath="+path+"&filename="+fileNametime;
+//
+//           String url= request.getScheme() +"://" + request.getServerName() + ":" +request.getServerPort();
+//           path=url+"/download?filepath="+path+"&filename="+fileNametime;
+
+           String url="http://static.iwakeup.cn/"+fileNametime;
+
 
 
            Upload upload =new Upload();
-           upload.upload(fileName,fileNametime,path);
+           upload.upload(fileName,fileNametime,url);
 
 
 

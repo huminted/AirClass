@@ -183,11 +183,11 @@ public class Doc {
         response.setContentType("text/json; charset=utf-8");
 
         DocService service=new DocServiceImpl();
-        CodeBean.docGroupId=Integer.parseInt(request.getParameter("groupid"));
 
 
 
-        List<DocBean> list=service.findFileByDocGroupid(CodeBean.docGroupId);
+
+        List<DocBean> list=service.findFileByDocGroupid(Integer.parseInt(request.getParameter("groupid")));
 
 
         if (list.isEmpty()){
@@ -238,10 +238,15 @@ public class Doc {
     response.setContentType("text/json; charset=utf-8");
     DocService service=new DocServiceImpl();
 
+
+    CodeBean.docGroupId=Integer.parseInt(request.getParameter("groupid"));
+
     HashMap hashMap=new HashMap();
     hashMap.put("userid", 2);
-    hashMap.put("groupid",request.getParameter("groupid"));
+    hashMap.put("groupid", CodeBean.docGroupId);
     List<DocBean> list= service.findFileByUserIdAndGroupId(hashMap);
+
+
 
 
         if (list.isEmpty()){

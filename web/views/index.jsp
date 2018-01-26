@@ -9,13 +9,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/loading.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>在线学习平台</title>
 </head>
 
-<body onload="initIndex();">
+<body onload="initIndex();" >
+
+
+
 <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 
 
@@ -25,7 +29,7 @@
         &nbsp;<a href="#!" class="brand-logo"><i class="large material-icons">import_contacts</i>DIST在线学习平台</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="/admin"><i class="material-icons">view_module</i></a></li>
-            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+            <li><a onclick=" window.location.reload();" ><i class="material-icons">refresh</i></a></li>
             <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
         </ul>
     </div>
@@ -149,7 +153,6 @@
 
 
     <div id="test4" class="col s12">
-        <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fc.iwakeup.cn%2Fdownload%3Ffilepath%3DC%3A%2FFiles%2F1516272605215mujiang.docx%26filename%3Dmujiang.docx' width='800px' height='800px' frameborder='0'>这是嵌入 <a target='_blank' href='https://office.com'>Microsoft Office</a> 文档，由 <a target='_blank' href='https://office.com/webapps'>Office Online</a> 支持。</iframe>
 
 
 

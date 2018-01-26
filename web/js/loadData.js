@@ -1,6 +1,12 @@
 // var path=window.location.pathname;
 
+
+
+
+
 var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
+
+
 
 
     fly.get('/video')
@@ -153,6 +159,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
     getAllDoc();
 
 
+
 });
 
 
@@ -182,14 +189,14 @@ function getAllDoc() {
                             " <div>" + docs[i].filename +"\n" +
 
                             " <a  class=\"secondary-content \"   target='iframe'  onclick='getAllDoc();'   href=\"/deldoc?objectid=" + docs[i].objectid + "\">\n" +
-                            " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text \">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
+                            " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" + encodeURIComponent(docs[i].fileurl) + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -239,19 +246,19 @@ function getDocByUserIdAndGroupId(groupid,groupname) {
                         var li = document.createElement("li");
                         li.setAttribute("class", "collection-item");
                         li.innerHTML =
-                            " <div>" + docs[i].filename +"&nbsp;&nbsp;|&nbsp;&nbsp;"+docs[i].username +"\n" +
+                            " <div>" + docs[i].filename +"&nbsp;&nbsp;|&nbsp;&nbsp;"+groupname+"\n" +
 
 
                             " <a  class=\"secondary-content \"   target='iframe'   onclick=\" getDocByGroupId("+ docs[i].objectid+",'"+ groupname+"');  \"   href=\"/deldoc?objectid=" + docs[i].objectid + "\">\n" +
-                            " <i class=\"\">&nbsp;删除 &nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text \">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
-                            " <i class=\"\">&nbsp;下载&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
-                            " <i class=\"\">&nbsp;查看&nbsp;</i>\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
                             " </div>";
@@ -275,7 +282,5 @@ function getDocByUserIdAndGroupId(groupid,groupname) {
 
 
 }
-
-
 
 

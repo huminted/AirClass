@@ -18,6 +18,8 @@ var FbRightAnswer;
 var TofRightAnswer;
 
 
+
+
 var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 

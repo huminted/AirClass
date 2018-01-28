@@ -21,6 +21,11 @@
         select * from score where paperid =#{paperid}
     </select>
 
+    <insert id="addScore" parameterType="Bean.ScoreBean">
+        insert into score (paperid,papertitle,userid,username,singlechoice,fillblank,tof,score)
+       values (#{paperid},#{papertitle},#{userid},#{username},#{singlechoice},#{fillblank},#{tof},#{score})
+    </insert>
+
 
 
 

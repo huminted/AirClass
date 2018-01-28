@@ -31,5 +31,10 @@ public class ScoreServiceImpl implements ScoreService {
         return scoreDao.findScoreByPaperId(paperid);
     }
 
+    @Override
+    public void addScore(ScoreBean scoreBean) {
+        scoreDao.addScore(scoreBean);
+    }
+
 
 }

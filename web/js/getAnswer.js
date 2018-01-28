@@ -1,6 +1,7 @@
 
 
 var totalScore=0;
+var flag=0;
 function getAllAnswer() {
     var  scnum=document.getElementById("scform").getElementsByTagName("div").length;
     var  fbnum=  document.getElementById("fbform").getElementsByTagName("div").length;
@@ -12,9 +13,15 @@ function getAllAnswer() {
     getFbAnswer(fbnum/2);
     getTofAnswer(tofnum);
 
-    alert("卷面总分"+totalScore);
+    if (flag===3){
+        genJson();
+        showScore();
+        clearScore();
 
-
+    }else {
+        alert("还有未完成的题目，禁止提交！");
+    }
+    clearScore();
 
 
 }
@@ -70,20 +77,21 @@ function checkSc(ScJson,ScRightAnswer) {
 
         for (var i=0;i<ScRightAnswer.total;i++){
 
-            alert("选择用户"+ScJson.sc[i].answer+" 和 标准答案"+ ScRightAnswer.sc[i].answer);
+            // alert("选择用户"+ScJson.sc[i].answer+" 和 标准答案"+ ScRightAnswer.sc[i].answer);
 
             if (ScJson.sc[i].answer == ScRightAnswer.sc[i].answer){
 
-                ScScore+=2;
+                ScScore+=1;
 
 
             }
 
         }
 
-        alert("选择题得分"+ScScore);
+        // alert("选择题得分"+ScScore);
         totalScore+=ScScore;
-        ScScore=0;
+        flag+=1;
+
 
 
 
@@ -100,8 +108,6 @@ function checkSc(ScJson,ScRightAnswer) {
 
 
 }
-
-
 
 
 function getFbAnswer (fbnum) {
@@ -135,8 +141,6 @@ function getFbAnswer (fbnum) {
 }
 
 
-
-
 var FbScore=0;
 function checkFb (FbJson,FbRightAnswer) {
 
@@ -145,20 +149,21 @@ function checkFb (FbJson,FbRightAnswer) {
 
         for (var i = 0; i < FbRightAnswer.total; i++) {
 
-            alert("填空用户 " + FbJson.fb[i].answer + " 和 标准答案" + FbRightAnswer.fb[i].answer);
+            // alert("填空用户 " + FbJson.fb[i].answer + " 和 标准答案" + FbRightAnswer.fb[i].answer);
 
             if (FbJson.fb[i].answer == FbRightAnswer.fb[i].answer) {
 
-                FbScore += 2;
+                FbScore += 1;
 
 
             }
 
         }
 
-        alert("填空" + FbScore);
+        // alert("填空" + FbScore);
         totalScore+=FbScore;
-        FbScore = 0;
+        flag+=1;
+
 
 
     }else {
@@ -169,9 +174,6 @@ function checkFb (FbJson,FbRightAnswer) {
     }
 
 }
-
-
-
 
 
 function getTofAnswer(tofnum) {
@@ -213,28 +215,26 @@ function checkTof(TofJson,TofRightAnswer) {
 
         for (var i=0;i<TofRightAnswer.total;i++){
 
-            alert("判断用户"+TofJson.tof[i].answer+" 和 标准答案"+ TofRightAnswer.tof[i].answer);
+            // alert("判断用户"+TofJson.tof[i].answer+" 和 标准答案"+ TofRightAnswer.tof[i].answer);
 
             if (TofJson.tof[i].answer == TofRightAnswer.tof[i].answer){
 
-                TofScore+=2;
+                TofScore+=1;
 
 
             }
 
         }
 
-        alert("判断题得分"+TofScore);
+        // alert("判断题得分"+TofScore);
         totalScore+=TofScore;
-        TofScore=0;
-
-
+        flag+=1;
 
 
 
     }else {
 
-        alert("判断题还有未完成的题目");
+        // alert("判断题还有未完成的题目");
 
         return false;
 
@@ -246,3 +246,75 @@ function checkTof(TofJson,TofRightAnswer) {
 
 
 }
+
+
+var fly=require(['../js/fly.js','../js/require.js'],function Sendjson() {});
+
+var  paperid=GetQueryString("paperid");
+var  papertitle=decodeURI(GetQueryString("papertitle"));
+
+function genJson() {
+
+
+    var scoretext = {
+        "score": totalScore,
+        "detial":[]
+
+    };
+    scoretext["detial"].push({
+
+        "paperid":paperid,
+        "papertitle":papertitle,
+        "singlechoice":ScScore,
+        "fillblank":FbScore,
+        "tof":TofScore
+
+
+
+    });
+        fly.get('/addScore?scoretext='+encodeURI(JSON.stringify(scoretext)))
+
+            .then(function (response) {
+
+                console.log(scoretext);
+
+                console.log(response);
+
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+        // alert("上传成功");
+}
+
+
+function clearScore() {
+
+    ScScore=0;
+    FbScore=0;
+    TofScore=0;
+    totalScore=0;
+    flag=0;
+
+
+
+}
+
+
+function showScore() {
+
+    var main=document.getElementById("main");
+
+    main.innerHTML="\n" +
+        "      <ul class=\"collection with-header\">\n" +
+        "        <li class=\"collection-header\"><h4>恭喜您在"+papertitle+"获得"+totalScore+"分"+"</h4></li>\n" +
+        "        <li class=\"collection-item\">单选题："+ScScore+"分 "+"</li>\n" +
+        "        <li class=\"collection-item\">填空题："+FbScore+"分 "+"</li>\n" +
+        "        <li class=\"collection-item\">判断题："+TofScore+"分"+"</li>\n" +
+        "      </ul>";
+
+}
+
+

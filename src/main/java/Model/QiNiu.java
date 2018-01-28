@@ -1,6 +1,8 @@
 package Model;
 
 import Bean.CodeBean;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
@@ -14,6 +16,10 @@ import com.qiniu.util.Auth;
 public class QiNiu {
 
 
+    public static void main(String arg[]){
+
+        test();
+    }
 
 
     public  void upload(String fileName,String filePath){
@@ -74,4 +80,23 @@ public class QiNiu {
 
 
     }
+
+    public static void test(){
+
+
+
+        JSONObject jsonObject= (JSONObject) JSONObject.parse("{\"score\":6,\"detial\":[{\"paperid\":\"278\",\"papertitle\":\"测试\",\"singlechoice\":3,\"fillblank\":3,\"tof\":0}]}");
+
+
+        String score=jsonObject.get("score").toString();
+
+        JSONArray detialArray=jsonObject.getJSONArray("detial");
+
+        JSONObject detialObj=detialArray.getJSONObject(0);
+
+
+
+
+    }
+
 }

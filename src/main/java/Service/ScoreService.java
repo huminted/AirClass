@@ -11,4 +11,6 @@ public interface ScoreService {
     List<ScoreBean> findScoreById(int userid);
     List<ScoreBean> findScoreByPaperId(int paperid);
 
+    void addScore(ScoreBean scoreBean);
+
 }

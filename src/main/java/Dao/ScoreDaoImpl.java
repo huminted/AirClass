@@ -58,5 +58,13 @@ public class ScoreDaoImpl implements ScoreDao {
 
     }
 
+    @Override
+    public void addScore(ScoreBean scoreBean) {
+        String add="scoreMapper.addScore";
+        session.insert(add,scoreBean);
+        session.commit();
+
+    }
+
 
 }

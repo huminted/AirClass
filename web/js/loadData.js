@@ -90,7 +90,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                         "                        <p>"+papers[i].content+" </p>\n" +
                         "                    </div>\n" +
                         "                    <div class=\"card-action\">\n" +
-                        "                        <a target='_blank' href=\"/text?paperid="+papers[i].objectid+"\">答题</a>\n" +
+                        "                        <a target='_blank' href=\"/text?paperid="+papers[i].objectid+"&papertitle="+papers[i].title+"\">答题</a>\n" +
                         "                    </div>\n" +
                         "                </div>\n" +
                         "            </div>\n" +

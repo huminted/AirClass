@@ -3,7 +3,7 @@ package Bean;
 public class ScoreBean {
 
     int objectid,paperid,userid;
-    String  papertitle,username,score;
+    String  papertitle,username,singlechoice,fillblank,tof,score;
 
 
     public int getObjectid() {
@@ -44,6 +44,30 @@ public class ScoreBean {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getSinglechoice() {
+        return singlechoice;
+    }
+
+    public void setSinglechoice(String singlechoice) {
+        this.singlechoice = singlechoice;
+    }
+
+    public String getFillblank() {
+        return fillblank;
+    }
+
+    public void setFillblank(String fillblank) {
+        this.fillblank = fillblank;
+    }
+
+    public String getTof() {
+        return tof;
+    }
+
+    public void setTof(String tof) {
+        this.tof = tof;
     }
 
     public String getScore() {

@@ -13,7 +13,9 @@ function GetQueryString(variable)
     return(false);
 }
 
-
+var ScRightAnswer;
+var FbRightAnswer;
+var TofRightAnswer;
 
 
 var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
@@ -32,6 +34,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
             if (typeof(sc) !== "undefined"){
 
+                ScRightAnswer ={"total" :json.scTotal,"sc":[ ] };
 
                 for (var i = 0; i <json.scTotal; i++) {
 
@@ -40,6 +43,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                     var parent = document.getElementById("scform");
                     var div = document.createElement("div");
 
+                    ScRightAnswer["sc"].push({ "number":i,"answer":sc[i].rightanswer});
 
                     //设置 div 属性，如 id
                     div.setAttribute("id", "sc"+i);
@@ -74,12 +78,16 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                     parent.appendChild(div);
                 }
 
+
             }
 
             if (typeof(fb) !== "undefined"){
 
+                FbRightAnswer ={"total" :json.fbTotal,"fb":[ ] };
+
                 for (var j = 0; j <json.fbTotal; j++) {
 
+                    FbRightAnswer["fb"].push({ "number":j,"answer":fb[j].rightanswer});
 
                     var parent2 = document.getElementById("fbform");
                     var div2 = document.createElement("div");
@@ -104,7 +112,13 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
             if (typeof(tof) !== "undefined"){
 
+
+                TofRightAnswer={"total" :json.tofTotal,"tof":[ ] };
+
                 for (var k = 0; k <json.tofTotal; k++) {
+
+                    TofRightAnswer["tof"].push({ "number":k,"answer":tof[k].rightanswer});
+
 
 
                     var parent3 = document.getElementById("tofform");

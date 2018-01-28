@@ -25,7 +25,7 @@ public class QiNiu {
         UploadManager uploadManager = new UploadManager(cfg);
         //...生成上传凭证，然后准备上传
         String accessKey = CodeBean.QiNiu_accessKey;
-        String secretKey = CodeBean.QiNiu_accessKey;
+        String secretKey = CodeBean.QiNiu_secretKey;
         String bucket =CodeBean.bucket;
         //如果是Windows情况下，格式是 D:\\qiniu\\test.png
 

@@ -42,7 +42,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                         "                    <p>" +videos[i].content+ "</p>\n" +
                         "                </div>\n" +
                         "                <div class=\"card-action\">\n" +
-                        "                    <a href=\"/genExcel?filename="+videos[i].objectid+"\">下载</a>\n" +
+                        "                    <a download='' href=\""+videos[i].url+"\">下载</a>\n" +
                         "                    <a href=\"/delete?objectid="+videos[i].objectid+"\">收藏</a>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
@@ -188,7 +188,7 @@ function getAllDoc() {
                         li.innerHTML =
                             " <div>" + docs[i].filename +"\n" +
 
-                            " <a  class=\"secondary-content \"   target='iframe'  onclick='getAllDoc();'   href=\"/deldoc?objectid=" + docs[i].objectid + "\">\n" +
+                            " <a  class=\"secondary-content \"   target='iframe'  onclick='getAllDoc();'   href=\"/deldoc?objectid=" + docs[i].objectid +"&filename="+docs[i].filename+ "\">\n" +
                             " <i class=\"material-icons black-text \">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 

@@ -1,5 +1,6 @@
 package Controller.Api.Delete;
 
+import Model.QiNiu;
 import Model.ShowResponse;
 import Service.DocService;
 import Service.DocServiceImpl;
@@ -16,10 +17,11 @@ public class delDoc {
     public void del(HttpServletRequest request , HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
 
-
+        QiNiu qiNiu=new QiNiu();
         DocService service =new DocServiceImpl();
 
         service.delFileByObjId(Integer.parseInt(request.getParameter("objectid")));
+        qiNiu.delete(request.getParameter("filename"));
 
         ShowResponse showResponse =new ShowResponse();
         showResponse.show(response,request);

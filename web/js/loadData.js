@@ -32,7 +32,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                     div.innerHTML = "<div id=\"card   \" class=\"col s3 medium\">\n" +
                         "            <div class=\"card \">\n" +
                         "                <div class=\"card-image small\">\n" +
-                        "                    <video class=\"responsive-video \" controls=\"controls\" poster=\"http://chart.iwakeup.cn/Main.png\">\n" +
+                        "                    <video class=\"responsive-video \" controls=\"controls\" poster=\"http://static.iwakeup.cn/airclassvideo2.png\">\n" +
                         "                     <source src=\" "+videos[i].url+"\" type=\"video/mp4\">\n" +
                         "                    </video>\n" +
                         "\n" +
@@ -42,8 +42,8 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                         "                    <p>" +videos[i].content+ "</p>\n" +
                         "                </div>\n" +
                         "                <div class=\"card-action\">\n" +
-                        "                    <a download='' href=\""+videos[i].url+"\">下载</a>\n" +
-                        "                    <a href=\"/delete?objectid="+videos[i].objectid+"\">收藏</a>\n" +
+                        "                    <a download  class='black-text' href=\""+videos[i].url+"\">下载</a>\n" +
+                        "                    <a class='black-text'  href=\"/delete?objectid="+videos[i].objectid+"\">收藏</a>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
                         "        </div>";
@@ -52,7 +52,17 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
             }
 
+            setEmpty(json.total,"itemVideo","\n" +
+                "<div class=\"pacman  \">\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <h6 class='text-lighten-1 black-text ' >Ծ‸Ծ被吃完了</h6>         \n  " +
+                "</div>");
 
+            reSize(json.total,4,"itemVideo");
 
 
 
@@ -69,7 +79,9 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
             var json = JSON.parse(text);
             var papers=eval(json.paper);
 
+
             if (papers!=="null"){
+
                 var parent = document.getElementById("row1");
 
                 for (var i = 0; i <json.total; i++) {
@@ -82,7 +94,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                     div.innerHTML = "<div class=\"col s12 m4\">\n" +
                         "            <div class=\"card horizontal\">\n" +
                         "                <div class=\"card-image\">\n" +
-                        "                    <img src=\"https://wx1.sinaimg.cn/mw690/66e8f898gy1fnjnukznaej20j70eejrv.jpg\">\n" +
+                        "                    <img src=\"http://static.iwakeup.cn/airclasspaper.png\">\n" +
                         "                </div>\n" +
                         "                <div class=\"card-stacked\">\n" +
                         "                    <div class=\"card-content\">\n" +
@@ -90,7 +102,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                         "                        <p>"+papers[i].content+" </p>\n" +
                         "                    </div>\n" +
                         "                    <div class=\"card-action\">\n" +
-                        "                        <a target='_blank' href=\"/text?paperid="+papers[i].objectid+"&papertitle="+papers[i].title+"\">答题</a>\n" +
+                        "                        <a target='_blank' class='black-text' href=\"/text?paperid="+papers[i].objectid+"&papertitle="+papers[i].title+"\">答题</a>\n" +
                         "                    </div>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
@@ -99,7 +111,17 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                 }
 
             }
+            setEmpty(json.total,"itemPaper","\n" +
+                "<div class=\"pacman  \">\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <div></div>\n" +
+                "  <h6 class='text-lighten-1 black-text'>Ծ‸Ծ被吃完了</h6>         \n  " +
+                "</div>");
 
+            reSize(json.total,9,"itemPaper");
 
 
 
@@ -207,6 +229,7 @@ function getAllDoc() {
 
                 }
 
+                reUlSize(json.total,5,"itemUpload");
 
 
 

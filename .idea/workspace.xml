@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="AirClass:war exploded" />
+      <artifact name="airclass" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AirClass/web/js/changYan.js" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/.idea/artifacts/airclass.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/artifacts/airclass.xml" />
       <change beforePath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Bean/ScoreBean.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Bean/ScoreBean.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Dao/ScoreDao.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Dao/ScoreDao.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Dao/ScoreDaoImpl.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Dao/ScoreDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Model/QiNiu.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Model/QiNiu.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Service/ScoreService.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Service/ScoreService.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Service/ScoreServiceImpl.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Service/ScoreServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/resources/scoreMapper.xml" afterPath="$PROJECT_DIR$/../AirClass/src/main/resources/scoreMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/getAnswer.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/getAnswer.js" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/css/loading.css" afterPath="$PROJECT_DIR$/../AirClass/web/css/loading.css" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/css/materialize.css" afterPath="$PROJECT_DIR$/../AirClass/web/css/materialize.css" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/css/materialize.min.css" afterPath="$PROJECT_DIR$/../AirClass/web/css/materialize.min.css" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js" />
       <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadQuestions.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadQuestions.js" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/text.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/text.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/utils.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/utils.js" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/admin.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/admin.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,38 +49,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="getAnswer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../AirClass/web/js/getAnswer.js">
+      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="229" column="8" lean-forward="false" selection-start-line="229" selection-start-column="8" selection-end-line="229" selection-end-column="8" />
+            <state relative-caret-position="416">
+              <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="96" column="94" lean-forward="false" selection-start-line="96" selection-start-column="94" selection-end-line="96" selection-end-column="94" />
               <folding>
-                <element signature="n#!!block;n#getScAnswer#0" expanded="false" />
-                <element signature="n#!!block;n#getFbAnswer#0" expanded="false" />
-                <element signature="e#4471#4569#0" expanded="false" />
-                <element signature="n#!!block;n#clearScore#0" expanded="false" />
+                <element signature="e#5151#6212#0" expanded="false" />
+                <marker date="1517227522951" expanded="true" signature="7396:7402" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="7408:7414" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="7645:7651" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="7665:7671" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="7978:7984" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="7998:8004" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9265:9271" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9271:9277" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9278:9284" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9284:9290" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9595:9601" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9607:9613" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9844:9850" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="9864:9870" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="10210:10216" ph="&amp;nbsp;" />
+                <marker date="1517227522951" expanded="true" signature="10230:10236" ph="&amp;nbsp;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addScore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java">
+      <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/js/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="284">
+              <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/text.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="394">
+              <caret line="208" column="80" lean-forward="false" selection-start-line="208" selection-start-column="80" selection-end-line="208" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -95,9 +114,9 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -137,15 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
-        <option value="$PROJECT_DIR$/web/views/admin.jsp" />
-        <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
-        <option value="$PROJECT_DIR$/web/js/utils.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/UserBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Upload.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/DocBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/LoginAndRegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/ScoreBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/DocDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/DocDapImpl.java" />
@@ -174,20 +184,29 @@
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/CodeBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/QiNiu.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Delete/delDoc.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Bean/PaperBean.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Bean/ScoreBean.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Dao/ScoreDao.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Service/ScoreService.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Dao/ScoreDaoImpl.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Service/ScoreServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../AirClass/web/js/loadQuestions.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Delete/delDoc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/PaperBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ScoreBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/ScoreDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/ScoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/ScoreDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/ScoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/js/loadQuestions.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/QiNiu.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/scoreMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Add/addScore.java" />
+        <option value="$PROJECT_DIR$/web/views/text.jsp" />
+        <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
+        <option value="$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js" />
+        <option value="$PROJECT_DIR$/../AirClass/web/css/materialize.css" />
+        <option value="$PROJECT_DIR$/../AirClass/web/css/materialize.min.css" />
+        <option value="$PROJECT_DIR$/../AirClass/web/css/loading.css" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/admin.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/js/utils.js" />
         <option value="$PROJECT_DIR$/../AirClass/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Model/QiNiu.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/resources/scoreMapper.xml" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java" />
-        <option value="$PROJECT_DIR$/../AirClass/web/views/text.jsp" />
-        <option value="$PROJECT_DIR$/../AirClass/web/js/getAnswer.js" />
+        <option value="$PROJECT_DIR$/../AirClass/web/js/changyan.js" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
       </list>
     </option>
   </component>
@@ -294,6 +313,9 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,6 +333,13 @@
               <item name="AirClass" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="airclass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
@@ -354,16 +383,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="Delete" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
@@ -427,35 +446,41 @@
               <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="AirClass" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="materialize.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/../////////////Nodejs/node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/..//////////////Nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3492647" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/AirClass/web/WEB-INF/applicationContext.xml" />
+    <property name="SearchEverywhereHistoryKey" value="indicator&#9;null&#9;null" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\AirClass\web\js" />
-      <recent name="F:\AirClass\web\WEB-INF" />
-      <recent name="F:\AirClass\web\views" />
+      <recent name="F:\AirClass\src\main\resources" />
+      <recent name="F:\AirClass\src\main\java\Service" />
+      <recent name="F:\AirClass\src\main\java\Dao" />
+      <recent name="F:\AirClass\src\main\java\Bean" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Dao" />
@@ -463,12 +488,10 @@
       <recent name="Model" />
       <recent name="Controller.Update" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\AirClass\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\AirClass\web\js" />
-      <recent name="F:\AirClass\src\main\java\Service" />
-      <recent name="F:\AirClass\src\main\java\Dao" />
-      <recent name="F:\AirClass\src\main\java\Bean" />
+      <recent name="F:\AirClass\web\WEB-INF" />
+      <recent name="F:\AirClass\web\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -690,7 +713,8 @@
       <workItem from="1516761544046" duration="37176000" />
       <workItem from="1516851062181" duration="31666000" />
       <workItem from="1516938714992" duration="23610000" />
-      <workItem from="1517117218828" duration="24727000" />
+      <workItem from="1517117218828" duration="25832000" />
+      <workItem from="1517203609194" duration="21691000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -776,11 +800,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517137989595</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="答题系统">
+      <created>1517147174794</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1517147174794</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257098000" />
+    <option name="totallyTimeSpent" value="279894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -803,11 +834,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66899765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66899765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23283261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -872,7 +903,8 @@
     <MESSAGE value="数据可按照类别查询" />
     <MESSAGE value="集成七牛云SDK" />
     <MESSAGE value="阅卷系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="阅卷系统" />
+    <MESSAGE value="答题系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="答题系统" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -885,11 +917,61 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/getAnswer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4420">
+          <caret line="229" column="8" lean-forward="false" selection-start-line="229" selection-start-column="8" selection-end-line="229" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!block;n#getScAnswer#0" expanded="false" />
+            <element signature="n#!!block;n#getFbAnswer#0" expanded="false" />
+            <element signature="e#4471#4569#0" expanded="false" />
+            <element signature="n#!!block;n#clearScore#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/text.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Doc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="method#getDoc#0;class#Doc#0" expanded="false" />
+            <element signature="e#1071#1087#0" expanded="false" />
+            <element signature="e#1554#1570#0" expanded="false" />
+            <element signature="e#2407#2423#0" expanded="false" />
+            <element signature="e#2890#2906#0" expanded="false" />
+            <element signature="e#3751#3767#0" expanded="false" />
+            <element signature="e#4239#4255#0" expanded="false" />
+            <element signature="e#5164#5180#0" expanded="false" />
+            <element signature="e#5647#5663#0" expanded="false" />
+            <element signature="e#6726#6742#0" expanded="false" />
+            <element signature="e#7209#7225#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Model/QiNiu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,9 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
           <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="method#delDocGroup#0;class#delDoc#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,14 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -931,9 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="51" />
-          <folding>
-            <element signature="method#delDocGroup#0;class#delDoc#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,17 +1026,17 @@
         <state relative-caret-position="464">
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="false" />
+            <element signature="e#1015#1016#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1131#1132#0" expanded="false" />
+            <element signature="e#1181#1182#0" expanded="false" />
+            <element signature="e#1223#1224#0" expanded="false" />
+            <element signature="e#1253#1254#0" expanded="false" />
+            <element signature="e#1279#1280#0" expanded="false" />
+            <element signature="e#1317#1318#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1021,32 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="92" column="122" lean-forward="false" selection-start-line="92" selection-start-column="112" selection-end-line="92" selection-end-column="122" />
-          <folding>
-            <element signature="e#178#2144#0" expanded="false" />
-            <marker date="1517140209616" expanded="true" signature="6474:6480" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="6486:6492" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="6723:6729" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="6743:6749" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="7056:7062" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="7076:7082" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8290:8296" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8296:8302" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8303:8309" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8309:8315" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8620:8626" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8632:8638" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8869:8875" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="8889:8895" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="9235:9241" ph="&amp;nbsp;" />
-            <marker date="1517140209616" expanded="true" signature="9255:9261" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/resources/docMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1014">
@@ -1062,14 +1104,6 @@
             <marker date="1516956263635" expanded="true" signature="1633:1717" ph="insert into docgroup" />
             <marker date="1516956263635" expanded="true" signature="1795:1845" ph="delete from docgroup... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,11 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="83" column="29" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
-          <folding>
-            <element signature="method#upload#0;class#QiNiu#0" expanded="false" />
-            <element signature="method#delete#0;class#QiNiu#0" expanded="false" />
-            <element signature="method#test#0;class#QiNiu#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,19 +1135,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java">
+    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Doc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="-650">
+          <caret line="171" column="26" lean-forward="true" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#getDoc#0;class#Doc#0" expanded="false" />
+            <element signature="e#1071#1087#0" expanded="false" />
+            <element signature="e#1554#1570#0" expanded="false" />
+            <element signature="e#2407#2423#0" expanded="false" />
+            <element signature="e#2890#2906#0" expanded="false" />
+            <element signature="e#3751#3767#0" expanded="false" />
+            <element signature="e#4239#4255#0" expanded="false" />
+            <element signature="e#5164#5180#0" expanded="false" />
+            <element signature="e#5647#5663#0" expanded="false" />
+            <element signature="e#6726#6742#0" expanded="false" />
+            <element signature="e#7209#7225#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/web/js/getAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="0">
           <caret line="229" column="8" lean-forward="false" selection-start-line="229" selection-start-column="8" selection-end-line="229" selection-end-column="8" />
           <folding>
             <element signature="n#!!block;n#getScAnswer#0" expanded="false" />
@@ -1126,6 +1165,148 @@
             <element signature="e#4471#4569#0" expanded="false" />
             <element signature="n#!!block;n#clearScore#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/css/materialize.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="5" column="64524" lean-forward="true" selection-start-line="5" selection-start-column="64524" selection-end-line="5" selection-end-column="64524" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/materialize.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="5" column="172586" lean-forward="true" selection-start-line="5" selection-start-column="172586" selection-end-line="5" selection-end-column="172586" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/css/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="5086" column="16" lean-forward="false" selection-start-line="5086" selection-start-column="16" selection-end-line="5086" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/css/loading.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="277" column="0" lean-forward="false" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#getAllScore#0" expanded="false" />
+            <element signature="n#!!block;n#getAllDoc#0" expanded="false" />
+            <element signature="n#!!block;n#getAllDocGroup#0" expanded="false" />
+            <element signature="n#!!block;n#getDocByGroupId#0" expanded="false" />
+            <element signature="e#9624#11059#0" expanded="false" />
+            <marker date="1517217389912" expanded="true" signature="8289:8295" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="8295:8301" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="8302:8308" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="8308:8314" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="8579:8585" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="8591:8597" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="8849:8855" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="8869:8875" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="11774:11780" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="11780:11786" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="11787:11793" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="11793:11799" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="12981:12987" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="12987:12993" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="12994:13000" ph="&amp;nbsp;" />
+            <marker date="1517217389912" expanded="true" signature="13000:13006" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="96" column="94" lean-forward="false" selection-start-line="96" selection-start-column="94" selection-end-line="96" selection-end-column="94" />
+          <folding>
+            <element signature="e#5151#6212#0" expanded="false" />
+            <marker date="1517227522951" expanded="true" signature="7396:7402" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="7408:7414" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="7645:7651" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="7665:7671" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="7978:7984" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="7998:8004" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9265:9271" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9271:9277" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9278:9284" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9284:9290" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9595:9601" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9607:9613" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9844:9850" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="9864:9870" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="10210:10216" ph="&amp;nbsp;" />
+            <marker date="1517227522951" expanded="true" signature="10230:10236" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/changYan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="208" column="80" lean-forward="false" selection-start-line="208" selection-start-column="80" selection-end-line="208" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1327,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>AirClass:war exploded</last-edited>
+          <last-edited>airclass</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="airclass">
-    <output-path>$PROJECT_DIR$/out/artifacts/AirClass_war</output-path>
+    <output-path>$PROJECT_DIR$/../AirClass/out/artifacts/airclass</output-path>
     <root id="archive" name="airclass.war">
       <element id="artifact" artifact-name="AirClass:war exploded" />
     </root>

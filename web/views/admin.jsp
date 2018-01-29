@@ -14,29 +14,30 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/materialize.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>管理页面</title>
+    <link rel="icon" href="http://static.iwakeup.cn/airclassadmin.ico" type="image/x-icon">
+    <title>管理系统</title>
 </head>
 <body onload="initAdmin();">
 <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 <nav>
-    <div class="nav-wrapper ">
+    <div class="nav-wrapper white ">
 
-        &nbsp;<a href="#!" class="brand-logo"><i class="large material-icons">import_contacts</i>管理模块</a>
+        &nbsp; &nbsp; &nbsp;&nbsp;<a href="/admin" class="brand-logo  black-text"> &nbsp;<i class="large material-icons">healing</i>管理系统 </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="/admin"><i class="material-icons">view_module</i></a></li>
-            <li><a onclick=" window.location.reload();" ><i class="material-icons">refresh</i></a></li>
-            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+            <li><a href="/"  target="_blank" class="black-text"><i class="material-icons">home</i></a></li>
+            <li><a onclick=" window.location.reload(); "  class="black-text"><i class="material-icons">refresh</i></a></li>
+            <li><a href="http://weibo.com/win8humin" target="_blank" class="black-text"><i class="material-icons">more_vert</i></a></li>
         </ul>
     </div>
 
 </nav>
 <div class="row s12" >
-    <div class="col12 s12">
-        <ul class="tabs">
-            <li class="tab col s3"><a  href="#itemDoc">文档管理</a></li>
-            <li class="tab col s3"><a  class="active" href="#itemPaper">在线出题</a></li>
-            <li class="tab col s3"><a href="#itemGrades">成绩查看</a></li>
-            <li class="tab col s3"><a href="#itemVideo">视频管理</a></li>
+    <div class="col12 s12 white z-depth-1">
+        <ul class="tabs" >
+            <li class="tab col s3 "><a  href="#itemDoc" class="black-text">文档管理</a></li>
+            <li class="tab col s3 "><a  class="active black-text" href="#itemPaper">在线出题</a></li>
+            <li class="tab col s3 "><a href="#itemGrades" class="black-text">成绩查看</a></li>
+            <li class="tab col s3 "><a href="#itemVideo" class="black-text">视频管理</a></li>
         </ul>
     </div>
 
@@ -108,7 +109,7 @@
                 <div class="collapsible-header">
 
                     <i class="material-icons">insert_drive_file</i>新增试卷
-                    <span class=" new badge" data-badge-caption="新增试卷后再出题"></span>
+                    <span class=" new badge red" data-badge-caption="新增试卷后再出题"></span>
 
                 </div>
                 <div class="collapsible-body">

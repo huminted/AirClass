@@ -67,3 +67,48 @@ function  setBadge(id,text) {
     badge.setAttribute("data-badge-caption",text);
 
 }
+
+
+function reUlSize(total,min,id) {
+
+    if (total<=min){
+
+        var item=document.getElementById(id);
+
+        var reSizediv = document.createElement("div");
+        reSizediv.setAttribute("class","ResizeContainer");
+
+        item.appendChild(reSizediv);
+    }
+
+}
+
+function reSize(total,min,id) {
+
+    if (total>0&&total<=min){
+
+        var item=document.getElementById(id);
+
+        var reSizediv = document.createElement("div");
+        reSizediv.setAttribute("class","ResizeContainer");
+
+        item.appendChild(reSizediv);
+    }
+
+}
+
+
+function setEmpty(total,id,html) {
+
+    if (total===0){
+
+        var itemPaper=document.getElementById(id);
+
+        var loadingdiv = document.createElement("div");
+        loadingdiv.setAttribute("class","container2");
+        loadingdiv.innerHTML=html;
+
+        itemPaper.appendChild(loadingdiv);
+    }
+    
+}

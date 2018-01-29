@@ -278,9 +278,6 @@ function getAllPaper () {
 
 
 
-
-
-
                     for (var i = json.total-1 ; i>=0; i--) {
                         var li = document.createElement("li");
                         li.setAttribute("class", "collection-item");

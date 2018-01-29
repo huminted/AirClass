@@ -1,6 +1,7 @@
 package Controller.Api.Find;
 
 
+import Bean.CodeBean;
 import Bean.PaperBean;
 import Bean.Questions.FillBlank;
 import Bean.Questions.SingleChoice;
@@ -79,9 +80,45 @@ public class PaperAndQuestions {
         response.setContentType("text/json; charset=UTF-8");
         QuestionsService service =new QuestionsServiceImpl();
 
-        List<SingleChoice>  list= service.findScById(Integer.parseInt(request.getParameter("paperid")));
+        List<SingleChoice>  list= service.findScById(CodeBean.paperId);
 
 
+        if (list.isEmpty()){
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","未找到文件");
+            fileMap.put("code",0);
+            fileMap.put("total",list.size());
+            fileMap.put("scs","null");
+
+            String jsonText = JSONArray.toJSONString(fileMap, true);
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+
+
+        }
+
+        else {
+
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","成功");
+            fileMap.put("code",1);
+            fileMap.put("total",list.size());
+            fileMap.put("scs",list);
+
+
+            String jsonText= JSONArray.toJSONString(fileMap,true);
+
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+
+
+        }
 
         return list;
 
@@ -107,7 +144,7 @@ public class PaperAndQuestions {
         response.setContentType("text/json; charset=UTF-8");
         QuestionsService service =new QuestionsServiceImpl();
 
-        List<FillBlank>  list= service.findFbById(Integer.parseInt(request.getParameter("paperid")));
+        List<FillBlank>  list= service.findFbById(CodeBean.paperId);
 
 
 

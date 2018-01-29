@@ -33,7 +33,7 @@ public class addPaper {
 
 
         paperBean=service.findPaperByCode(code);
-        CodeBean.objectid=paperBean.objectid;
+        CodeBean.paperId=paperBean.objectid;
 
         ShowResponse show=new ShowResponse();
         show.show(response,request);

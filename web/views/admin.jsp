@@ -172,8 +172,15 @@
                             <label for="scrightanswer">正确答案</label>
                         </div>
                     </div>
-                        <button   class="btn " form="scform" type="submit" name="gensc"  onclick="showToast('发布成功');">发布该试题</button>
+
+                        <button   class="btn " form="scform" type="submit" name="gensc"  onclick="showToast('发布成功');getScByPaperId();">发布该试题</button>
                     </form>
+
+
+                    <ul class="collection with-header" id="scul">
+                        <li class="collection-header"><h4>选择题</h4></li>
+
+                    </ul>
                 </div>
             </li>
 

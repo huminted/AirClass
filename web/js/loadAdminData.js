@@ -385,9 +385,6 @@ function getAllVideo() {
 
 
 
-
-
-
 function  getScoreById () {
 
     fly.get('/getscorebyid')
@@ -485,7 +482,59 @@ function getScoreByPaperId(paperid,papername) {
 
 
 
+function getScByPaperId() {
 
+
+    setTimeout(function  sleep() {
+
+        fly.get('/getSc')
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                var text= JSON.stringify(response.data);
+                var json = JSON.parse(text);
+
+                var scs=eval(json.scs);
+
+
+
+                if (scs!=="null"){
+                    var parent = document.getElementById("scul");
+                    parent.innerHTML=" ";
+
+
+                    for (var i = json.total-1 ; i>=0; i--) {
+                        var li = document.createElement("li");
+                        li.setAttribute("class", "collection-item");
+                        li.innerHTML =
+                            " <div>"
+                            + scs[i].question  +scs[i].answer1+scs[i].answer2+ "\n" +
+
+                            " <a  class=\"secondary-content \"  onclick='getScByPaperId();' target='iframe"  +
+                            "'   href=\"/delsc?objectid=" + scs[i].objectid + "\">\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
+                            " </a>\n" +
+
+
+                            " </div>";
+
+                        parent.appendChild(li);
+                    }
+
+                }
+
+
+
+
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    },500);
+
+
+}
 
 
 

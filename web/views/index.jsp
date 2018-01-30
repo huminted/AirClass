@@ -5,6 +5,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
+
+
+    <!-- Google Analytics -->
+    <script async>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-113330665-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -12,7 +23,7 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/loading.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <link rel="icon" href="http://static.iwakeup.cn/airclass.ico" type="image/x-icon">
     <title>在线学习平台</title>
 </head>
@@ -44,13 +55,12 @@
     </div>
     <div class="col s6 white">
 
-
         <nav  class="z-depth-0 m12 white  ">
         <ul class="tabs white s12 m12">
             <li class="tab col s3 black-text  "><a class="active black-text" href="#itemVideo">在线视频</a></li>
             <li class="tab col s3"><a  href="#itemPaper" class="black-text">在线答题</a></li>
             <li class="tab col s3"><a href="#itemUpload" class="black-text">文档提交</a></li>
-            <li class="tab col s3"><a href="#itemBBS" class="black-text">学习讨论</a></li>
+            <li class="tab col s3"><a href="#itemZone" class="black-text">个人中心</a></li>
             <li class="indicator black" ></li>
         </ul>
         </nav>
@@ -66,7 +76,7 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="/admin"  target="_blank" class="black-text"><i class="material-icons">view_module</i></a></li>
                     <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>
-                    <li><a href="mobile.html" class="black-text"><i class="material-icons">more_vert</i></a></li>
+                    <li><a href="/chat" target="_blank" class="black-text"><i class="material-icons">comment</i></a></li>
                 </ul>
 
             </div>
@@ -84,7 +94,7 @@
 
     </div>
 
-    <div id="itemVideo" class="col s12  " >
+    <div id="itemVideo" class="row s12  " >
         <%--视频卡片区域--%>
         <div id="row" class="row"></div>
     </div>
@@ -193,12 +203,18 @@
 
 
 
-    <div id="itemBBS" class="col s12 ">
+    <div id="itemZone" class="col s12  ">
+        <div class="card  col m12 l12 hoverable" >
+            <p class="flow-text">我的成绩</p>
+            <div class="ResizeContainer"></div>
 
-        <div id="SOHUCS" ></div>
 
 
 
+            <ul class="collection with-header" id="gradesul">
+
+            </ul>
+        </div>
     </div>
 
 
@@ -209,31 +225,31 @@
 
 
 
-<footer class="page-footer grey darken-4 ">
+<footer class="page-footer grey lighten-4">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">DIST信管在线学习系统 Beta V0.1</h5>
-                <p class="grey-text text-lighten-4">推荐使用Chrome，Firefox等现代内核浏览器</p>
+                <h5 class="black-text">DIST信管在线学习系统 Beta V0.1</h5>
+                <p class="black-text ">推荐使用Chrome，Firefox等现代内核浏览器</p>
             </div>
             <div class="col l3 offset-l2 s12">
-                <h5 class="white-text">友情链接</h5>
+                <h5 class="black-text">友情链接</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    <li><a class="black-text " href="#!">Link 1</a></li>
+                    <li><a class="black-text " href="#!">Link 2</a></li>
+                    <li><a class="black-text " href="#!">Link 3</a></li>
+                    <li><a class="black-text " href="#!">Link 4</a></li>
                 </ul>
 
 
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
-        <div class="container">
+    <div class="footer-copyright grey lighten-4" >
+        <div class="container black-text">
             <a>蜀ICP备17008553号-1</a>
             © 2018 MujiangTech Humin , All rights reserved.
-            <a class="grey-text text-lighten-4 right " href="https://weibo.com/win8humin">了解更多</a>
+            <a class="black-text right " href="https://weibo.com/win8humin">了解更多</a>
         </div>
     </div>
 </footer>
@@ -248,14 +264,9 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/loadData.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/utils.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/changYan.js"></script>
 
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: 'cytrobxYl',
-        conf: 'prod_766c3d0dff316896867ce159960d45f7'
-    });
-</script>
+
+
 
 
 </body>

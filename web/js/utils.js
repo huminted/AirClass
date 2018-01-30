@@ -36,6 +36,9 @@ function initAdmin() {
     var instance3 = M.Dropdown.init(elem3, 10);
 
 
+    $(document).ready(function(){
+        $('.parallax').parallax();
+    });
 
 
 

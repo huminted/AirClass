@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-public class IndexController {
+public class RouterController {
 
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     public  String index(HttpServletRequest request , ModelMap modelMap){
@@ -24,6 +24,14 @@ public class IndexController {
     public  String admin(HttpServletRequest request , ModelMap modelMap){
 
         return "admin";
+
+
+    }
+
+    @RequestMapping(value = "/chat",method = RequestMethod.GET)
+    public  String chat(HttpServletRequest request , ModelMap modelMap){
+
+        return "chat";
 
 
     }

@@ -7,15 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../AirClass/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AirClass/web/views/chat.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/.idea/misc.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Paper.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Paper.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/PaperAndQuestions.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/PaperAndQuestions.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/css/materialize.min.css" afterPath="$PROJECT_DIR$/../AirClass/web/css/materialize.min.css" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/IndexController.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/RouterController.java" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" />
       <change beforePath="$PROJECT_DIR$/../AirClass/web/js/utils.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/utils.js" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/admin.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/admin.jsp" />
       <change beforePath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/login.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/register.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/register.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/text.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/text.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,16 +48,61 @@
     <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="294" column="14" lean-forward="true" selection-start-line="279" selection-start-column="7" selection-end-line="294" selection-end-column="14" />
+              <folding>
+                <element signature="n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="208" column="39" lean-forward="false" selection-start-line="208" selection-start-column="39" selection-end-line="208" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loading.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/css/loading.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/chat.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
+        <option value="package_json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -95,15 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/Score.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/docMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/scoreMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/userMapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/Doc.java" />
-        <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
         <option value="$PROJECT_DIR$/web/views/admin.jsp" />
         <option value="$PROJECT_DIR$/web/css/loading.css" />
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
@@ -140,17 +178,32 @@
         <option value="$PROJECT_DIR$/../AirClass/src/main/java/Model/ShowJsonResponse.java" />
         <option value="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/PaperAndQuestions.java" />
         <option value="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Questions.java" />
+        <option value="$PROJECT_DIR$/../AirClass/web/css/materialize.min.css" />
         <option value="$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Paper.java" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/login.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/register.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/text.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/admin.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/chat.xhtml" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/chat.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Controller/RouterController.java" />
         <option value="$PROJECT_DIR$/../AirClass/web/js/utils.js" />
         <option value="$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js" />
-        <option value="$PROJECT_DIR$/../AirClass/web/views/admin.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/../AirClass/web/js/Chart.js" />
+        <option value="$PROJECT_DIR$/../AirClass/web/js/dd.js" />
         <option value="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
-        <option value="$PROJECT_DIR$/../AirClass/web/css/materialize.min.css" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -191,6 +244,9 @@
             <id>Code style issuesJava</id>
           </State>
           <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
             <id>Google Web Toolkit issues</id>
           </State>
           <State>
@@ -212,6 +268,9 @@
             <id>Java language level migration aidsJava</id>
           </State>
           <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
             <id>Javadoc issuesJava</id>
           </State>
           <State>
@@ -230,6 +289,11 @@
             <id>Threading issuesJava</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>ES6ConvertVarToLetConst</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -275,13 +339,6 @@
             <path>
               <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="AirClass" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="airclass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,16 +378,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="Add" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
@@ -384,25 +431,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="materialize.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -411,25 +439,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/..///////////////Nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3492647" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     <property name="SearchEverywhereHistoryKey" value=".tabs &#9;null&#9;null&#10;tabs &#9;null&#9;null&#10;.tabs .tab a &#9;null&#9;null&#10;tab&#9;null&#9;null&#10;tabs&#9;null&#9;null&#10;indicator&#9;null&#9;null" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\AirClass\web\js" />
-      <recent name="F:\AirClass\src\main\resources" />
-      <recent name="F:\AirClass\src\main\java\Service" />
-      <recent name="F:\AirClass\src\main\java\Dao" />
-      <recent name="F:\AirClass\src\main\java\Bean" />
+      <recent name="F:\AirClass\web\WEB-INF" />
+      <recent name="F:\AirClass\web\views" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Dao" />
@@ -437,10 +464,12 @@
       <recent name="Model" />
       <recent name="Controller.Update" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\AirClass\web\js" />
-      <recent name="F:\AirClass\web\WEB-INF" />
-      <recent name="F:\AirClass\web\views" />
+      <recent name="F:\AirClass\src\main\resources" />
+      <recent name="F:\AirClass\src\main\java\Service" />
+      <recent name="F:\AirClass\src\main\java\Dao" />
+      <recent name="F:\AirClass\src\main\java\Bean" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -664,7 +693,7 @@
       <workItem from="1516938714992" duration="23610000" />
       <workItem from="1517117218828" duration="25832000" />
       <workItem from="1517203609194" duration="24630000" />
-      <workItem from="1517291074529" duration="13968000" />
+      <workItem from="1517291074529" duration="24108000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -771,11 +800,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517236266034</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="修改导航栏">
+      <created>1517305066072</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1517305066074</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296801000" />
+    <option name="totallyTimeSpent" value="306941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -798,10 +834,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33799535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33799535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2360515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2360515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -870,7 +906,8 @@
     <MESSAGE value="畅言评论系统" />
     <MESSAGE value="新增出题列表" />
     <MESSAGE value="修改导航栏" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改导航栏" />
+    <MESSAGE value="转移Chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="转移Chat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,148 +920,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4550">
-          <caret line="175" column="131" lean-forward="false" selection-start-line="175" selection-start-column="131" selection-end-line="175" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addQuestions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Paper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="102" lean-forward="true" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Bean/CodeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13286">
-          <caret line="511" column="88" lean-forward="false" selection-start-line="511" selection-start-column="88" selection-end-line="511" selection-end-column="88" />
-          <folding>
-            <element signature="n#!!block;n#getAllScore#0" expanded="false" />
-            <element signature="n#!!block;n#getAllDoc#0" expanded="false" />
-            <element signature="n#!!block;n#getAllDocGroup#0" expanded="false" />
-            <element signature="e#5409#7132#0" expanded="false" />
-            <element signature="e#5503#7034#0" expanded="false" />
-            <element signature="e#11261#12696#0" expanded="false" />
-            <element signature="n#!!block;n#getScoreById#0" expanded="false" />
-            <element signature="e#13972#14958#0" expanded="false" />
-            <element signature="n#!!block;n#getScByPaperId#0" expanded="false" />
-            <element signature="n#!!block;n#getFbByPaperId#0" expanded="false" />
-            <element signature="n#!!block;n#getTofByPaperId#0" expanded="false" />
-            <marker date="1517300701561" expanded="true" signature="983:989" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="989:995" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="996:1002" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="1002:1008" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2221:2227" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2227:2233" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2234:2240" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2240:2246" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2453:2459" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2473:2479" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2819:2825" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2839:2845" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4311:4317" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4317:4323" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4324:4330" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4330:4336" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4618:4624" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4630:4636" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6209:6215" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6215:6221" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6222:6228" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6228:6234" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6444:6450" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6464:6470" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6810:6816" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6830:6836" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8285:8291" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8291:8297" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8298:8304" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8304:8310" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8575:8581" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8587:8593" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8845:8851" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8865:8871" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11871:11877" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11877:11883" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11884:11890" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11890:11896" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11920:11926" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11926:11932" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11933:11939" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11939:11945" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12231:12237" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12243:12249" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12496:12502" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12516:12522" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13408:13414" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13414:13420" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13421:13427" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13427:13433" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14615:14621" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14621:14627" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14628:14634" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14634:14640" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15854:15860" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15860:15866" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15867:15873" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15873:15879" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="16183:16189" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="16195:16201" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17321:17327" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17327:17333" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17334:17340" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17340:17346" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17650:17656" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17662:17668" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18794:18800" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18800:18806" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18807:18813" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18813:18819" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="19126:19132" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="19138:19144" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/PaperAndQuestions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2132">
-          <caret line="82" column="69" lean-forward="false" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/web/js/getAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4420">
           <caret line="229" column="8" lean-forward="false" selection-start-line="229" selection-start-column="8" selection-end-line="229" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!block;n#getScAnswer#0" expanded="false" />
-            <element signature="n#!!block;n#getFbAnswer#0" expanded="false" />
-            <element signature="e#4471#4569#0" expanded="false" />
-            <element signature="n#!!block;n#clearScore#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,12 +1067,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="162" column="11" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="162" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!block;n#GetQueryString#0" expanded="false" />
-            <element signature="e#567#5992#0" expanded="false" />
-            <element signature="e#992#3366#0" expanded="false" />
-            <element signature="e#3427#4385#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,14 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/text.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Doc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-650">
@@ -1251,12 +1138,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="229" column="8" lean-forward="false" selection-start-line="229" selection-start-column="8" selection-end-line="229" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!block;n#getScAnswer#0" expanded="false" />
-            <element signature="n#!!block;n#getFbAnswer#0" expanded="false" />
-            <element signature="e#4471#4569#0" expanded="false" />
-            <element signature="n#!!block;n#clearScore#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,14 +1149,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/css/loading.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,150 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="96" column="94" lean-forward="false" selection-start-line="96" selection-start-column="94" selection-end-line="96" selection-end-column="94" />
-          <folding>
-            <element signature="e#5151#6212#0" expanded="false" />
-            <marker date="1517227522951" expanded="true" signature="7396:7402" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="7408:7414" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="7645:7651" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="7665:7671" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="7978:7984" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="7998:8004" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9265:9271" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9271:9277" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9278:9284" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9284:9290" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9595:9601" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9607:9613" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9844:9850" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="9864:9870" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="10210:10216" ph="&amp;nbsp;" />
-            <marker date="1517227522951" expanded="true" signature="10230:10236" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="121" column="49" lean-forward="false" selection-start-line="121" selection-start-column="49" selection-end-line="121" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1686">
-          <caret line="127" column="38" lean-forward="false" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1194">
-          <caret line="357" column="108" lean-forward="false" selection-start-line="357" selection-start-column="108" selection-end-line="357" selection-end-column="108" />
-          <folding>
-            <element signature="n#!!block;n#getAllScore#0" expanded="false" />
-            <element signature="n#!!block;n#getAllDoc#0" expanded="false" />
-            <element signature="n#!!block;n#getAllDocGroup#0" expanded="false" />
-            <element signature="e#5409#7132#0" expanded="false" />
-            <element signature="e#5503#7034#0" expanded="false" />
-            <element signature="e#11261#12696#0" expanded="false" />
-            <element signature="n#!!block;n#getScoreById#0" expanded="false" />
-            <element signature="e#13972#14958#0" expanded="false" />
-            <element signature="n#!!block;n#getScByPaperId#0" expanded="false" />
-            <element signature="n#!!block;n#getFbByPaperId#0" expanded="false" />
-            <element signature="n#!!block;n#getTofByPaperId#0" expanded="false" />
-            <marker date="1517300701561" expanded="true" signature="983:989" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="989:995" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="996:1002" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="1002:1008" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2221:2227" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2227:2233" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2234:2240" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2240:2246" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2453:2459" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2473:2479" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2819:2825" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="2839:2845" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4311:4317" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4317:4323" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4324:4330" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4330:4336" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4618:4624" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="4630:4636" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6209:6215" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6215:6221" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6222:6228" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6228:6234" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6444:6450" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6464:6470" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6810:6816" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="6830:6836" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8285:8291" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8291:8297" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8298:8304" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8304:8310" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8575:8581" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8587:8593" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8845:8851" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="8865:8871" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11871:11877" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11877:11883" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11884:11890" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11890:11896" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11920:11926" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11926:11932" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11933:11939" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="11939:11945" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12231:12237" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12243:12249" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12496:12502" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="12516:12522" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13408:13414" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13414:13420" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13421:13427" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="13427:13433" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14615:14621" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14621:14627" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14628:14634" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="14634:14640" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15854:15860" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15860:15866" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15867:15873" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="15873:15879" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="16183:16189" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="16195:16201" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17321:17327" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17327:17333" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17334:17340" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17340:17346" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17650:17656" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="17662:17668" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18794:18800" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18800:18806" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18807:18813" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="18813:18819" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="19126:19132" ph="&amp;nbsp;" />
-            <marker date="1517300701561" expanded="true" signature="19138:19144" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Paper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
-          <folding>
-            <element signature="method#getPaper#0;class#Paper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addPaper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1487,10 +1217,10 @@
         <state relative-caret-position="361">
           <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#findSc#0;class#Questions#0" expanded="false" />
-            <element signature="e#1109#1125#0" expanded="true" />
-            <element signature="e#1592#1608#0" expanded="true" />
+            <element signature="e#1109#1125#0" expanded="false" />
+            <element signature="e#1592#1608#0" expanded="false" />
             <element signature="method#findFb#0;class#Questions#0" expanded="false" />
             <element signature="method#findTof#0;class#Questions#0" expanded="false" />
           </folding>
@@ -1501,9 +1231,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="5" column="1392" lean-forward="true" selection-start-line="5" selection-start-column="1392" selection-end-line="5" selection-end-column="1392" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1531,14 +1259,185 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Paper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="89" column="37" lean-forward="false" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+          <folding>
+            <element signature="method#getPaper#0;class#Paper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/text.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/chat.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/RouterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/BizCharts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/Chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/dd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1517311963190" expanded="true" signature="7398:7404" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="7410:7416" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="7647:7653" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="7667:7673" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="7980:7986" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="8000:8006" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9267:9273" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9273:9279" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9280:9286" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9286:9292" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9597:9603" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9609:9615" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9846:9852" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="9866:9872" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="10212:10218" ph="&amp;nbsp;" />
+            <marker date="1517311963190" expanded="true" signature="10232:10238" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/loadAdminData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding>
+            <marker date="1517311957052" expanded="true" signature="2221:2227" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="2227:2233" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="2234:2240" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="2240:2246" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="2453:2459" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="2473:2479" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="2819:2825" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="2839:2845" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8285:8291" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8291:8297" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8298:8304" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8304:8310" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8575:8581" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8587:8593" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8845:8851" ph="&amp;nbsp;" />
+            <marker date="1517311957052" expanded="true" signature="8865:8871" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/chat.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/css/loading.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="294" column="14" lean-forward="true" selection-start-line="279" selection-start-column="7" selection-end-line="294" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="208" column="39" lean-forward="false" selection-start-line="208" selection-start-column="39" selection-end-line="208" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

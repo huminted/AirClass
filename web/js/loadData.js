@@ -20,6 +20,8 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
             if (videos!=="null"){
 
+
+
                 var parent = document.getElementById("row");
 
                 for (var i = 0; i <json.total; i++) {

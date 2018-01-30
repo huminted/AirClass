@@ -76,7 +76,7 @@ public class Paper {
     @RequestMapping(value = "/getpaperbycode")
     public void getPaperByCode(HttpServletRequest request, HttpServletResponse response) throws  IOException{
         request.setCharacterEncoding("UTF-8");
-        response.setContentType("type/json; charset=utf-8");
+        response.setContentType("text/json; charset=utf-8");
 
 
     }
@@ -87,7 +87,7 @@ public class Paper {
     public void getNewestPaper(HttpServletRequest request, HttpServletResponse response) throws  IOException{
 
         request.setCharacterEncoding("UTF-8");
-        response.setContentType("type/json; charset=utf-8");
+        response.setContentType("text/json; charset=utf-8");
 
         PaperService service =new PaperServiceImpl();
         PaperBean paperBean =service.findPaperById(CodeBean.paperId);

@@ -8,6 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
+    <!-- Google Analytics -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-113330665-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -49,7 +59,7 @@
 
             <div class="card  col m12 l12 hoverable" id="doc">
                 <p class="flow-text">&nbsp;学生文档</p>
-                <span class="new badge red"  id="selectedgroupid" ></span>
+                <span class="new badge blue"  id="selectedgroupid" ></span>
 
                 <!-- 选择文档分组 -->
                 <a class='dropdown-trigger btn  ' href='#' data-target='docGroupDropdown'>选择文档分组</a>
@@ -71,7 +81,7 @@
 
                         <div class="row">
                             <div class="input-field col s6 offset-l3 ">
-                                <input id="docgroupname"  name="docgroupname" type="text" class="validate">
+                                <input id="docgroupname"  name="docgroupname" type="text" class="validate" required>
                                 <label for="docgroupname">分组名称</label>
                             </div>
                         </div>
@@ -79,13 +89,13 @@
 
                         <div class="row">
                             <div class="input-field col s6 offset-l3">
-                                <input id="notification"  name="notification" type="text" class="validate">
+                                <input id="notification"  name="notification" type="text" class="validate" required>
                                 <label for="notification">分组说明</label>
                             </div>
                         </div>
 
 
-                        <button class="btn" form="docgroupform" type="submit" name="action" onclick="getAllDocGroup();showToast('发布成功');" >发布分组</button>
+                        <button class="btn" form="docgroupform" type="submit" name="action" onclick="getAllDocGroup();" >发布分组</button>
 
                     </form>
                 </center>
@@ -109,26 +119,27 @@
                 <div class="collapsible-header">
 
                     <i class="material-icons">insert_drive_file</i>新增试卷
-                    <span class=" new badge red" data-badge-caption="新增试卷后再出题"></span>
+                    <span class=" new badge blue " data-badge-caption="新增试卷后再出题" id="genpaperbadge"></span>
 
                 </div>
-                <div class="collapsible-body">
+                <div class="collapsible-body" id="collapsible-body">
 
-                    <form id="paperform"   action="addpaper" method="get" target="iframe" >
-                        <div class="row" >
+                    <form id="paperform"   action="/addpaper" method="get" target="iframe" >
+
+                        <div class="row" id="inputrow">
 
                             <div class="input-field col s12">
-                                <input id="papertitle"  name="papertitle" type="text" class="validate">
+                                <input id="papertitle"  name="papertitle" type="text" class="validate" required>
                                 <label for="papertitle">试卷标题</label>
                             </div>
 
                             <div class="input-field col s12">
-                                <input id="papercontent"  name="papercontent" type="text" class="validate">
+                                <input id="papercontent"  name="papercontent" type="text" class="validate" required>
                                 <label for="papercontent">试卷描述</label>
                             </div>
 
                         </div>
-                        <button class="btn"  type="submit" name="genpaper" onclick="getAllPaper();showToast('出卷成功');">生成一张试卷</button>
+                        <button class="btn"  type="submit" id="genpaper" onclick="getAllPaper();getNewestPaper();">生成一张试卷</button>
                     </form>
                 </div>
             </li>
@@ -138,47 +149,47 @@
             <li>
                 <div class="collapsible-header"><i class="material-icons">assignment_turned_in</i>选择题</div>
                 <div class="collapsible-body">
-                    <!--TEST1表单-->
+
                     <form id="scform" action="/addsc" method="get" target="iframe">
                     <div class="row" >
 
                         <div class="input-field col s12">
-                            <input id="scquestion"  name="scquestion" type="text" class="validate">
+                            <input id="scquestion"  name="scquestion" type="text" class="validate" required>
                             <label for="scquestion">题目</label>
                         </div>
 
                         <div class="input-field col s2">
-                            <input id="scanswer1"  name="scanswer1" type="text" class="validate">
+                            <input id="scanswer1"  name="scanswer1" type="text" class="validate" required>
                             <label for="scanswer1">选项1</label>
                         </div>
 
                         <div class="input-field col s2">
-                            <input id="scanswer2"  name="scanswer2" type="text" class="validate">
+                            <input id="scanswer2"  name="scanswer2" type="text" class="validate" required>
                             <label for="scanswer2">选项2</label>
                         </div>
 
                         <div class="input-field col s2">
-                            <input id="scanswer3"  name="scanswer3" type="text" class="validate">
+                            <input id="scanswer3"  name="scanswer3" type="text" class="validate" required>
                             <label for="scanswer3">选项3</label>
                         </div>
 
                         <div class="input-field col s2">
-                            <input id="scanswer4"  name="scanswer4" type="text" class="validate">
+                            <input id="scanswer4"  name="scanswer4" type="text" class="validate" required>
                             <label for="scanswer4">选项4</label>
                         </div>
 
                         <div class="input-field col s2">
-                            <input id="scrightanswer"  name="scrightanswer" type="text" class="validate">
+                            <input id="scrightanswer"  name="scrightanswer" type="text" class="validate" required>
                             <label for="scrightanswer">正确答案</label>
                         </div>
                     </div>
 
-                        <button   class="btn " form="scform" type="submit" name="gensc"  onclick="showToast('发布成功');getScByPaperId();">发布该试题</button>
+                        <button   class="btn " form="scform" type="submit" name="gensc"  onclick="getScByPaperId();">发布该试题</button>
                     </form>
 
 
                     <ul class="collection with-header" id="scul">
-                        <li class="collection-header"><h4>选择题</h4></li>
+
 
                     </ul>
                 </div>
@@ -194,19 +205,23 @@
                         <div class="row" >
 
                             <div class="input-field col s12">
-                                <input id="fbquestion"  name="fbquestion" type="text" class="validate">
+                                <input id="fbquestion"  name="fbquestion" type="text" class="validate" required>
                                 <label for="fbquestion">题目</label>
                             </div>
 
 
                             <div class="input-field col s2">
-                                <input id="fbanswer"  name="fbanswer" type="text" class="validate">
+                                <input id="fbanswer"  name="fbanswer" type="text" class="validate" required>
                                 <label for="fbanswer">答案</label>
                             </div>
 
                         </div>
-                        <button class="btn " form="fbform" type="submit" name="genfb" onclick="showToast('发布成功');">发布该试题</button>
+                        <button class="btn " form="fbform" type="submit" name="genfb" onclick="getFbByPaperId();">发布该试题</button>
                     </form>
+                    <ul class="collection with-header" id="fbul">
+
+
+                    </ul>
                 </div>
             </li>
 
@@ -222,19 +237,24 @@
                         <div class="row" >
 
                             <div class="input-field col s12">
-                                <input id="tofquestion"  name="tofquestion" type="text" class="validate">
+                                <input id="tofquestion"  name="tofquestion" type="text" class="validate" required>
                                 <label for="tofquestion">题目</label>
                             </div>
 
 
                             <div class="input-field col s12">
-                                <input id="tofanswer"  name="tofanswer" type="text" class="validate">
+                                <input id="tofanswer"  name="tofanswer" type="text" class="validate" required>
                                 <label for="tofanswer">0代表错，1代表对</label>
                             </div>
 
                         </div>
-                        <button class="btn " form="tofform" type="submit" name="gentof" onclick="showToast('发布成功');">发布该试题</button>
+                        <button class="btn " form="tofform" type="submit" name="gentof" onclick="getTofByPaperId()">发布该试题</button>
                     </form>
+
+                    <ul class="collection with-header" id="toful">
+
+
+                    </ul>
                 </div>
             </li>
         </ul>
@@ -252,11 +272,6 @@
         </div>
 
 
-
-
-
-
-
     </div>
 
 
@@ -264,7 +279,7 @@
 
         <div class="card  col m12 l12 hoverable" id="grades">
             <p class="flow-text">&nbsp;学生成绩</p>
-            <span class="new badge  red"  id="paperidtotal" ></span>
+            <span class="new badge  blue"  id="paperidtotal" ></span>
 
             <!-- 试卷选择 -->
             <a class='dropdown-trigger btn  ' href='#' data-target='dropdown' id="choosepaperbtn">选择试卷</a>
@@ -289,25 +304,25 @@
 
                     <div class="row">
                         <div class="input-field col s6 offset-l3 ">
-                            <input id="videotitle"  name="videotitle" type="text" class="validate">
+                            <input id="videotitle"  name="videotitle" type="text" class="validate" required>
                             <label for="videotitle">视频标题</label>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="input-field col s6 offset-l3">
-                            <input id="videocontent"  name="videocontent" type="text" class="validate">
+                            <input id="videocontent"  name="videocontent" type="text" class="validate" required>
                             <label for="videocontent">视频描述</label>
                         </div>
                     </div>
 
                     <div class="row ">
                         <div class="input-field col s6 offset-l3">
-                            <input id="videourl"  name="videourl" type="text" class="validate">
+                            <input id="videourl"  name="videourl" type="text" class="validate" required>
                             <label for="videourl">视频链接</label>
                         </div>
                     </div>
-                    <button class="btn" form="videoform" type="submit" name="action" onclick="getAllVideo();showToast('发布成功');" >发布视频</button>
+                    <button class="btn" form="videoform" type="submit" name="action" onclick="getAllVideo();" >发布视频</button>
 
                 </form>
             </center>

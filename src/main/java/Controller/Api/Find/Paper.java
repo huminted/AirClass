@@ -1,5 +1,6 @@
 package Controller.Api.Find;
 
+import Bean.CodeBean;
 import Bean.PaperBean;
 import Service.PaperService;
 import Service.PaperServiceImpl;
@@ -78,6 +79,49 @@ public class Paper {
         response.setContentType("type/json; charset=utf-8");
 
 
+    }
+
+
+
+    @RequestMapping(value = "/getNewestPaper")
+    public void getNewestPaper(HttpServletRequest request, HttpServletResponse response) throws  IOException{
+
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("type/json; charset=utf-8");
+
+        PaperService service =new PaperServiceImpl();
+        PaperBean paperBean =service.findPaperById(CodeBean.paperId);
+
+
+        if (paperBean!=null){
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","成功");
+            fileMap.put("code",1);
+            fileMap.put("paper",paperBean);
+
+            String jsonText = JSONArray.toJSONString(fileMap, true);
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+        }
+        else {
+
+
+
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","未找到文件");
+            fileMap.put("code",0);
+            fileMap.put("paper","null");
+
+            String jsonText = JSONArray.toJSONString(fileMap, true);
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+
+        }
 
 
 

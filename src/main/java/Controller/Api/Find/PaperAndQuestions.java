@@ -40,7 +40,8 @@ public class PaperAndQuestions {
 
         Map<String ,Object> jsonmap=new HashMap<>();
 
-        PaperBean paperList=paperService.findPaperById(Integer.parseInt(request.getParameter("paperid")));
+
+        PaperBean paperList=paperService.findPaperById( Integer.parseInt(request.getParameter("paperid")));
 
 
         jsonmap.put("msg","成功");
@@ -80,45 +81,8 @@ public class PaperAndQuestions {
         response.setContentType("text/json; charset=UTF-8");
         QuestionsService service =new QuestionsServiceImpl();
 
-        List<SingleChoice>  list= service.findScById(CodeBean.paperId);
+        List<SingleChoice>  list= service.findScById(Integer.parseInt(request.getParameter("paperid")));
 
-
-        if (list.isEmpty()){
-
-            Map<String ,Object> fileMap=new HashMap<String ,Object>();
-            fileMap.put("state",200);
-            fileMap.put("msg","未找到文件");
-            fileMap.put("code",0);
-            fileMap.put("total",list.size());
-            fileMap.put("scs","null");
-
-            String jsonText = JSONArray.toJSONString(fileMap, true);
-            PrintWriter print=response.getWriter();
-            print.print(jsonText);
-            print.close();
-
-
-        }
-
-        else {
-
-
-            Map<String ,Object> fileMap=new HashMap<String ,Object>();
-            fileMap.put("state",200);
-            fileMap.put("msg","成功");
-            fileMap.put("code",1);
-            fileMap.put("total",list.size());
-            fileMap.put("scs",list);
-
-
-            String jsonText= JSONArray.toJSONString(fileMap,true);
-
-            PrintWriter print=response.getWriter();
-            print.print(jsonText);
-            print.close();
-
-
-        }
 
         return list;
 
@@ -144,7 +108,7 @@ public class PaperAndQuestions {
         response.setContentType("text/json; charset=UTF-8");
         QuestionsService service =new QuestionsServiceImpl();
 
-        List<FillBlank>  list= service.findFbById(CodeBean.paperId);
+        List<FillBlank>  list= service.findFbById(Integer.parseInt(request.getParameter("paperid")));
 
 
 
@@ -174,6 +138,7 @@ public class PaperAndQuestions {
         QuestionsService service =new QuestionsServiceImpl();
         List<Tof>  list= service.findTofById(Integer.parseInt(request.getParameter("paperid")));
 
+
         return list;
 
 
@@ -189,8 +154,9 @@ public class PaperAndQuestions {
         service.delTofById(Integer.parseInt(request.getParameter("objectid")));
 
 
-
     }
+
+
 
 
 

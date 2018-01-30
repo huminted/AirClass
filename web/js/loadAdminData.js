@@ -247,10 +247,6 @@ function getDocByGroupId(groupid,groupname) {
 
 }
 
-
-
-
-
 function getAllPaper () {
     // "/allpaer"
     setTimeout(function  sleep() {
@@ -324,6 +320,68 @@ function getAllPaper () {
 
 
 }
+
+
+function getNewestPaper() {
+
+    setTimeout(function sleep() {
+
+        fly.get('/getNewestPaper')
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                var text= JSON.stringify(response.data);
+                var json = JSON.parse(text);
+                var paper=eval(json.paper);
+
+
+                // setBadge("selectedgroupid","当前分组为:"+groupname);
+
+
+                if (json.code!==0){
+
+                    setBadge("genpaperbadge",paper.title);
+
+                    document.getElementById("genpaper").disabled=true;
+
+                    document.getElementById("inputrow").style.display="none";
+
+
+                    var collapsibleBody =document.getElementById("collapsible-body");
+                    var lockdiv=document.createElement("div");
+                    lockdiv.setAttribute("id","lockdiv");
+
+                    lockdiv.innerHTML=
+                        "<div class=\"card-panel\">\n" +
+                        "      <span class=\"blue-text text-darken-2\">已经为您锁定试卷</span>\n" +
+                        "      <span class=\"blue-text text-darken-2 right\"  onclick='unLock();'>解锁 </span>" +
+                        "      <h6 class=\"blue-text  center-align text-darken-2\">"+paper.title+"</h6>" +
+                        "      <h6 class=\"blue-text center-align  text-darken-2\">"+paper.content+"</h6>" +
+                        "</div>";
+
+                    collapsibleBody.appendChild(lockdiv);
+
+
+
+                }
+
+
+
+
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+
+    },500);
+
+
+    
+}
+
+
+
 
 function getAllVideo() {
 
@@ -487,7 +545,7 @@ function getScByPaperId() {
 
     setTimeout(function  sleep() {
 
-        fly.get('/getSc')
+        fly.get('/getScByPaperId')
             .then(function (response) {
                 console.log(JSON.stringify(response.data));
                 var text= JSON.stringify(response.data);
@@ -507,7 +565,7 @@ function getScByPaperId() {
                         li.setAttribute("class", "collection-item");
                         li.innerHTML =
                             " <div>"
-                            + scs[i].question  +scs[i].answer1+scs[i].answer2+ "\n" +
+                            + scs[i].question  +"&nbsp;&nbsp;|&nbsp;&nbsp;正确答案: "+scs[i].rightanswer+ "\n" +
 
                             " <a  class=\"secondary-content \"  onclick='getScByPaperId();' target='iframe"  +
                             "'   href=\"/delsc?objectid=" + scs[i].objectid + "\">\n" +
@@ -537,4 +595,110 @@ function getScByPaperId() {
 }
 
 
+function getFbByPaperId() {
 
+
+    setTimeout(function  sleep() {
+
+        fly.get('/getFbByPaperId')
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                var text= JSON.stringify(response.data);
+                var json = JSON.parse(text);
+
+                var fbs=eval(json.fbs);
+
+
+
+                if (fbs!=="null"){
+                    var parent = document.getElementById("fbul");
+                    parent.innerHTML=" ";
+
+
+                    for (var i = json.total-1 ; i>=0; i--) {
+                        var li = document.createElement("li");
+                        li.setAttribute("class", "collection-item");
+                        li.innerHTML =
+                            " <div>"
+                            + fbs[i].question  +"&nbsp;&nbsp;|&nbsp;&nbsp;正确答案: "+fbs[i].rightanswer+ "\n" +
+
+                            " <a  class=\"secondary-content \"  onclick='getFbByPaperId();' target='iframe"  +
+                            "'   href=\"/delsc?objectid=" + fbs[i].objectid + "\">\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
+                            " </a>\n" +
+
+
+                            " </div>";
+
+                        parent.appendChild(li);
+                    }
+
+                }
+
+
+
+
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    },500);
+
+
+}
+
+function getTofByPaperId() {
+
+
+    setTimeout(function  sleep() {
+
+        fly.get('/getTofByPaperId')
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                var text= JSON.stringify(response.data);
+                var json = JSON.parse(text);
+
+                var tofs=eval(json.tofs);
+
+
+
+                if (tofs!=="null"){
+                    var parent = document.getElementById("toful");
+                    parent.innerHTML=" ";
+
+
+                    for (var i = json.total-1 ; i>=0; i--) {
+                        var li = document.createElement("li");
+                        li.setAttribute("class", "collection-item");
+                        li.innerHTML =
+                            " <div>"
+                            + tofs[i].question  +"&nbsp;&nbsp;|&nbsp;&nbsp;正确答案: "+tofs[i].rightanswer+ "\n" +
+
+                            " <a  class=\"secondary-content \"  onclick='getTofByPaperId();' target='iframe"  +
+                            "'   href=\"/delsc?objectid=" + tofs[i].objectid + "\">\n" +
+                            " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
+                            " </a>\n" +
+
+
+                            " </div>";
+
+                        parent.appendChild(li);
+                    }
+
+                }
+
+
+
+
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    },500);
+
+
+}

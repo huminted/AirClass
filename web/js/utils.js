@@ -112,3 +112,21 @@ function setEmpty(total,id,html) {
     }
     
 }
+
+function unLock(){
+
+
+    document.getElementById("genpaper").disabled=false;
+
+    document.getElementById("inputrow").style.display="inline";
+
+    var collapsibleBody =document.getElementById("collapsible-body");
+
+    var child=document.getElementById("lockdiv");
+
+    collapsibleBody.removeChild(child);
+    setBadge("genpaperbadge","新增试卷后再出题");
+
+
+
+}

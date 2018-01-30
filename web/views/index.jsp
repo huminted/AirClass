@@ -24,27 +24,64 @@
 <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 
 
-<nav >
-    <div class="nav-wrapper white   ">
-        &nbsp; &nbsp; &nbsp;&nbsp;<a href="/" class="brand-logo  black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass </a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="/admin"  target="_blank" class="black-text"><i class="material-icons">view_module</i></a></li>
-            <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>
-            <li><a href="mobile.html" class="black-text"><i class="material-icons">more_vert</i></a></li>
-        </ul>
+<nav class="white">
+
+<div class="row">
+
+    <div class="col s3">
+
+        <nav class="z-depth-0">
+
+            <div class="nav-wrapper white s12 col ">
+
+                &nbsp; &nbsp; &nbsp;&nbsp;<a href="/" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass </a>
+                <span class="center-align">dsa</span>
+
+            </div>
+
+        </nav>
+
     </div>
+    <div class="col s6 white">
 
-</nav>
 
-<div class="row s12  " >
-    <div class="col12 s12  black  black-text z-depth-1">
-        <ul class="tabs white  ">
+        <nav  class="z-depth-0 m12 white  ">
+        <ul class="tabs white s12 m12">
             <li class="tab col s3 black-text  "><a class="active black-text" href="#itemVideo">在线视频</a></li>
             <li class="tab col s3"><a  href="#itemPaper" class="black-text">在线答题</a></li>
             <li class="tab col s3"><a href="#itemUpload" class="black-text">文档提交</a></li>
             <li class="tab col s3"><a href="#itemBBS" class="black-text">学习讨论</a></li>
             <li class="indicator black" ></li>
         </ul>
+        </nav>
+
+    </div>
+    <div class="col s3">
+
+        <nav class="z-depth-0">
+
+            <div class="nav-wrapper white  s12 ">
+
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/admin"  target="_blank" class="black-text"><i class="material-icons">view_module</i></a></li>
+                    <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>
+                    <li><a href="mobile.html" class="black-text"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+</div>
+
+</nav>
+
+<div class="row s12  " >
+    <div class="  black  black-text z-depth-1">
+
+
     </div>
 
     <div id="itemVideo" class="col s12  " >

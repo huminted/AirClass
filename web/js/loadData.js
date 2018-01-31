@@ -4,7 +4,7 @@
 
 
 
-var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
+var fly=require(['../js/fly.js','../js/Chart.min.js','../js/require.js'],function  () {
 
 
 
@@ -32,20 +32,20 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                     div.setAttribute("id", "newDiv");
 
                     div.innerHTML = "<div id=\"card   \" class=\"col s3 medium\">\n" +
-                        "            <div class=\"card \">\n" +
+                        "            <div class=\"card   \">\n" +
                         "                <div class=\"card-image small\">\n" +
                         "                    <video class=\"responsive-video \" controls=\"controls\" poster=\"http://static.iwakeup.cn/airclassvideo2.png\">\n" +
                         "                     <source src=\" "+videos[i].url+"\" type=\"video/mp4\">\n" +
                         "                    </video>\n" +
                         "\n" +
                         "                </div>\n" +
-                        "                <div class=\"card-content\">\n" +
+                        "                <div class=\"card-content \">\n" +
                         "                    <span class=\"card-title\">"+ videos[i].title+" </span>\n" +
                         "                    <p>" +videos[i].content+ "</p>\n" +
                         "                </div>\n" +
-                        "                <div class=\"card-action\">\n" +
+                        "                <div class=\"card-action \">\n" +
                         "                    <a download  class='black-text' href=\""+videos[i].url+"\">下载</a>\n" +
-                        "                    <a class='black-text'  href=\"/delete?objectid="+videos[i].objectid+"\">收藏</a>\n" +
+                        "                    <a class='black-text'  target='_blank' href=\""+videos[i].url+"\">播放</a>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
                         "        </div>";
@@ -98,7 +98,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                         "                <div class=\"card-image\">\n" +
                         "                    <img src=\"http://static.iwakeup.cn/airclasspaper.png\">\n" +
                         "                </div>\n" +
-                        "                <div class=\"card-stacked\">\n" +
+                        "                <div class=\"card-stacked  \">\n" +
                         "                    <div class=\"card-content\">\n" +
                         "                        <p>"+ papers[i].title+"</p>\n" +
                         "                        <p>"+papers[i].content+" </p>\n" +
@@ -181,6 +181,8 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
         });
 
     getAllDoc();
+    getScoreById ();
+    getMyInfo();
 
 
 
@@ -308,4 +310,120 @@ function getDocByUserIdAndGroupId(groupid,groupname) {
 
 }
 
+
+var subjectArray=[];
+var scoreArray=[];
+var colorArray=[];
+var borderColorArray=[];
+
+function  getScoreById () {
+
+
+
+
+    fly.get('/getscorebyid')
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            var text= JSON.stringify(response.data);
+            var json = JSON.parse(text);
+
+
+            if (json!==""){
+
+
+                for (var i = 0; i <json.length; i++) {
+
+
+                    subjectArray[i]=json[i].papertitle;
+                    scoreArray[i]=json[i].score;
+                    var r=Math.floor(Math.random()*255);
+                    var g=Math.floor(Math.random()*255);
+                    var b=Math.floor(Math.random()*255);
+                    colorArray[i]='rgba('+ r+','+ g+','+b+','+0.2+')';
+
+                    borderColorArray[i]='rgba('+ r+','+ g+','+b+','+1+')';
+
+
+                }
+
+            }
+
+            console.log(colorArray);
+            console.log(borderColorArray);
+
+
+
+
+
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+}
+
+function getMyInfo() {
+
+    fly.get('/getMyInfo')
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            var text= JSON.stringify(response.data);
+            var json = JSON.parse(text);
+            var user=eval(json.user);
+
+
+
+            if (json.code===1){
+
+                document.getElementById("name").value=user.username;
+                document.getElementById("userid").value=user.userid;
+                document.getElementById("school").value=user.school;
+                document.getElementById("major").value=user.major;
+
+            }
+
+
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+}
+
+
+
+function loadChart() {
+    document.getElementById("myChart").style.display="inline";
+
+
+    require(['../js/Chart.min.js'], function(Chart){
+
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels:subjectArray,
+                datasets: [{
+                    label: '我的成绩',
+                    data: scoreArray,
+                    backgroundColor: colorArray,
+                    borderColor: borderColorArray,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+
+    });
+}
 

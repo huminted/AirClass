@@ -12,60 +12,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 });
 
 
-function  getAllScore() {
 
-
-    fly.get('/allscore')
-        .then(function (response) {
-            console.log(JSON.stringify(response.data));
-            var text= JSON.stringify(response.data);
-            var json = JSON.parse(text);
-
-
-
-            if (json!==""){
-
-                var parent = document.getElementById("gradesul");
-                parent.innerHTML=" ";
-
-                var badge=document.getElementById("paperidtotal");
-                badge.setAttribute("data-badge-caption","共有 "+json.length+" 人的成绩");
-
-
-
-                for (var i = 0; i <json.length; i++) {
-
-                    var li = document.createElement("li");
-                    li.setAttribute("class", "collection-item");
-                    li.innerHTML =
-                        " <div>" + json[i].papertitle +"&nbsp;&nbsp;|&nbsp;&nbsp;"+json[i].username+"\n" +
-
-
-                        " <a  class=\"secondary-content \"\">\n" +
-                        " "+"成绩: "+json[i].score  +"\n" +
-                        " </a>\n" +
-
-
-                        " </div>";
-
-                    parent.appendChild(li);
-                }
-
-            }
-
-
-
-
-
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-
-
-
-
-}
 
 
 
@@ -486,28 +433,28 @@ function  getScoreById () {
 
 }
 
+function  getAllScore() {
 
 
-
-function getScoreByPaperId(paperid,papername) {
-
-    fly.get('/getscorebypaperid?paperid='+paperid)
+    fly.get('/allscore')
         .then(function (response) {
             console.log(JSON.stringify(response.data));
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
+            var subjectArray=[],scoreArray=[];
 
             if (json!==""){
 
                 var parent = document.getElementById("gradesul");
                 parent.innerHTML=" ";
 
-                setBadge("paperidtotal",papername+"   共有: "+json.length+" 人交卷");
+                var badge=document.getElementById("paperidtotal");
+                badge.setAttribute("data-badge-caption","共有 "+json.length+" 人的成绩");
+
 
 
                 for (var i = 0; i <json.length; i++) {
-
 
                     var li = document.createElement("li");
                     li.setAttribute("class", "collection-item");
@@ -523,7 +470,74 @@ function getScoreByPaperId(paperid,papername) {
                         " </div>";
 
                     parent.appendChild(li);
+
+                    subjectArray[i]=json[i].username;
+                    scoreArray[i]=json[i].score;
                 }
+
+            }
+
+
+            var scoreChart=new ScoreChart("scorechart","全部成绩",subjectArray,scoreArray);
+
+            scoreChart.show();
+
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+
+
+
+}
+
+
+function getScoreByPaperId(paperid,papername) {
+
+    fly.get('/getscorebypaperid?paperid='+paperid)
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            var text= JSON.stringify(response.data);
+            var json = JSON.parse(text);
+
+            var subjectArray=[],scoreArray=[];
+
+            if (json!==""){
+
+                var parent = document.getElementById("gradesul");
+                parent.innerHTML=" ";
+
+                setBadge("paperidtotal",papername+"   共有: "+json.length+" 人交卷");
+
+
+                for (var i = 0; i <json.length; i++) {
+
+                    var li = document.createElement("li");
+                    li.setAttribute("class", "collection-item");
+                    li.innerHTML =
+                        " <div>" + json[i].papertitle +"&nbsp;&nbsp;|&nbsp;&nbsp;"+json[i].username+"\n" +
+
+
+                        " <a  class=\"secondary-content \"\">\n" +
+                        " "+"成绩: "+json[i].score  +"\n" +
+                        " </a>\n" +
+
+
+                        " </div>";
+
+                    parent.appendChild(li);
+
+
+                    subjectArray[i]=json[i].username;
+                    scoreArray[i]=json[i].score;
+
+                }
+
+                var scoreChart=new ScoreChart("scorechart",papername,subjectArray,scoreArray);
+
+                scoreChart.show();
 
             }
 

@@ -22,6 +22,11 @@
     align-items: center;
     justify-content: center;
 }
+.Gradient{
+
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 50%);
+
+}
 
 
 .pacman {

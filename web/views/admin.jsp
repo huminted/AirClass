@@ -58,7 +58,7 @@
         <div id="row" class="col s12">
 
             <div class="card  col m12 l12 hoverable" id="doc">
-                <p class="flow-text">&nbsp;学生文档</p>
+                <p class="flow-text">&nbsp;<i class="material-icons">class</i>&nbsp;学生文档</p>
                 <span class="new badge blue"  id="selectedgroupid" ></span>
 
                 <!-- 选择文档分组 -->
@@ -113,7 +113,7 @@
 
 
     <div id="itemPaper" class="col s12" >
-        <ul class="collapsible popout" data-collapsible="accordion">
+        <ul class="collapsible " data-collapsible="accordion">
 
             <li>
                 <div class="collapsible-header">
@@ -262,7 +262,7 @@
 
 
         <div class="card col m12 l12 hoverable" id="paperadmin">
-            <p class="flow-text">试卷管理</p>
+            <p class="flow-text">&nbsp;<i class="material-icons">filter_none</i>&nbsp;试卷管理</p>
             <a onclick="getAllPaper()"  >&nbsp;&nbsp;刷新</a>
             <ul class="collection with-header" id="paperul">
 
@@ -277,16 +277,24 @@
 
     <div id="itemGrades" class="col s12">
 
+        <div id="chartContainter" class="container s12">
+
+            <canvas id="scorechart" style="padding-top: 20px" ></canvas>
+
+        </div>
+
+
+
         <div class="card  col m12 l12 hoverable" id="grades">
-            <p class="flow-text">&nbsp;学生成绩</p>
+            <p class="flow-text">&nbsp;<i class="material-icons">subject</i>&nbsp;学生成绩</p>
             <span class="new badge  blue"  id="paperidtotal" ></span>
 
             <!-- 试卷选择 -->
             <a class='dropdown-trigger btn  ' href='#' data-target='dropdown' id="choosepaperbtn">选择试卷</a>
             <ul id='dropdown' class='dropdown-content'>
 
-
             </ul>
+
 
 
             <ul class="collection with-header" id="gradesul">
@@ -298,7 +306,7 @@
     <div id="itemVideo" class="col s12">
 
         <div class="card  hoverable col s12">
-            <p class="flow-text">视频发布</p>
+            <p class="flow-text">&nbsp;<i class="material-icons">subscriptions</i>&nbsp;视频发布</p>
             <center>
                 <form id="videoform" action="/addvideo" target="iframe" method="get">
 
@@ -329,7 +337,7 @@
         </div>
 
         <div class="card  hoverable col s12 ">
-            <p class="flow-text">视频管理</p>
+            <p class="flow-text">&nbsp;<i class="material-icons">subscriptions</i>&nbsp;视频管理</p>
 
         <ul class="collection with-header" id="videoul">
 

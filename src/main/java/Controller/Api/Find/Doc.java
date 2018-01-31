@@ -30,7 +30,7 @@ public class Doc {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/json; charset=UTF-8");
 
-        List<DocBean> list=service.findFileByUserId(2);
+        List<DocBean> list=service.findFileByUserId(UserBean.userid);
 
 
         if (list.isEmpty()){
@@ -242,7 +242,7 @@ public class Doc {
     CodeBean.docGroupId=Integer.parseInt(request.getParameter("groupid"));
 
     HashMap hashMap=new HashMap();
-    hashMap.put("userid", 2);
+    hashMap.put("userid", UserBean.userid);
     hashMap.put("groupid", CodeBean.docGroupId);
     List<DocBean> list= service.findFileByUserIdAndGroupId(hashMap);
 

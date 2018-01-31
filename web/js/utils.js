@@ -36,10 +36,6 @@ function initAdmin() {
     var instance3 = M.Dropdown.init(elem3, 10);
 
 
-    $(document).ready(function(){
-        $('.parallax').parallax();
-    });
-
 
 
 }
@@ -52,6 +48,9 @@ function initIndex() {
 
     var elem2 = document.querySelector('.dropdown-trigger');
     var instance2 = M.Dropdown.init(elem2, 10);
+
+    var elem3 = document.querySelectorAll('.collapsible');
+    var instance3 = M.Collapsible.init(elem3,4);
 
 
 }
@@ -130,6 +129,79 @@ function unLock(){
     collapsibleBody.removeChild(child);
     setBadge("genpaperbadge","新增试卷后再出题");
 
+
+
+}
+
+function ScoreChart(id,label,subjectArray,scoreArray) {
+
+    var colorArray=[];
+    var borderColorArray=[];
+
+    for (var i=0;i<scoreArray.length;i++){
+
+
+        var r=Math.floor(Math.random()*255);
+        var g=Math.floor(Math.random()*255);
+        var b=Math.floor(Math.random()*255);
+
+        colorArray[i]='rgba('+ r+','+ g+','+b+','+0.2+')';
+
+        borderColorArray[i]='rgba('+ r+','+ g+','+b+','+1+')';
+
+    }
+
+    this.show=function () {
+
+
+
+
+
+        document.getElementById("chartContainter").innerHTML='&nbsp;';
+        document.getElementById("chartContainter").innerHTML='<canvas id="scorechart" style="padding-top: 20px" ></canvas>';
+
+
+
+        require(['../js/Chart.min.js'], function(Chart){
+
+            var ctx = document.getElementById(id).getContext("2d");
+
+
+
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels:subjectArray,
+                    datasets: [{
+                        label: label,
+                        data: scoreArray,
+                        backgroundColor: colorArray,
+                        borderColor: borderColorArray,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    },
+
+
+                }
+            });
+
+        });
+
+
+
+
+
+
+
+    }
 
 
 }

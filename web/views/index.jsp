@@ -41,21 +41,21 @@
 
     <div class="col s3">
 
-        <nav class="z-depth-0">
+        <nav class="z-depth-0 =">
 
             <div class="nav-wrapper white s12 col ">
 
-                &nbsp; &nbsp; &nbsp;&nbsp;<a href="/" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass </a>
-                <span class="center-align">dsa</span>
+                &nbsp; &nbsp; &nbsp;&nbsp;<a href="/index" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass </a>
+
 
             </div>
 
         </nav>
 
     </div>
-    <div class="col s6 white">
+    <div class="col s6 =">
 
-        <nav  class="z-depth-0 m12 white  ">
+        <nav  class="z-depth-0 m12 =  ">
         <ul class="tabs white s12 m12">
             <li class="tab col s3 black-text  "><a class="active black-text" href="#itemVideo">在线视频</a></li>
             <li class="tab col s3"><a  href="#itemPaper" class="black-text">在线答题</a></li>
@@ -74,7 +74,7 @@
 
 
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="/admin"  target="_blank" class="black-text"><i class="material-icons">view_module</i></a></li>
+                    <li><a href="/login"  target="_blank" class="black-text"><i class="material-icons">power_settings_new</i></a></li>
                     <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>
                     <li><a href="/chat" target="_blank" class="black-text"><i class="material-icons">comment</i></a></li>
                 </ul>
@@ -110,7 +110,7 @@
     <div id="itemUpload" class="col s12 ">
 
         <div class="card col s12 m12 l12"  >
-            <p class="flow-text">&nbsp;上传操作说</p>
+            <p class="flow-text">&nbsp;<i class=" material-icons">lightbulb_outline</i>&nbsp;上传操作说</p>
             <blockquote>
                 1.先选择文档分类
             </blockquote>
@@ -204,16 +204,78 @@
 
 
     <div id="itemZone" class="col s12  ">
-        <div class="card  col m12 l12 hoverable" >
-            <p class="flow-text">我的成绩</p>
-            <div class="ResizeContainer"></div>
 
 
 
 
-            <ul class="collection with-header" id="gradesul">
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">timeline</i>成绩统计</div>
+                <div class="collapsible-body">
 
-            </ul>
+                    <span onclick="loadChart()" class=" blue-text darken-2">查看</span>
+
+                    <canvas id="myChart"   class="container " style="display: none" ></canvas>
+
+
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">wb_incandescent</i>我的收藏</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">account_box</i>个人信息</div>
+                <div class="collapsible-body">
+
+                    <div class="row">
+
+                        <form target="iframe" class="col m12 center-align" id="MyInfoForm" action="/updateUser" method="post">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input disabled id="name"  name="name" type="text" class="validate">
+                                    <label for="name"></label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input disabled id="userid" name="userid" type="number" class="validate">
+                                    <label for="userid"></label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input disabled id="school" name="school" type="text" class="validate">
+                                    <label for="school"></label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input disabled id="major" name="major" type="text" class="validate">
+                                    <label for="major"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input  id="password" name="password" type="text" class="validate">
+                                    <label for="password">新密码</label>
+                                </div>
+                            </div>
+                            <button class="btn" form="MyInfoForm" type="submit" name="action" onclick="showToast('修改成功')">修改密码</button>
+
+
+                        </form>
+
+                    </div>
+
+
+
+
+                </div>
+            </li>
+        </ul>
+
+
+
+        <div style="height: 400px" >
+
+
         </div>
     </div>
 
@@ -256,14 +318,13 @@
 
 
 
-
-
-
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/fly.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/loadData.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/utils.js"></script>
+
+
 
 
 

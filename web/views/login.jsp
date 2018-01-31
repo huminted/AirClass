@@ -7,7 +7,7 @@
 --%>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
-<link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 
 
 
@@ -27,7 +27,7 @@
 </head>
 <body>
 
-<div style="background-image:  url(https://picsum.photos/1980/1080/?random); width: 100%;height: 100%">
+<div  style="background-image:  url(https://picsum.photos/1980/1080/?random); width: 100%;height: 100%">
 <div style="height: 30%"></div>
 <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 <div class="container "  >
@@ -44,13 +44,13 @@
                     <form class="col s12" action="home" method="post" onsubmit="check()" >
                         <div class="row">
                             <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input  name ="username" id="username"  type="text" class="validate" >
-                                <label for="username">账号</label>
+                                <i class="material-icons prefix">looks_one</i>
+                                <input  name ="userid" id="userid"  type="text" class="validate"  required>
+                                <label for="userid">学号</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">lock_outline</i>
-                                <input name ="password" id="password" type="password" class="validate">
+                                <input name ="password" id="password" type="password" class="validate" required>
                                 <label for="password">密码</label>
 
                             </div>

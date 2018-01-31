@@ -1,6 +1,8 @@
 package Controller.Api.Find;
 
+import Bean.CodeBean;
 import Bean.ScoreBean;
+import Bean.UserBean;
 import Service.ScoreService;
 import Service.ScoreServiceImpl;
 import com.alibaba.fastjson.JSONArray;
@@ -44,7 +46,7 @@ public class Score {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/json; charset=UTF-8");
 
-        List<ScoreBean> list =scoreService.findScoreById(1);
+        List<ScoreBean> list =scoreService.findScoreById(UserBean.userid);
 
         String jsonText= JSONArray.toJSONString(list,true);
 

@@ -40,30 +40,30 @@
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input  name ="username" id="username"  type="text" class="validate" >
+                                    <input  name ="username" id="username"  type="text" class="validate" required >
                                     <label for="username">姓名</label>
                                 </div>
                                 <div class="input-field col s12">
-                                    <i class="material-icons prefix">phone</i>
-                                    <input  name ="userid" id="userid"  type="text" class="validate" >
-                                    <label for="userid">电话号码</label>
+                                    <i class="material-icons prefix">looks_one</i>
+                                    <input  name ="userid" id="userid"  type="text" class="validate" required>
+                                    <label for="userid">学号</label>
                                 </div>
 
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">lock_outline</i>
-                                    <input name ="password" id="password" type="tel" class="validate">
+                                    <input name ="password" id="password" type="tel" class="validate" required>
                                     <label for="password">密码</label>
                                 </div>
 
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">lock_outline</i>
-                                    <input name ="school" id="school" type="tel" class="validate">
+                                    <input name ="school" id="school" type="tel" class="validate" required>
                                     <label for="school">学院</label>
                                 </div>
 
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">lock_outline</i>
-                                    <input name ="major" id="major" type="tel" class="validate">
+                                    <input name ="major" id="major" type="tel" class="validate" required>
                                     <label for="major">专业</label>
                                 </div>
 

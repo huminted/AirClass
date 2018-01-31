@@ -272,13 +272,18 @@ function genJson() {
 
 
     });
-        fly.get('/addScore?scoretext='+encodeURI(JSON.stringify(scoretext)))
+    var newData = JSON.stringify(scoretext);
+
+
+        fly.get('/addScore?scoretext='+encodeURI(newData))
 
             .then(function (response) {
 
-                console.log(scoretext);
+                var text= JSON.stringify(response.data);
+                var json = JSON.parse(text);
+                json=JSON.stringify(json.state);
+                alert(json);
 
-                console.log(response);
 
 
             })

@@ -23,7 +23,7 @@ public class CheckAccount {
         UserService service = new UserServiceImpl();
 
 
-        int InputUserID= Integer.parseInt((request.getParameter("username")));
+        int InputUserID= Integer.parseInt((request.getParameter("userid")));
         String InputUserPW= request.getParameter("password");
 
 
@@ -51,17 +51,10 @@ public class CheckAccount {
                 String jsonText= JSONArray.toJSONString(userMap,true);
                 System.out.println("登陆成功"+jsonText);
 
-//                LoadData loadData =new LoadData();
-//                loadData.Load(modelMap);
-//
-//                LoadFiles loadFiles =new LoadFiles();
-//                request.setAttribute("Userfilesmap", loadFiles.loadUser());
-//                request.setAttribute("Centerfilesmap",loadFiles.loadCenter());
-//                request.setAttribute("permission",UserBean.permission);
-//                request.setAttribute("setmap",loadFiles.loadSet());
 
 
-                return "index";
+
+                return "redirect:index";
 
             }
 

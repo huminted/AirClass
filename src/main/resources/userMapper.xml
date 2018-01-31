@@ -17,15 +17,7 @@
 
     <update id="updateUser" parameterType="Bean.UserBean" >
 
-        update user set username=#{username},
-                        userid=#{userid},
-                        password=#{password},
-                        school=#{school},
-                        major=#{major},
-                        classes=#{classes},
-
-
-                        where userid=#{userid}
+        update user set password=#{password} where userid=#{userid}
     </update>
 
 </mapper>

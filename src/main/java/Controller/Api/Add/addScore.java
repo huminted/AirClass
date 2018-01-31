@@ -14,20 +14,36 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @Controller
 public class addScore {
 
+
     @RequestMapping(value = "/addScore")
     public void add(HttpServletRequest request, HttpServletResponse response) throws IOException{
+
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json;charset=utf-8");
+        String jsonText=request.getParameter("scoretext");
+
+
 
         ScoreService service =new ScoreServiceImpl();
 
-        String jsonText=request.getParameter("scoretext");
-        System.out.println(jsonText);
+        if (jsonText.equals(CodeBean.jsonText)){
 
+            PrintWriter writer=response.getWriter();
+            writer.print("{ \"state\":\"r\"}");
+            writer.close();
+        }
+        else {
+
+
+
+
+        jsonText=request.getParameter("scoretext");
+        System.out.println(jsonText);
 
         JSONObject jsonObject= (JSONObject) JSONObject.parse(jsonText);
 
@@ -54,7 +70,13 @@ public class addScore {
 
 
 
+        PrintWriter writer=response.getWriter();
+        writer.print("{ \"state\":\"ok\"}");
+        writer.close();
 
+        CodeBean.jsonText=jsonText;
+
+        }
 
     }
 

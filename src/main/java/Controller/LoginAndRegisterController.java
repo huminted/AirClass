@@ -2,6 +2,7 @@ package Controller;
 
 
 
+import Bean.CodeBean;
 import Bean.UserBean;
 import Service.UserService;
 import Service.UserServiceImpl;
@@ -9,19 +10,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 
 @Controller
 public class LoginAndRegisterController {
 
 
-    UserService service = new UserServiceImpl();
-
-
 
     @RequestMapping(value = "/login")
-    public String Login( ModelMap modelMap,HttpServletRequest request){
+    public String Login(HttpSession session, HttpServletRequest request){
+
+
+
         return "login";
     }
 
@@ -39,7 +42,7 @@ public class LoginAndRegisterController {
     @RequestMapping(value = "/regist")
     public String Regist( ModelMap modelMap,HttpServletRequest request) throws UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
-
+        UserService service = new UserServiceImpl();
 
 
         UserBean user=new UserBean();

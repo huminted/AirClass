@@ -65,7 +65,8 @@ var fly=require(['../js/fly.js','../js/Chart.min.js','../js/require.js'],functio
                 "</div>");
 
             reSize(json.total,4,"itemVideo");
-
+            document.getElementById("content").style.display="inline";
+            document.getElementById("footer").style="inline ;linear-gradient(120deg, #fdfbfb 0%, #ebedee 50%)";
 
 
         })

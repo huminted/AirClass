@@ -11,12 +11,10 @@ function closediv(obj) {
     element.setAttribute("style","display: none;");
 }
 
-function showloadingdialog(obj) {
 
-    var element=document.getElementById(obj);
-    element.setAttribute("style","display: inline;");
 
-}
+
+
 
 
 
@@ -41,7 +39,16 @@ function initAdmin() {
 }
 
 
+
+
+
+
+
+
 function initIndex() {
+
+
+
 
     var elem = document.querySelector('.tabs');
     var instance = M.Tabs.init(elem, 4);
@@ -187,7 +194,7 @@ function ScoreChart(id,label,subjectArray,scoreArray) {
                                 beginAtZero:true
                             }
                         }]
-                    },
+                    }
 
 
                 }
@@ -196,12 +203,9 @@ function ScoreChart(id,label,subjectArray,scoreArray) {
         });
 
 
-
-
-
-
-
     }
 
 
 }
+
+

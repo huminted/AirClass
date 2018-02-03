@@ -282,7 +282,7 @@ function genJson() {
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 json=JSON.stringify(json.state);
-                alert(json);
+
 
 
 

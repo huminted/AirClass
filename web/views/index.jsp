@@ -3,7 +3,8 @@
 
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
+
 <head>
 
 
@@ -36,8 +37,7 @@
 
 
 <nav class="white">
-
-<div class="row">
+    <div class="row" >
 
     <div class="col s3">
 
@@ -53,9 +53,9 @@
         </nav>
 
     </div>
-    <div class="col s6 =">
+    <div class="col s6 ">
 
-        <nav  class="z-depth-0 m12 =  ">
+        <nav  class="z-depth-0 m12   ">
         <ul class="tabs white s12 m12">
             <li class="tab col s3 black-text  "><a class="active black-text" href="#itemVideo">在线视频</a></li>
             <li class="tab col s3"><a  href="#itemPaper" class="black-text">在线答题</a></li>
@@ -67,16 +67,14 @@
 
     </div>
     <div class="col s3">
-
         <nav class="z-depth-0">
-
             <div class="nav-wrapper white  s12 ">
-
-
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="/login"  target="_blank" class="black-text"><i class="material-icons">power_settings_new</i></a></li>
-                    <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>
+                    <li><a onclick="alert('按住Ctrl+F')" target="_blank" class="black-text"><i class="material-icons">search</i></a></li>
                     <li><a href="/chat" target="_blank" class="black-text"><i class="material-icons">comment</i></a></li>
+                    <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>
+                    <li><a href="/login"  target="_blank" class="black-text"><i class="material-icons">power_settings_new</i></a></li>
+
                 </ul>
 
             </div>
@@ -88,7 +86,7 @@
 
 </nav>
 
-<div class="row s12  " >
+<div class="row s12  " id="content"  style="display: none">
     <div class="  black  black-text z-depth-1">
 
 
@@ -161,9 +159,11 @@
 
         <div class=" container  ">
 
+
+
             <!--悬浮按钮-->
             <div class="fixed-action-btn toolbar ">
-                <a class="btn-floating btn-large pulse" onclick="showdiv('uploaddiv')">
+                <a class="btn-floating btn-large " onclick="showdiv('uploaddiv')">
                     <i class="large material-icons">arrow_upward</i>
                 </a>
                 <ul>
@@ -172,6 +172,8 @@
 
                 </ul>
             </div>
+
+
             <div class="container" id="uploaddiv" style="display: none;">
                 <form action="fileupload" name="fileupload" id="fileupload"   onsubmit=form("userrow","file"); enctype="multipart/form-data" method="post"  >
                     <div class="file-field input-field"  >
@@ -287,7 +289,7 @@
 
 
 
-<footer class="page-footer grey lighten-4">
+<footer  id="footer" class="page-footer Gradient " style="display: none; ">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -296,33 +298,36 @@
             </div>
             <div class="col l3 offset-l2 s12">
                 <h5 class="black-text">友情链接</h5>
+
                 <ul>
-                    <li><a class="black-text " href="#!">Link 1</a></li>
-                    <li><a class="black-text " href="#!">Link 2</a></li>
-                    <li><a class="black-text " href="#!">Link 3</a></li>
-                    <li><a class="black-text " href="#!">Link 4</a></li>
+                    <li>                <a class="github-button" href="https://github.com/huminted/AirClass" data-size="large" data-show-count="true" aria-label="Star huminted/AirClass on GitHub">Star</a>
+                    </li>
+                    <li><a class="black-text "  target="_blank" href="https://weibo.com/win8humin/">关注我</a></li>
+                    <li><a class="black-text " target="_blank" href="https://github.com/huminted/AirClass">查看源代码</a></li>
                 </ul>
 
 
             </div>
         </div>
     </div>
-    <div class="footer-copyright grey lighten-4" >
+    <div class="footer-copyright grey lighten-4 Gradient" >
         <div class="container black-text">
             <a>蜀ICP备17008553号-1</a>
             © 2018 MujiangTech Humin , All rights reserved.
             <a class="black-text right " href="https://weibo.com/win8humin">了解更多</a>
         </div>
     </div>
-</footer>
+</footer >
 
 
-
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript"  async charset="utf-8"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/fly.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/loadData.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/utils.js"></script>
+
 
 
 

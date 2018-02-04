@@ -8,10 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/getAnswer.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/getAnswer.js" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/utils.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/utils.js" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/../AirClass/web/WEB-INF/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/../AirClass/web/WEB-INF/dispatcher-servlet.xml" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../AirClass/web/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/chat.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/chat.jsp" />
       <change beforePath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/login.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/register.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/register.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,66 +46,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
+      <file leaf-file-name="chat.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/chat.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="279" column="54" lean-forward="false" selection-start-line="279" selection-start-column="54" selection-end-line="279" selection-end-column="54" />
+            <state relative-caret-position="232">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addScore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1716">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="676">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Score.java">
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="305" column="61" lean-forward="false" selection-start-line="305" selection-start-column="61" selection-end-line="305" selection-end-column="61" />
+            <state relative-caret-position="158">
+              <caret line="54" column="73" lean-forward="false" selection-start-line="54" selection-start-column="73" selection-end-line="54" selection-end-column="73" />
               <folding>
-                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AirClass/web/js/utils.js">
+      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/WEB-INF/dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding>
-                <element signature="n#!!block;n#ScoreChart#0" expanded="false" />
-                <element signature="e#3626#3826#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="516">
+              <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getAnswer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AirClass/web/js/getAnswer.js">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7384">
-              <caret line="284" column="0" lean-forward="false" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+            <state relative-caret-position="92">
+              <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -159,12 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Add/addQuestions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/PaperAndQuestions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/ShowJsonResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/PaperAndQuestions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/Questions.java" />
-        <option value="$PROJECT_DIR$/web/css/materialize.min.css" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/Paper.java" />
         <option value="$PROJECT_DIR$/web/views/login.jsp" />
         <option value="$PROJECT_DIR$/web/views/register.jsp" />
@@ -207,9 +201,15 @@
         <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
         <option value="$PROJECT_DIR$/web/js/utils.js" />
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
-        <option value="$PROJECT_DIR$/../AirClass/web/js/utils.js" />
-        <option value="$PROJECT_DIR$/../AirClass/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/js/utils.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/chat.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/login.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/register.jsp" />
+        <option value="$PROJECT_DIR$/../AirClass/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/../AirClass/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/../AirClass/web/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -333,9 +333,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -501,11 +500,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/..///////////////////Nodejs/node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/..////////////////////Nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -762,7 +762,8 @@
       <workItem from="1517376615367" duration="43008000" />
       <workItem from="1517465251084" duration="6665000" />
       <workItem from="1517576107991" duration="669000" />
-      <workItem from="1517647975080" duration="2753000" />
+      <workItem from="1517647975080" duration="4080000" />
+      <workItem from="1517727341131" duration="2351000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -890,11 +891,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517423619592</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Footer links">
+      <created>1517650881619</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1517650881620</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360367000" />
+    <option name="totallyTimeSpent" value="364045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -921,7 +929,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5897436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.152897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15504292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -992,7 +1000,8 @@
     <MESSAGE value="修改导航栏" />
     <MESSAGE value="转移Chat" />
     <MESSAGE value="Chart.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chart.js" />
+    <MESSAGE value="Footer links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer links" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1005,8 +1014,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/chat.xhtml" />
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/js/BizCharts.min.js" />
     <entry file="file://$PROJECT_DIR$/../AirClass/web/js/Chart.js" />
     <entry file="file://$PROJECT_DIR$/../AirClass/package.json" />
     <entry file="file://$PROJECT_DIR$/../AirClass/package-lock.json" />
@@ -1066,30 +1073,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="46" column="78" lean-forward="false" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="46" column="74" lean-forward="false" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,14 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="279" column="54" lean-forward="false" selection-start-line="279" selection-start-column="54" selection-end-line="279" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/web/js/getAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7384">
@@ -1333,14 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/chat.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Add/addScore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
@@ -1352,7 +1319,7 @@
     <entry file="file://$PROJECT_DIR$/../AirClass/web/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="n#!!block;n#ScoreChart#0" expanded="false" />
             <element signature="e#3626#3826#0" expanded="false" />
@@ -1362,7 +1329,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Score.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="234">
           <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="38" />
           <folding />
         </state>
@@ -1395,11 +1362,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="305" column="61" lean-forward="false" selection-start-line="305" selection-start-column="61" selection-end-line="305" selection-end-column="61" />
+        <state relative-caret-position="702">
+          <caret line="27" column="80" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="279" column="54" lean-forward="false" selection-start-line="279" selection-start-column="54" selection-end-line="279" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/chat.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="54" column="73" lean-forward="false" selection-start-line="54" selection-start-column="73" selection-end-line="54" selection-end-column="73" />
           <folding>
-            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

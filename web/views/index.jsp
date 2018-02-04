@@ -3,7 +3,7 @@
 
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html xmlns:wb="http://open.weibo.com/wb">
+<html >
 
 <head>
 
@@ -321,7 +321,6 @@
 
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript"  async charset="utf-8"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/fly.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/loadData.js"></script>

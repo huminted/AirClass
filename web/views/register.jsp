@@ -14,6 +14,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
+    <link rel="icon" href="http://static.iwakeup.cn/airclass.ico" type="image/x-icon">
+
     <!-- Google Analytics -->
     <script>
         window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -29,7 +31,7 @@
 <body onload="$(document).ready(function() {$('select').material_select();});">
 
 <div style="background-image:  url(https://picsum.photos/1980/1080/?random); width: 100%;height: 100%">
-    <div style="height: 25%"></div>
+    <div style="height: 8%"></div>
     <div class="container "  >
         <!-- Page Content goes here -->
         <div class="row push-s7"  >
@@ -50,25 +52,25 @@
                                 </div>
 
                                 <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
+                                    <i class="material-icons prefix">lock</i>
                                     <input name ="password" id="password" type="tel" class="validate" required>
                                     <label for="password">密码</label>
                                 </div>
 
                                 <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
+                                    <i class="material-icons prefix">account_balance</i>
                                     <input name ="school" id="school" type="tel" class="validate" required>
                                     <label for="school">学院</label>
                                 </div>
 
                                 <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
+                                    <i class="material-icons prefix">explore</i>
                                     <input name ="major" id="major" type="tel" class="validate" required>
                                     <label for="major">专业</label>
                                 </div>
 
                                 <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
+                                    <i class="material-icons prefix">local_library</i>
                                     <input name ="classes" id="classes" type="tel" class="validate">
                                     <label for="classes">班级</label>
                                 </div>

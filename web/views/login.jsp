@@ -23,7 +23,8 @@
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
     <title>登陆</title>
-    <link rel="icon" href="http://chart.iwakeup.cn/cat.ico" type="image/x-icon">
+    <link rel="icon" href="http://static.iwakeup.cn/airclass.ico" type="image/x-icon">
+
 </head>
 <body>
 

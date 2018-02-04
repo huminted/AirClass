@@ -8,6 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="icon" href="http://static.iwakeup.cn/airclass.ico" type="image/x-icon">
+
     <title>学习讨论</title>
 </head>
 <body>

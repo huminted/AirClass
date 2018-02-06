@@ -105,7 +105,7 @@
     </div>
 
 
-    <div id="itemUpload" class="col s12 ">
+    <div id="itemUpload" class="col s12 " style="padding-bottom: 20%">
 
         <div class="card col s12 m12 l12"  >
             <p class="flow-text">&nbsp;<i class=" material-icons">lightbulb_outline</i>&nbsp;上传操作说</p>
@@ -222,10 +222,7 @@
 
                 </div>
             </li>
-            <li>
-                <div class="collapsible-header"><i class="material-icons">wb_incandescent</i>我的收藏</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
+
             <li>
                 <div class="collapsible-header"><i class="material-icons">account_box</i>个人信息</div>
                 <div class="collapsible-body">
@@ -293,14 +290,14 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="black-text">DIST信管在线学习系统 Beta V0.1</h5>
+                <h5 class="black-text">DIST信管在线学习系统 <h6 class="black-text">V 0.9.18.24 Beta </h6> </h5>
                 <p class="black-text ">推荐使用Chrome，Firefox等现代内核浏览器</p>
             </div>
             <div class="col l3 offset-l2 s12">
                 <h5 class="black-text">友情链接</h5>
 
                 <ul>
-                    <li>                <a class="github-button" href="https://github.com/huminted/AirClass" data-size="large" data-show-count="true" aria-label="Star huminted/AirClass on GitHub">Star</a>
+                    <li> <a  target="_blank" class="github-button" href="https://github.com/huminted/AirClass" data-size="large" data-show-count="true" aria-label="Star huminted/AirClass on GitHub">Star</a>
                     </li>
                     <li><a class="black-text "  target="_blank" href="https://weibo.com/win8humin/">关注我</a></li>
                     <li><a class="black-text " target="_blank" href="https://github.com/huminted/AirClass">查看源代码</a></li>
@@ -313,8 +310,10 @@
     <div class="footer-copyright grey lighten-4 Gradient" >
         <div class="container black-text">
             <a>蜀ICP备17008553号-1</a>
-            © 2018 MujiangTech Humin , All rights reserved.
-            <a class="black-text right " href="https://weibo.com/win8humin">了解更多</a>
+            © 2018 MujiangTech @Humin , All rights reserved.
+                 <a class="black-text right " href="Mailto:humin147@live.com?subject=反馈BUG">
+                     <i class="material-icons Tiny ">bug_report</i>     反馈BUG</a>
+
         </div>
     </div>
 </footer >

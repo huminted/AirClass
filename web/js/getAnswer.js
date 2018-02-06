@@ -314,7 +314,7 @@ function showScore() {
 
     main.innerHTML="\n" +
         "      <ul class=\"collection with-header\">\n" +
-        "        <li class=\"collection-header\"><h4>恭喜您在"+papertitle+"获得"+totalScore+"分"+"</h4></li>\n" +
+        "        <li class=\"collection-header\"><h4>恭喜您在&nbsp;《"+papertitle+"》&nbsp;获得"+totalScore+"分"+"</h4></li>\n" +
         "        <li class=\"collection-item\">单选题："+ScScore+"分 "+"</li>\n" +
         "        <li class=\"collection-item\">填空题："+FbScore+"分 "+"</li>\n" +
         "        <li class=\"collection-item\">判断题："+TofScore+"分"+"</li>\n" +

@@ -39,6 +39,9 @@ public class UpLoadDoc {
            System.out.println(file.isEmpty());
 
            String fileName=file.getOriginalFilename();
+           File tempFile =new File( fileName.trim());
+           fileName=tempFile.getName();
+
 
            System.out.println("文件名称"+fileName);
 

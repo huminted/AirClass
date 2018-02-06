@@ -234,7 +234,7 @@ function getAllDoc() {
 
                 }
 
-                reUlSize(json.total,5,"itemUpload");
+
 
 
 

@@ -34,6 +34,23 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
             var fb=eval(json.fb);
             var tof=eval(json.tof);
 
+            if (json.scTotal===0){
+                document.getElementById("scform").innerHTML="<i class='material-icons'> tag_faces</i><h6>无选择题</h6>";
+
+
+            }
+            if (json.fbTotal===0){
+                document.getElementById("fbform").innerHTML="<i class='material-icons'> tag_faces</i><h6>无填空题</h6>";
+
+
+            }
+            if (json.tofTotal===0){
+                document.getElementById("tofform").innerHTML="<i class='material-icons'> tag_faces</i><h6>无判断题</h6>";
+
+
+            }
+
+
             if (typeof(sc) !== "undefined"){
 
                 ScRightAnswer ={"total" :json.scTotal,"sc":[ ] };

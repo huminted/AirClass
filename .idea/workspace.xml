@@ -7,11 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../AirClass/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_10.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/UpLoadDoc.java" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Controller/UpLoadDoc.java" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/getAnswer.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/getAnswer.js" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadData.js" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/js/loadQuestions.js" afterPath="$PROJECT_DIR$/../AirClass/web/js/loadQuestions.js" />
+      <change beforePath="$PROJECT_DIR$/../AirClass/AirClass.iml" afterPath="$PROJECT_DIR$/../AirClass/AirClass.iml" />
       <change beforePath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="Doc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Doc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
+            <state relative-caret-position="525">
               <caret line="234" column="46" lean-forward="false" selection-start-line="234" selection-start-column="22" selection-end-line="234" selection-end-column="46" />
               <folding>
                 <element signature="method#getDoc#0;class#Doc#0" expanded="false" />
@@ -62,7 +61,7 @@
       <file leaf-file-name="delDoc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Delete/delDoc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
+            <state relative-caret-position="336">
               <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
@@ -72,7 +71,7 @@
       <file leaf-file-name="ShowResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Model/ShowResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="189">
               <caret line="16" column="60" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="16" selection-end-column="60" />
               <folding />
             </state>
@@ -82,8 +81,8 @@
       <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="861">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,19 +91,31 @@
       <file leaf-file-name="Upload.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Model/Upload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="84">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpLoadDoc.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UpLoadDoc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/UpLoadDoc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+            <state relative-caret-position="273">
+              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="268" column="22" lean-forward="true" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/views/chat.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/RouterController.java" />
         <option value="$PROJECT_DIR$/web/js/utils.js" />
         <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
@@ -210,7 +220,8 @@
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Model/ShowResponse.java" />
-        <option value="$PROJECT_DIR$/../AirClass/src/main/java/Controller/UpLoadDoc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
+        <option value="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
       </list>
     </option>
   </component>
@@ -334,7 +345,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -450,17 +461,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/..//////////////////////Nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/..///////////////////////Nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3492647" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -717,7 +728,8 @@
       <workItem from="1517647975080" duration="4080000" />
       <workItem from="1517727341131" duration="6509000" />
       <workItem from="1517832654557" duration="3354000" />
-      <workItem from="1517908159171" duration="218000" />
+      <workItem from="1517908159171" duration="313000" />
+      <workItem from="1520408312907" duration="367000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -859,15 +871,21 @@
       <option name="project" value="LOCAL" />
       <updated>1517729741608</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="修复Edge等浏览下无法上传文件">
+      <created>1517908424703</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1517908424703</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371775000" />
+    <option name="totallyTimeSpent" value="372237000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -887,10 +905,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5897436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58960176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19474249" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19669509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -963,7 +981,8 @@
     <MESSAGE value="Chart.js" />
     <MESSAGE value="Footer links" />
     <MESSAGE value="修复无法上传大文件，以及注册页面icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复无法上传大文件，以及注册页面icon" />
+    <MESSAGE value="修复Edge等浏览下无法上传文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复Edge等浏览下无法上传文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1292,14 +1311,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2158">
           <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="299" column="43" lean-forward="false" selection-start-line="299" selection-start-column="43" selection-end-line="299" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="e#191#2826#0" expanded="false" />
+            <element signature="e#2964#5205#0" expanded="false" />
+            <element signature="e#5348#6409#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1327,7 +1343,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Doc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
+        <state relative-caret-position="525">
           <caret line="234" column="46" lean-forward="false" selection-start-line="234" selection-start-column="22" selection-end-line="234" selection-end-column="46" />
           <folding>
             <element signature="method#getDoc#0;class#Doc#0" expanded="false" />
@@ -1340,7 +1356,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Delete/delDoc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
+        <state relative-caret-position="336">
           <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
@@ -1348,7 +1364,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Model/ShowResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="189">
           <caret line="16" column="60" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="16" selection-end-column="60" />
           <folding />
         </state>
@@ -1356,15 +1372,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/Api/Find/Score.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="861">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Model/Upload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="84">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
@@ -1372,9 +1388,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/UpLoadDoc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        <state relative-caret-position="273">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="268" column="22" lean-forward="true" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

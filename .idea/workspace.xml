@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../AirClass/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_10.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../AirClass/src/main/java/Model/ShowResponse.java" />
       <change beforePath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AirClass/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/AirClass.iml" afterPath="$PROJECT_DIR$/../AirClass/AirClass.iml" />
-      <change beforePath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" afterPath="$PROJECT_DIR$/../AirClass/web/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/UpLoadDoc.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,8 +108,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="268" column="22" lean-forward="true" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
+            <state relative-caret-position="214">
+              <caret line="238" column="21" lean-forward="false" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -729,7 +726,7 @@
       <workItem from="1517727341131" duration="6509000" />
       <workItem from="1517832654557" duration="3354000" />
       <workItem from="1517908159171" duration="313000" />
-      <workItem from="1520408312907" duration="367000" />
+      <workItem from="1520408312907" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -878,14 +875,22 @@
       <option name="project" value="LOCAL" />
       <updated>1517908424703</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fix UI">
+      <created>1520408829552</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1520408829552</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372237000" />
+    <option name="totallyTimeSpent" value="372839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -908,7 +913,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58960176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19669509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19669509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -982,7 +987,8 @@
     <MESSAGE value="Footer links" />
     <MESSAGE value="修复无法上传大文件，以及注册页面icon" />
     <MESSAGE value="修复Edge等浏览下无法上传文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复Edge等浏览下无法上传文件" />
+    <MESSAGE value="Fix UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1389,15 +1395,15 @@
     <entry file="file://$PROJECT_DIR$/../AirClass/src/main/java/Controller/UpLoadDoc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AirClass/web/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="268" column="22" lean-forward="true" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
+        <state relative-caret-position="214">
+          <caret line="238" column="21" lean-forward="false" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

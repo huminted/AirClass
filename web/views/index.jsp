@@ -45,7 +45,7 @@
 
             <div class="nav-wrapper white s12 col ">
 
-                &nbsp; &nbsp; &nbsp;&nbsp;<a href="/index" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass </a>
+                &nbsp; &nbsp; &nbsp;&nbsp;<a href="/index" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass2 </a>
 
 
             </div>

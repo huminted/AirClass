@@ -7,7 +7,7 @@
 --%>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
-<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/materialize.min.css"  media="screen,projection"/>
 
 
 
@@ -99,6 +99,6 @@
 
 <script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="../../js/materialize.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
 </body>
 </html>

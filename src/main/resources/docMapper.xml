@@ -29,7 +29,7 @@
 
 
     <insert id="addFile" parameterType="Bean.DocBean">
-        insert into doc(userid,username,filename,fileurl,filenametime,groupid)  values(#{userid},#{username},#{filename},#{fileurl},#{filenametime},#{groupid})
+        insert into doc(userid,username,filename,fileurl,filenametime,groupid,viewurl)  values(#{userid},#{username},#{filename},#{fileurl},#{filenametime},#{groupid},#{viewurl})
     </insert>
 
     <!--<insert id="addFileToCenter" parameterType="Bean.DocBean>-->

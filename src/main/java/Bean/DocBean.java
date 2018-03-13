@@ -9,14 +9,7 @@ public class DocBean {
     public  int userid;
     public  String filename;
     public  String fileurl;
-
-    public int getGroupid() {
-        return groupid;
-    }
-
-    public void setGroupid(int groupid) {
-        this.groupid = groupid;
-    }
+    public  String viewurl;
 
     public int getObjectid() {
         return objectid;
@@ -24,6 +17,14 @@ public class DocBean {
 
     public void setObjectid(int objectid) {
         this.objectid = objectid;
+    }
+
+    public int getGroupid() {
+        return groupid;
+    }
+
+    public void setGroupid(int groupid) {
+        this.groupid = groupid;
     }
 
     public String getUsername() {
@@ -58,17 +59,11 @@ public class DocBean {
         this.fileurl = fileurl;
     }
 
-    public String getFilenametime() {
-        return filenametime;
+    public String getViewurl() {
+        return viewurl;
     }
 
-    public void setFilenametime(String filenametime) {
-        this.filenametime = filenametime;
+    public void setViewurl(String viewurl) {
+        this.viewurl = viewurl;
     }
-
-    public  String filenametime;
-
-
-
-
 }

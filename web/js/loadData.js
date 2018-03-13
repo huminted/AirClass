@@ -151,13 +151,7 @@ var fly=require(['../js/fly.js','../js/Chart.min.js','../js/require.js'],functio
                 dropdownLiGetAll.innerHTML="<a onclick=\"getAllDoc();\">"+"查看全部"+"</a>";
                 dropdown.appendChild(dropdownLiGetAll);
 
-
-
-
-
                 for (var i = json.total-1 ; i>=0; i--) {
-
-
 
                     var dropdownLi=document.createElement("li");
                     dropdownLi.innerHTML="    <a onclick=\"getDocByUserIdAndGroupId("+ docgroups[i].objectid+",'"+ docgroups[i].groupname+"');\"> "+ docgroups[i].groupname  +"      </a>                                                                    ";
@@ -223,7 +217,7 @@ function getAllDoc() {
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" + encodeURIComponent(docs[i].fileurl) + "\">\n" +
+                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/wv/wordviewerframe.aspx?WOPISrc=" + encodeURIComponent(docs[i].fileurl) + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 

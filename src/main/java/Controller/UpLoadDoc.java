@@ -65,7 +65,8 @@ public class UpLoadDoc {
 //           String url= request.getScheme() +"://" + request.getServerName() + ":" +request.getServerPort();
 //           path=url+"/download?filepath="+path+"&filename="+fileNametime;
 
-           String url="http://static.iwakeup.cn/"+fileNametime;
+           String url=" http://a.iwakeup.cn:8091/files/"+fileNametime+"/contents";
+
 
 
 

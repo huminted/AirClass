@@ -65,13 +65,13 @@ public class UpLoadDoc {
 //           String url= request.getScheme() +"://" + request.getServerName() + ":" +request.getServerPort();
 //           path=url+"/download?filepath="+path+"&filename="+fileNametime;
 
-           String url=" http://a.iwakeup.cn:8091/wopi/files/"+fileNametime+"/contents";
-
+           String url=" http://a.iwakeup.cn:8091/wopi/files/"+fileName+"/contents";
+           String viewurl=" http://a.iwakeup.cn:8091/wopi/files/"+fileName;
 
 
 
            Upload upload =new Upload();
-           upload.upload(fileName,fileNametime,url);
+           upload.upload(fileName,fileNametime,url,viewurl);
 
 
 

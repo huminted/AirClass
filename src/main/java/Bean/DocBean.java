@@ -10,6 +10,7 @@ public class DocBean {
     public  String filename;
     public  String fileurl;
     public  String viewurl;
+    public  String filenametime;
 
     public int getObjectid() {
         return objectid;
@@ -65,5 +66,13 @@ public class DocBean {
 
     public void setViewurl(String viewurl) {
         this.viewurl = viewurl;
+    }
+
+    public String getFilenametime() {
+        return filenametime;
+    }
+
+    public void setFilenametime(String filenametime) {
+        this.filenametime = filenametime;
     }
 }

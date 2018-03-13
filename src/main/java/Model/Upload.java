@@ -3,6 +3,7 @@ package Model;
 import Bean.CodeBean;
 import Bean.DocBean;
 import Bean.UserBean;
+import Controller.Api.Find.Doc;
 import Service.DocService;
 import Service.DocServiceImpl;
 
@@ -11,7 +12,7 @@ public class Upload {
 
 
 
-    public void upload(String filename, String filenametime,String fileurl){
+    public void upload(String filename, String filenametime,String fileurl,String viewurl){
 
         DocBean DocBean =new DocBean();
 
@@ -22,6 +23,7 @@ public class Upload {
         DocBean.setFilename(filename);
         DocBean.setFileurl(fileurl);
         DocBean.setFilenametime(filenametime);
+        DocBean.setViewurl(viewurl);
 
         DocService service =new DocServiceImpl();
         service.addFile(DocBean);

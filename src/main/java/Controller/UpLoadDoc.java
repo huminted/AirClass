@@ -46,10 +46,12 @@ public class UpLoadDoc {
            File tempFile =new File( fileName.trim());
            fileName=tempFile.getName();
 
+           //后缀名
+           String suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
 
            System.out.println("文件名称"+fileName);
 
-           String fileNametime= String.valueOf(UserBean.userid);
+           String fileNametime= String.valueOf(UserBean.userid)+suffix;
 
 
 

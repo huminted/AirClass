@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
-      <change beforePath="$PROJECT_DIR$/web/views/index.jsp" afterPath="$PROJECT_DIR$/web/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -812,7 +810,7 @@
       <workItem from="1520670782675" duration="78000" />
       <workItem from="1520849973211" duration="4053000" />
       <workItem from="1520940716051" duration="4943000" />
-      <workItem from="1521012940797" duration="6247000" />
+      <workItem from="1521012940797" duration="6868000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -1059,11 +1057,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521022520976</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="修复中文名文件无法预览">
+      <created>1521023139174</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1521023139174</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="397617000" />
+    <option name="totallyTimeSpent" value="398238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1145,7 +1150,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="数据加载" />
     <MESSAGE value="文档在线预览" />
     <MESSAGE value="部署路径修改" />
     <MESSAGE value="增加题目" />
@@ -1170,7 +1174,8 @@
     <MESSAGE value="Office View" />
     <MESSAGE value="中文文件名编码" />
     <MESSAGE value="UUID" />
-    <option name="LAST_COMMIT_MESSAGE" value="UUID" />
+    <MESSAGE value="修复中文名文件无法预览" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复中文名文件无法预览" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

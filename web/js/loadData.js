@@ -217,7 +217,7 @@ function getAllDoc() {
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/wv/wordviewerframe.aspx?WOPISrc=" + docs[i].viewurl + "\">\n" +
+                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx??WOPISrc=" + docs[i].viewurl + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -279,7 +279,7 @@ function getDocByUserIdAndGroupId(groupid,groupname) {
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a  target='_blank' class=\"secondary-content\" href=\"https://view.officeapps.live.com/op/view.aspx?src=" +encodeURIComponent(docs[i].fileurl) + "&filename=" + docs[i].filename + "\">\n" +
+                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx?WOPISrc=" +docs[i].viewurl + "&filename=" + docs[i].filename + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 

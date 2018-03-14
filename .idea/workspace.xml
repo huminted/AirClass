@@ -8,9 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bean/DocBean.java" afterPath="$PROJECT_DIR$/src/main/java/Bean/DocBean.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Upload.java" afterPath="$PROJECT_DIR$/src/main/java/Model/Upload.java" />
+      <change beforePath="$PROJECT_DIR$/web/js/loadData.js" afterPath="$PROJECT_DIR$/web/js/loadData.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,31 +41,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="loadData.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="loadData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="221" column="39" lean-forward="true" selection-start-line="219" selection-start-column="28" selection-end-line="221" selection-end-column="39" />
+            <state relative-caret-position="660">
+              <caret line="224" column="0" lean-forward="true" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
               <folding>
                 <element signature="e#191#2826#0" expanded="false" />
                 <element signature="e#2964#5205#0" expanded="false" />
                 <element signature="e#5348#6403#0" expanded="false" />
-                <marker date="1520945170494" expanded="true" signature="7625:7631" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="7637:7643" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="7874:7880" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="7894:7900" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="8211:8217" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="8231:8237" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="9446:9452" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="9452:9458" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="9459:9465" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="9465:9471" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="9776:9782" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="9788:9794" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="10025:10031" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="10045:10051" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="10391:10397" ph="&amp;nbsp;" />
-                <marker date="1520945170494" expanded="true" signature="10411:10417" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="7625:7631" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="7637:7643" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="7874:7880" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="7894:7900" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="8231:8237" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="8251:8257" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="9466:9472" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="9472:9478" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="9479:9485" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="9485:9491" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="9796:9802" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="9808:9814" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="10045:10051" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="10065:10071" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="10411:10417" ph="&amp;nbsp;" />
+                <marker date="1521018388403" expanded="true" signature="10431:10437" ph="&amp;nbsp;" />
               </folding>
             </state>
           </provider>
@@ -75,7 +74,7 @@
       <file leaf-file-name="loadAdminData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/loadAdminData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3622">
+            <state relative-caret-position="5160">
               <caret line="172" column="39" lean-forward="false" selection-start-line="172" selection-start-column="39" selection-end-line="172" selection-end-column="39" />
               <folding>
                 <marker date="1520945427155" expanded="true" signature="992:998" ph="&amp;nbsp;" />
@@ -158,18 +157,38 @@
       <file leaf-file-name="UpLoadDoc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="73" column="58" lean-forward="false" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
+            <state relative-caret-position="390">
+              <caret line="73" column="60" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Upload.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckAccount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-270">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/ShowResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="16" column="60" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="16" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Upload.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Model/Upload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="225">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -178,7 +197,7 @@
       <file leaf-file-name="DocBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DocBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
+            <state relative-caret-position="1260">
               <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
               <folding>
                 <element signature="e#290#291#0" expanded="true" />
@@ -312,14 +331,14 @@
         <option value="$PROJECT_DIR$/web/views/login.jsp" />
         <option value="$PROJECT_DIR$/web/views/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/docMapper.xml" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/DocBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Upload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
       </list>
     </option>
   </component>
@@ -558,8 +577,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
@@ -832,7 +851,8 @@
       <workItem from="1520670710301" duration="43000" />
       <workItem from="1520670782675" duration="78000" />
       <workItem from="1520849973211" duration="4053000" />
-      <workItem from="1520940716051" duration="4333000" />
+      <workItem from="1520940716051" duration="4943000" />
+      <workItem from="1521012940797" duration="2246000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -1030,11 +1050,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520945508836</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Office View">
+      <created>1520945961554</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1520945961554</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390760000" />
+    <option name="totallyTimeSpent" value="393616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1042,20 +1069,20 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58879495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5887446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1067,11 +1094,11 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Struts Assistant" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1157,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,7 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,26 +1407,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-944">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DocGroupBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ShowResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1423,7 +1430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="33" column="91" lean-forward="true" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1439,9 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,9 +1452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1473,37 +1473,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="221" column="39" lean-forward="true" selection-start-line="219" selection-start-column="28" selection-end-line="221" selection-end-column="39" />
-          <folding>
-            <element signature="e#191#2826#0" expanded="false" />
-            <element signature="e#2964#5205#0" expanded="false" />
-            <element signature="e#5348#6403#0" expanded="false" />
-            <marker date="1520945170494" expanded="true" signature="7625:7631" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="7637:7643" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="7874:7880" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="7894:7900" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="8211:8217" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="8231:8237" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="9446:9452" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="9452:9458" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="9459:9465" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="9465:9471" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="9776:9782" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="9788:9794" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="10025:10031" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="10045:10051" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="10391:10397" ph="&amp;nbsp;" />
-            <marker date="1520945170494" expanded="true" signature="10411:10417" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/loadAdminData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3622">
+        <state relative-caret-position="5160">
           <caret line="172" column="39" lean-forward="false" selection-start-line="172" selection-start-column="39" selection-end-line="172" selection-end-column="39" />
           <folding>
             <marker date="1520945427155" expanded="true" signature="992:998" ph="&amp;nbsp;" />
@@ -1584,7 +1556,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DocBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
+        <state relative-caret-position="1260">
           <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
           <folding>
             <element signature="e#290#291#0" expanded="true" />
@@ -1622,19 +1594,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Upload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="73" column="58" lean-forward="false" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
+        <state relative-caret-position="225">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Upload.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="390">
+          <caret line="73" column="60" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ShowResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="60" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="16" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="224" column="0" lean-forward="true" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding>
+            <element signature="e#191#2826#0" expanded="false" />
+            <element signature="e#2964#5205#0" expanded="false" />
+            <element signature="e#5348#6403#0" expanded="false" />
+            <marker date="1521018388403" expanded="true" signature="7625:7631" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="7637:7643" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="7874:7880" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="7894:7900" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="8231:8237" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="8251:8257" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="9466:9472" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="9472:9478" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="9479:9485" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="9485:9491" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="9796:9802" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="9808:9814" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="10045:10051" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="10065:10071" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="10411:10417" ph="&amp;nbsp;" />
+            <marker date="1521018388403" expanded="true" signature="10431:10437" ph="&amp;nbsp;" />
+          </folding>
         </state>
       </provider>
     </entry>

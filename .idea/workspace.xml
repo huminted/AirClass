@@ -9,7 +9,6 @@
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
-      <change beforePath="$PROJECT_DIR$/web/js/loadData.js" afterPath="$PROJECT_DIR$/web/js/loadData.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="loadData.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loadData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="224" column="0" lean-forward="true" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
               <folding>
                 <element signature="e#191#2826#0" expanded="false" />
                 <element signature="e#2964#5205#0" expanded="false" />
@@ -154,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpLoadDoc.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UpLoadDoc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="73" column="60" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+            <state relative-caret-position="330">
+              <caret line="51" column="82" lean-forward="true" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -334,11 +333,11 @@
         <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/DocBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Upload.java" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
+        <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
-        <option value="$PROJECT_DIR$/web/js/loadData.js" />
       </list>
     </option>
   </component>
@@ -852,7 +851,7 @@
       <workItem from="1520670782675" duration="78000" />
       <workItem from="1520849973211" duration="4053000" />
       <workItem from="1520940716051" duration="4943000" />
-      <workItem from="1521012940797" duration="2246000" />
+      <workItem from="1521012940797" duration="3759000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -1057,11 +1056,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520945961554</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="中文文件名编码">
+      <created>1521018622610</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1521018622610</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="393616000" />
+    <option name="totallyTimeSpent" value="395129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1167,7 +1173,8 @@
     <MESSAGE value="Maven" />
     <MESSAGE value="CSS URI" />
     <MESSAGE value="Office View" />
-    <option name="LAST_COMMIT_MESSAGE" value="Office View" />
+    <MESSAGE value="中文文件名编码" />
+    <option name="LAST_COMMIT_MESSAGE" value="中文文件名编码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1602,14 +1609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="73" column="60" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270">
@@ -1628,8 +1627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="224" column="0" lean-forward="true" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
           <folding>
             <element signature="e#191#2826#0" expanded="false" />
             <element signature="e#2964#5205#0" expanded="false" />
@@ -1651,6 +1650,14 @@
             <marker date="1521018388403" expanded="true" signature="10411:10417" ph="&amp;nbsp;" />
             <marker date="1521018388403" expanded="true" signature="10431:10437" ph="&amp;nbsp;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="51" column="82" lean-forward="true" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>

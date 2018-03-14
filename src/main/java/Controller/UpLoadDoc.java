@@ -1,6 +1,8 @@
 package Controller;
 
 
+import Bean.CodeBean;
+import Bean.UserBean;
 import Model.QiNiu;
 import Model.Upload;
 import com.google.gson.Gson;
@@ -11,6 +13,7 @@ import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
+import org.h2.engine.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,6 +23,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
+import java.util.UUID;
 
 @Controller
 public class UpLoadDoc {
@@ -45,7 +49,7 @@ public class UpLoadDoc {
 
            System.out.println("文件名称"+fileName);
 
-           String fileNametime=fileName;
+           String fileNametime= String.valueOf(UserBean.userid)+UUID.randomUUID();
 
 
 
@@ -65,8 +69,8 @@ public class UpLoadDoc {
 //           String url= request.getScheme() +"://" + request.getServerName() + ":" +request.getServerPort();
 //           path=url+"/download?filepath="+path+"&filename="+fileNametime;
 
-           String url="http://a.iwakeup.cn:8091/wopi/files/"+fileName+"/contents";
-           String viewurl="http://a.iwakeup.cn:8091/wopi/files/"+fileName;
+           String url="http://a.iwakeup.cn:8091/wopi/files/"+fileNametime+"/contents";
+           String viewurl="http://a.iwakeup.cn:8091/wopi/files/"+fileNametime;
 
 
 

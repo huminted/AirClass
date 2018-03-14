@@ -43,7 +43,7 @@ function getAllDoc() {
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx?WOPISrc=" + docs[i].viewurl +"&filename="+docs[i].filename + "\">\n" +
+                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx?WOPISrc=" + docs[i].viewurl + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -168,7 +168,7 @@ function getDocByGroupId(groupid,groupname) {
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx?WOPISrc=" + docs[i].viewurl +"&filename="+docs[i].filename +"\">\n" +
+                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx?WOPISrc=" + docs[i].viewurl +"\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 

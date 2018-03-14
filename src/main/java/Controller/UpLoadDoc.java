@@ -49,7 +49,7 @@ public class UpLoadDoc {
 
            System.out.println("文件名称"+fileName);
 
-           String fileNametime= String.valueOf(UserBean.userid)+UUID.randomUUID();
+           String fileNametime= String.valueOf(UserBean.userid);
 
 
 

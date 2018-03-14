@@ -9,8 +9,7 @@
     <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
-      <change beforePath="$PROJECT_DIR$/web/js/loadAdminData.js" afterPath="$PROJECT_DIR$/web/js/loadAdminData.js" />
-      <change beforePath="$PROJECT_DIR$/web/js/loadData.js" afterPath="$PROJECT_DIR$/web/js/loadData.js" />
+      <change beforePath="$PROJECT_DIR$/web/views/index.jsp" afterPath="$PROJECT_DIR$/web/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="loadData.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loadData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="223" column="38" lean-forward="true" selection-start-line="223" selection-start-column="38" selection-end-line="223" selection-end-column="38" />
+              <caret line="223" column="38" lean-forward="false" selection-start-line="223" selection-start-column="38" selection-end-line="223" selection-end-column="38" />
               <folding>
                 <element signature="e#191#2826#0" expanded="false" />
                 <element signature="e#2964#5205#0" expanded="false" />
@@ -155,11 +154,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpLoadDoc.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UpLoadDoc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="525">
+              <caret line="73" column="96" lean-forward="false" selection-start-line="73" selection-start-column="96" selection-end-line="73" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="298" column="20" lean-forward="false" selection-start-line="298" selection-start-column="20" selection-end-line="298" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -175,64 +184,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/ShowResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="60" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="16" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Upload.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Model/Upload.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DocBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-              <folding>
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
-                <element signature="e#1102#1103#0" expanded="true" />
-                <element signature="e#1140#1141#0" expanded="true" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1204#1205#0" expanded="true" />
-                <element signature="e#1250#1251#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-                <element signature="e#1362#1363#0" expanded="true" />
-                <element signature="e#1418#1419#0" expanded="true" />
-                <element signature="e#1466#1467#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -307,7 +264,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/Score.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/RouterController.java" />
         <option value="$PROJECT_DIR$/web/css/loading.css" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/views/admin.jsp" />
         <option value="$PROJECT_DIR$/web/js/utils.js" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/CodeBean.java" />
@@ -315,9 +271,7 @@
         <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
         <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
         <option value="$PROJECT_DIR$/web/js/utils.js" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/js/utils.js" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/views/chat.jsp" />
         <option value="$PROJECT_DIR$/web/views/login.jsp" />
         <option value="$PROJECT_DIR$/web/views/register.jsp" />
@@ -326,9 +280,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/js/loadQuestions.js" />
         <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Model/ShowResponse.java" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/views/login.jsp" />
@@ -336,12 +288,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/docMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/DocBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Upload.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java" />
       </list>
     </option>
   </component>
@@ -855,7 +812,7 @@
       <workItem from="1520670782675" duration="78000" />
       <workItem from="1520849973211" duration="4053000" />
       <workItem from="1520940716051" duration="4943000" />
-      <workItem from="1521012940797" duration="5066000" />
+      <workItem from="1521012940797" duration="6247000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -1088,11 +1045,25 @@
       <option name="project" value="LOCAL" />
       <updated>1521021171114</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="UUID">
+      <created>1521021944809</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1521021944809</updated>
+    </task>
+    <task id="LOCAL-00035" summary="UUID">
+      <created>1521022520976</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1521022520976</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396436000" />
+    <option name="totallyTimeSpent" value="397617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1465,14 +1436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Chart.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1507,48 +1470,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/DocBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="706">
           <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
           <folding>
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
+            <element signature="e#548#549#0" expanded="false" />
+            <element signature="e#583#584#0" expanded="false" />
+            <element signature="e#614#615#0" expanded="false" />
+            <element signature="e#662#663#0" expanded="false" />
+            <element signature="e#702#703#0" expanded="false" />
+            <element signature="e#732#733#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+            <element signature="e#802#803#0" expanded="false" />
+            <element signature="e#838#839#0" expanded="false" />
+            <element signature="e#873#874#0" expanded="false" />
+            <element signature="e#904#905#0" expanded="false" />
+            <element signature="e#952#953#0" expanded="false" />
+            <element signature="e#992#993#0" expanded="false" />
+            <element signature="e#1026#1027#0" expanded="false" />
+            <element signature="e#1056#1057#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1140#1141#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1250#1251#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1362#1363#0" expanded="false" />
+            <element signature="e#1418#1419#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Upload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1561,19 +1524,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Upload.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="-270">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
+    <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="298" column="20" lean-forward="false" selection-start-line="298" selection-start-column="20" selection-end-line="298" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="223" column="38" lean-forward="false" selection-start-line="223" selection-start-column="38" selection-end-line="223" selection-end-column="38" />
+          <folding>
+            <element signature="e#191#2826#0" expanded="false" />
+            <element signature="e#2964#5205#0" expanded="false" />
+            <element signature="e#5348#6403#0" expanded="false" />
+            <marker date="1521021799046" expanded="true" signature="7625:7631" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="7637:7643" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="7874:7880" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="7894:7900" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="8191:8197" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="8211:8217" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="9426:9432" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="9432:9438" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="9439:9445" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="9445:9451" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="9756:9762" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="9768:9774" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="10005:10011" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="10025:10031" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="10371:10377" ph="&amp;nbsp;" />
+            <marker date="1521021799046" expanded="true" signature="10391:10397" ph="&amp;nbsp;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1658,31 +1649,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/loadData.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UpLoadDoc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="223" column="38" lean-forward="true" selection-start-line="223" selection-start-column="38" selection-end-line="223" selection-end-column="38" />
-          <folding>
-            <element signature="e#191#2826#0" expanded="false" />
-            <element signature="e#2964#5205#0" expanded="false" />
-            <element signature="e#5348#6403#0" expanded="false" />
-            <marker date="1521021799046" expanded="true" signature="7625:7631" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="7637:7643" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="7874:7880" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="7894:7900" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="8191:8197" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="8211:8217" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="9426:9432" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="9432:9438" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="9439:9445" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="9445:9451" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="9756:9762" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="9768:9774" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="10005:10011" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="10025:10031" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="10371:10377" ph="&amp;nbsp;" />
-            <marker date="1521021799046" expanded="true" signature="10391:10397" ph="&amp;nbsp;" />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="73" column="96" lean-forward="false" selection-start-line="73" selection-start-column="96" selection-end-line="73" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>

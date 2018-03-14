@@ -297,8 +297,6 @@
                 <h5 class="black-text">友情链接</h5>
 
                 <ul>
-                    <li> <a  target="_blank" class="github-button" href="https://github.com/huminted/AirClass" data-size="large" data-show-count="true" aria-label="Star huminted/AirClass on GitHub">Star</a>
-                    </li>
                     <li><a class="black-text "  target="_blank" href="https://weibo.com/win8humin/">关注我</a></li>
                     <li><a class="black-text " target="_blank" href="https://github.com/huminted/AirClass">查看源代码</a></li>
                 </ul>
@@ -319,7 +317,7 @@
 </footer >
 
 
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/fly.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/loadData.js"></script>

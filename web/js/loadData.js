@@ -209,7 +209,7 @@ function getAllDoc() {
                         li.innerHTML =
                             " <div>" + docs[i].filename +"\n" +
 
-                            " <a  class=\"secondary-content \"   target='iframe'  onclick='getAllDoc();'   href=\"/deldoc?objectid=" + docs[i].objectid +"&filename="+docs[i].filename+ "\">\n" +
+                            " <a  class=\"secondary-content \"   target='iframe'  onclick='getAllDoc();'   href=\"/deldoc?objectid=" + docs[i].objectid + "\">\n" +
                             " <i class=\"material-icons black-text \">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -217,7 +217,7 @@ function getAllDoc() {
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx??WOPISrc=" + docs[i].viewurl + "\">\n" +
+                            " <a  target='_blank' class=\"secondary-content\" href=\"http://oos.iwakeup.cn/we/wordeditorframe.aspx?WOPISrc=" + docs[i].viewurl +"&filename="+ docs[i].filename+"\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;remove_red_eye&nbsp;</i>\n" +
                             " </a>\n" +
 

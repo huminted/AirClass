@@ -213,7 +213,7 @@ function getAllDoc() {
                             " <i class=\"material-icons black-text \">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
+                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl +"?filename="+docs[i].filename+ "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -275,7 +275,7 @@ function getDocByUserIdAndGroupId(groupid,groupname) {
                             " <i class=\"material-icons black-text \">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
-                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
+                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl +"?filename="+docs[i].filename+ "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 

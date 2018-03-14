@@ -39,7 +39,7 @@ function getAllDoc() {
                         li.setAttribute("class", "collection-item");
                         li.innerHTML =
                             " <div>" + docs[i].filename +"&nbsp;&nbsp;|&nbsp;&nbsp;"+docs[i].username +"\n" +
-                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
+                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl +"?filename="+docs[i].filename+ "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -164,7 +164,7 @@ function getDocByGroupId(groupid,groupname) {
 
 
 
-                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl + "\">\n" +
+                            " <a download class=\"secondary-content\"   href=\"" + docs[i].fileurl +"?filename="+docs[i].filename+ "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;arrow_downward&nbsp;</i>\n" +
                             " </a>\n" +
 

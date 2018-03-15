@@ -45,7 +45,7 @@
 
             <div class="nav-wrapper white s12 col ">
 
-                &nbsp; &nbsp; &nbsp;&nbsp;<a href="/index" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass2 </a>
+                &nbsp; &nbsp; &nbsp;&nbsp;<a href="/index" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass </a>
 
 
             </div>
@@ -108,12 +108,15 @@
     <div id="itemUpload" class="col s12 " style="padding-bottom: 20%">
 
         <div class="card col s12 m12 l12"  >
-            <p class="flow-text">&nbsp;<i class=" material-icons">lightbulb_outline</i>&nbsp;上传操作说</p>
+            <p class="flow-text">&nbsp;<i class=" material-icons">lightbulb_outline</i>&nbsp;上传操作说明</p>
             <blockquote>
                 1.先选择文档分类
             </blockquote>
             <blockquote>
                 2.点击右下角图标上传文档
+            </blockquote>
+            <blockquote>
+                3.请将.dox转换成.doxc格式  .doc格式只支持预览，.doxc支持预览和编辑
             </blockquote>
             <div class="col s6 m6  left">
 

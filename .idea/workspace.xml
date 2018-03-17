@@ -6,8 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
+    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="Fix Bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/web/views/index.jsp" afterPath="$PROJECT_DIR$/web/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,140 +43,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="291" column="93" lean-forward="false" selection-start-line="291" selection-start-column="93" selection-end-line="291" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/admin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4563">
-              <caret line="186" column="59" lean-forward="false" selection-start-line="186" selection-start-column="53" selection-end-line="186" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addQuestions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Add/addQuestions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loadAdminData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/loadAdminData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1126">
-              <caret line="584" column="45" lean-forward="false" selection-start-line="584" selection-start-column="45" selection-end-line="584" selection-end-column="45" />
-              <folding>
-                <element signature="e#283#1893#0" expanded="false" />
-                <element signature="e#1968#4066#0" expanded="false" />
-                <element signature="n#!!block;n#getDocByGroupId#0" expanded="false" />
-                <element signature="e#5954#8218#0" expanded="false" />
-                <element signature="n#!!block;n#getNewestPaper#0" expanded="false" />
-                <element signature="n#!!block;n#getScoreById#0" expanded="false" />
-                <element signature="n#!!block;n#getAllScore#0" expanded="false" />
-                <element signature="e#14202#15472#0" expanded="false" />
-                <marker date="1521273203607" expanded="true" signature="10603:10609" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10609:10615" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10616:10622" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10622:10628" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10652:10658" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10658:10664" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10665:10671" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10671:10677" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10963:10969" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="10975:10981" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="11228:11234" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="11248:11254" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="16368:16374" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="16374:16380" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="16381:16387" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="16387:16393" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="16697:16703" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="16709:16715" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="17835:17841" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="17841:17847" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="17848:17854" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="17854:17860" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="18164:18170" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="18176:18182" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="19308:19314" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="19314:19320" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="19321:19327" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="19327:19333" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="19641:19647" ph="&amp;nbsp;" />
-                <marker date="1521273203607" expanded="true" signature="19653:19659" ph="&amp;nbsp;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaperAndQuestions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Find/PaperAndQuestions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1287">
-              <caret line="92" column="35" lean-forward="false" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="35" />
-              <folding>
-                <element signature="method#getOnePaper#0;class#PaperAndQuestions#0" expanded="false" />
-                <element signature="method#findSc#0;class#PaperAndQuestions#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loading.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/loading.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/ShowResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Paper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Find/Paper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-469">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delPaper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Delete/delPaper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Find/Score.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="417">
+              <caret line="311" column="67" lean-forward="false" selection-start-line="311" selection-start-column="67" selection-end-line="311" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -858,7 +727,7 @@
       <workItem from="1521033927307" duration="858000" />
       <workItem from="1521107921519" duration="1853000" />
       <workItem from="1521189133961" duration="87000" />
-      <workItem from="1521269953215" duration="4480000" />
+      <workItem from="1521269953215" duration="5562000" />
     </task>
     <task id="LOCAL-00001" summary="UI，API">
       <created>1516197289719</created>
@@ -1161,14 +1030,22 @@
       <option name="project" value="LOCAL" />
       <updated>1521274406096</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Fix Bugs">
+      <created>1521274453912</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1521274453912</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="411020000" />
+    <option name="totallyTimeSpent" value="412102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1183,7 +1060,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22736955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22736955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1650,11 +1527,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/admin.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/loading.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4563">
-          <caret line="186" column="59" lean-forward="false" selection-start-line="186" selection-start-column="53" selection-end-line="186" selection-end-column="59" />
+        <state relative-caret-position="420">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Find/PaperAndQuestions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-747">
+          <caret line="92" column="35" lean-forward="false" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <element signature="method#getOnePaper#0;class#PaperAndQuestions#0" expanded="false" />
+            <element signature="method#findSc#0;class#PaperAndQuestions#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1713,29 +1601,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Find/PaperAndQuestions.java">
+    <entry file="file://$PROJECT_DIR$/web/views/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1287">
-          <caret line="92" column="35" lean-forward="false" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="35" />
-          <folding>
-            <element signature="method#getOnePaper#0;class#PaperAndQuestions#0" expanded="false" />
-            <element signature="method#findSc#0;class#PaperAndQuestions#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/loading.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="-4549">
+          <caret line="186" column="59" lean-forward="false" selection-start-line="186" selection-start-column="53" selection-end-line="186" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="291" column="93" lean-forward="false" selection-start-line="291" selection-start-column="93" selection-end-line="291" selection-end-column="93" />
+        <state relative-caret-position="417">
+          <caret line="311" column="67" lean-forward="false" selection-start-line="311" selection-start-column="67" selection-end-line="311" selection-end-column="67" />
           <folding />
         </state>
       </provider>

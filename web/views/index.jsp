@@ -309,7 +309,7 @@
             <a>蜀ICP备17008553号-1</a>
             © 2018 MujiangTech @Humin , All rights reserved.
                  <a class="black-text right " href="Mailto:humin147@live.com?subject=反馈BUG">
-                     <i class="material-icons Tiny ">bug_report</i>     反馈BUG</a>
+                     <i class="material-icons Tiny ">bug_report</i>反馈BUG</a>
 
         </div>
     </div>

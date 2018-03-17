@@ -118,7 +118,7 @@
             <blockquote>
                 3.请将.dox转换成.doxc格式  .doc格式只支持预览，.doxc支持预览和编辑
             </blockquote>
-            <div class="col s6 m6  left">
+            <div class="col s12 m12  ">
 
 
                 <div class="card col offset-s12 m12 l12" id="first">
@@ -130,11 +130,7 @@
                     <ul id='docGroupDropdown' class='dropdown-content'>
 
 
-
-
                     </ul>
-
-
                     <ul class="collection with-header" id="docul">
 
                     </ul>
@@ -143,16 +139,16 @@
             </div>
 
 
-            <div class="col s6 m6 left">
+            <%--<div class="col s6 m6 left">--%>
 
-                <div class="card col s12 m12 l12" id="tow">
-                    <p class="flow-text">&nbsp;已批该文档</p>
-                    <ul class="collection with-header" id="modifydocul">
+                <%--<div class="card col s12 m12 l12" id="tow">--%>
+                    <%--<p class="flow-text">&nbsp;已批该文档</p>--%>
+                    <%--<ul class="collection with-header" id="modifydocul">--%>
 
-                    </ul>
+                    <%--</ul>--%>
 
-                </div>
-            </div>
+                <%--</div>--%>
+            <%--</div>--%>
 
         </div>
 
@@ -275,7 +271,7 @@
 
 
 
-        <div style="height: 600px" >
+        <div class="container2">
 
 
         </div>
@@ -293,7 +289,7 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="black-text">DIST信管在线学习系统 <h6 class="black-text">V 0.9.18.24 Beta </h6> </h5>
+                <h5 class="black-text">DIST信管在线学习系统 <h6 class="black-text">V 0.9.18.317 Beta2 </h6> </h5>
                 <p class="black-text ">推荐使用Chrome，Firefox等现代内核浏览器</p>
             </div>
             <div class="col l3 offset-l2 s12">

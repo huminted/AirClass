@@ -582,7 +582,7 @@ function getScByPaperId() {
                             + scs[i].question  +"&nbsp;&nbsp;|&nbsp;&nbsp;正确答案: "+scs[i].rightanswer+ "\n" +
 
                             " <a  class=\"secondary-content \"  onclick='getScByPaperId();' target='iframe"  +
-                            "'   href=\"/delsc?objectid=" + scs[i].objectid + "\">\n" +
+                            "'   href=\"/delSc?objectid=" + scs[i].objectid + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -637,7 +637,7 @@ function getFbByPaperId() {
                             + fbs[i].question  +"&nbsp;&nbsp;|&nbsp;&nbsp;正确答案: "+fbs[i].rightanswer+ "\n" +
 
                             " <a  class=\"secondary-content \"  onclick='getFbByPaperId();' target='iframe"  +
-                            "'   href=\"/delsc?objectid=" + fbs[i].objectid + "\">\n" +
+                            "'   href=\"/delFb?objectid=" + fbs[i].objectid + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 
@@ -691,7 +691,7 @@ function getTofByPaperId() {
                             + tofs[i].question  +"&nbsp;&nbsp;|&nbsp;&nbsp;正确答案: "+tofs[i].rightanswer+ "\n" +
 
                             " <a  class=\"secondary-content \"  onclick='getTofByPaperId();' target='iframe"  +
-                            "'   href=\"/delsc?objectid=" + tofs[i].objectid + "\">\n" +
+                            "'   href=\"/delTof?objectid=" + tofs[i].objectid + "\">\n" +
                             " <i class=\"material-icons black-text\">&nbsp;clear &nbsp;</i>\n" +
                             " </a>\n" +
 

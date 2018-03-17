@@ -6,6 +6,7 @@ import Bean.PaperBean;
 import Bean.Questions.FillBlank;
 import Bean.Questions.SingleChoice;
 import Bean.Questions.Tof;
+import Model.ShowResponse;
 import Service.PaperService;
 import Service.PaperServiceImpl;
 import Service.QuestionsService;
@@ -97,7 +98,8 @@ public class PaperAndQuestions {
 
         service.delScById(Integer.parseInt(request.getParameter("objectid")));
 
-
+        ShowResponse showResponse =new ShowResponse();
+        showResponse.show(response,request);
 
     }
 
@@ -127,7 +129,8 @@ public class PaperAndQuestions {
 
         service.delFbById(Integer.parseInt(request.getParameter("objectid")));
 
-
+        ShowResponse showResponse =new ShowResponse();
+        showResponse.show(response,request);
     }
 
 
@@ -153,7 +156,8 @@ public class PaperAndQuestions {
         QuestionsService service =new QuestionsServiceImpl();
         service.delTofById(Integer.parseInt(request.getParameter("objectid")));
 
-
+        ShowResponse showResponse =new ShowResponse();
+        showResponse.show(response,request);
     }
 
 

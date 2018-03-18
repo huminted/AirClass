@@ -2,20 +2,12 @@ package Bean;
 
 public class UserBean {
     int objectid;
-    public static String username;
-    public static int userid;
-    public static String password;
-    public static String school;
-    public static String major;
-    public static String classes;
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public  String username;
+    public  int userid;
+    public  String password;
+    public  String school;
+    public  String major;
+    public  String classes;
 
     public int getObjectid() {
         return objectid;
@@ -33,12 +25,20 @@ public class UserBean {
         this.username = username;
     }
 
-    public  int getUserid() {
+    public int getUserid() {
         return userid;
     }
 
     public void setUserid(int userid) {
-        UserBean.userid = userid;
+        this.userid = userid;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getSchool() {

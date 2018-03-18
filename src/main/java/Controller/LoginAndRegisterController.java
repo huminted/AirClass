@@ -37,8 +37,6 @@ public class LoginAndRegisterController {
     }
 
 
-
-
     @RequestMapping(value = "/regist")
     public String Regist( ModelMap modelMap,HttpServletRequest request) throws UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");

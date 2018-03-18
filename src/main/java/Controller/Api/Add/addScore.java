@@ -4,13 +4,16 @@ package Controller.Api.Add;
 import Bean.CodeBean;
 import Bean.ScoreBean;
 import Bean.UserBean;
+import Model.CookieUtils;
 import Service.ScoreService;
 import Service.ScoreServiceImpl;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -27,11 +30,20 @@ public class addScore {
         response.setContentType("text/json;charset=utf-8");
         String jsonText=request.getParameter("scoretext");
 
+        System.out.println(jsonText.substring(34));
+
+        CookieUtils cookieUtils =new CookieUtils();
+
+        cookieUtils.addCookie(response,"scoretext","aa");
+        Cookie cookietext=cookieUtils.getCookieByName(request,"scoretext");
+
+
+
 
 
         ScoreService service =new ScoreServiceImpl();
 
-        if (jsonText.equals(CodeBean.jsonText)){
+        if (jsonText.equals(cookietext.getValue())){
 
             PrintWriter writer=response.getWriter();
             writer.print("{ \"state\":\"r\"}");
@@ -41,6 +53,8 @@ public class addScore {
 
 
 
+        Cookie cookiename=cookieUtils.getCookieByName(request,"username");
+        Cookie cookieid=cookieUtils.getCookieByName(request,"userid");
 
         jsonText=request.getParameter("scoretext");
         System.out.println(jsonText);
@@ -56,8 +70,8 @@ public class addScore {
         ScoreBean scoreBean=new ScoreBean();
         scoreBean.setPaperid(Integer.parseInt(detialObj.getString("paperid")));
         scoreBean.setPapertitle(detialObj.getString("papertitle"));
-        scoreBean.setUserid(UserBean.userid);
-        scoreBean.setUsername(UserBean.username);
+        scoreBean.setUserid(Integer.parseInt(cookieid.getValue()));
+        scoreBean.setUsername( cookiename.getValue());
 
         scoreBean.setScore(score);
         scoreBean.setSinglechoice(String.valueOf(detialObj.getInteger("singlechoice")));
@@ -74,7 +88,7 @@ public class addScore {
         writer.print("{ \"state\":\"ok\"}");
         writer.close();
 
-        CodeBean.jsonText=jsonText;
+        cookietext.setValue(jsonText);
 
         }
 

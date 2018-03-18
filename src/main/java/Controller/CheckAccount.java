@@ -2,6 +2,7 @@ package Controller;
 
 
 import Bean.UserBean;
+import Model.CookieUtils;
 import Service.UserService;
 import Service.UserServiceImpl;
 import com.alibaba.fastjson.JSONArray;
@@ -10,6 +11,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +20,7 @@ public class CheckAccount {
 
 
     @RequestMapping(value = "/home")
-    public String Check(ModelMap modelMap, HttpServletRequest request, UserBean User){
+    public String Check(ModelMap modelMap, HttpServletRequest request, HttpServletResponse response, UserBean User){
 
         UserService service = new UserServiceImpl();
 
@@ -30,8 +32,6 @@ public class CheckAccount {
         if (service.findUserById(InputUserID)!=null){
 
             User=service.findUserById(InputUserID);
-
-
 
 
             int ID=User.getUserid();
@@ -50,6 +50,10 @@ public class CheckAccount {
 
                 String jsonText= JSONArray.toJSONString(userMap,true);
                 System.out.println("登陆成功"+jsonText);
+
+                CookieUtils cookieUtils =new CookieUtils();
+                cookieUtils.addCookie(response,"username",User.getUsername());
+                cookieUtils.addCookie(response,"userid", String.valueOf(User.getUserid()));
 
 
 

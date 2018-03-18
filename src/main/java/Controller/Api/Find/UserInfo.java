@@ -2,12 +2,14 @@ package Controller.Api.Find;
 
 
 import Bean.UserBean;
+import Model.CookieUtils;
 import Service.UserService;
 import Service.UserServiceImpl;
 import com.alibaba.fastjson.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -24,7 +26,11 @@ public class UserInfo {
         response.setContentType("text/json; charset=UTF-8");
 
         UserService userService=new UserServiceImpl();
-        UserBean user= userService.findUserById(UserBean.userid);
+
+        CookieUtils cookieUtils=new CookieUtils();
+        Cookie cookiename=cookieUtils.getCookieByName(request,"username");
+        Cookie cookieid=cookieUtils.getCookieByName(request,"userid");
+        UserBean user= userService.findUserById(Integer.parseInt(cookieid.getValue()));
 
         Map<String ,Object> userMap=new HashMap<String ,Object>();
 

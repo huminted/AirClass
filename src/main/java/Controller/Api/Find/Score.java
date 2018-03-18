@@ -3,12 +3,14 @@ package Controller.Api.Find;
 import Bean.CodeBean;
 import Bean.ScoreBean;
 import Bean.UserBean;
+import Model.CookieUtils;
 import Service.ScoreService;
 import Service.ScoreServiceImpl;
 import com.alibaba.fastjson.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -46,7 +48,11 @@ public class Score {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/json; charset=UTF-8");
 
-        List<ScoreBean> list =scoreService.findScoreById(UserBean.userid);
+        CookieUtils cookieUtils=new CookieUtils();
+        Cookie cookiename=cookieUtils.getCookieByName(request,"username");
+        Cookie cookieid=cookieUtils.getCookieByName(request,"userid");
+
+        List<ScoreBean> list =scoreService.findScoreById(Integer.parseInt(cookieid.getValue()));
 
         String jsonText= JSONArray.toJSONString(list,true);
 

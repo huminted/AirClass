@@ -4,6 +4,7 @@ import Bean.CodeBean;
 import Bean.DocBean;
 import Bean.DocGroupBean;
 import Bean.UserBean;
+import Model.CookieUtils;
 import Service.DocService;
 import Service.DocServiceImpl;
 import com.alibaba.fastjson.JSONArray;
@@ -11,6 +12,7 @@ import com.mysql.cj.xdevapi.JsonArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -30,7 +32,11 @@ public class Doc {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/json; charset=UTF-8");
 
-        List<DocBean> list=service.findFileByUserId(UserBean.userid);
+        CookieUtils cookieUtils=new CookieUtils();
+        Cookie cookiename=cookieUtils.getCookieByName(request,"username");
+        Cookie cookieid=cookieUtils.getCookieByName(request,"userid");
+
+        List<DocBean> list=service.findFileByUserId(Integer.parseInt(cookieid.getValue()));
 
 
         if (list.isEmpty()){
@@ -241,8 +247,12 @@ public class Doc {
 
     CodeBean.docGroupId=Integer.parseInt(request.getParameter("groupid"));
 
+    CookieUtils cookieUtils=new CookieUtils();
+    Cookie cookiename=cookieUtils.getCookieByName(request,"username");
+    Cookie cookieid=cookieUtils.getCookieByName(request,"userid");
+
     HashMap hashMap=new HashMap();
-    hashMap.put("userid", UserBean.userid);
+    hashMap.put("userid",cookieid.getValue() );
     hashMap.put("groupid", CodeBean.docGroupId);
     List<DocBean> list= service.findFileByUserIdAndGroupId(hashMap);
 

@@ -77,7 +77,7 @@ public class UpLoadDoc {
 
 
            Upload upload =new Upload();
-           upload.upload(fileName,fileNametime,url,viewurl);
+           upload.upload(fileName,fileNametime,url,viewurl,request);
 
 
 

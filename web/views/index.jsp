@@ -73,7 +73,7 @@
                     <li><a onclick="alert('按住Ctrl+F')" target="_blank" class="black-text"><i class="material-icons">search</i></a></li>
                     <li><a href="/chat" target="_blank" class="black-text"><i class="material-icons">comment</i></a></li>
                     <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>
-                    <li><a href="/login"  target="_blank" class="black-text"><i class="material-icons">power_settings_new</i></a></li>
+                    <li><a href="/login"   class="black-text"><i class="material-icons">power_settings_new</i></a></li>
 
                 </ul>
 
@@ -289,7 +289,7 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="black-text">DIST信管在线学习系统 <h6 class="black-text">V 0.9.18.317 Beta2 </h6> </h5>
+                <h5 class="black-text">DIST信管在线学习系统 <h6 class="black-text">V 0.9.18.318 Beta2 </h6> </h5>
                 <p class="black-text ">推荐使用Chrome，Firefox等现代内核浏览器</p>
             </div>
             <div class="col l3 offset-l2 s12">

@@ -46,7 +46,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">looks_one</i>
-                                <input  name ="userid" id="userid"  type="text" class="validate"  required>
+                                <input  name ="userid" id="userid"  type="text" class="validate"  maxlength="10" required>
                                 <label for="userid">学号</label>
                             </div>
                             <div class="input-field col s12">

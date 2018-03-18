@@ -6,15 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="完善试卷UI">
+    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Api/Add/addScore.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/Api/Add/addScore.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ScoreDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/ScoreDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ScoreDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/ScoreDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/ScoreService.java" afterPath="$PROJECT_DIR$/src/main/java/Service/ScoreService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/ScoreServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Service/ScoreServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/scoreMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/scoreMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/web/js/getAnswer.js" afterPath="$PROJECT_DIR$/web/js/getAnswer.js" />
+      <change beforePath="$PROJECT_DIR$/web/views/index.jsp" afterPath="$PROJECT_DIR$/web/views/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/views/login.jsp" afterPath="$PROJECT_DIR$/web/views/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/views/register.jsp" afterPath="$PROJECT_DIR$/web/views/register.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,6 +42,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="291" column="87" lean-forward="false" selection-start-line="291" selection-start-column="87" selection-end-line="291" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="addScore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Add/addScore.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,20 +64,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getAnswer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getAnswer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/getAnswer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="286" column="14" lean-forward="false" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
+              <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#checkSc#0" expanded="false" />
                 <element signature="n#!!block;n#getFbAnswer#0" expanded="false" />
                 <element signature="n#!!block;n#checkFb#0" expanded="false" />
                 <element signature="n#!!block;n#getTofAnswer#0" expanded="false" />
                 <element signature="n#!!block;n#checkTof#0" expanded="false" />
-                <marker date="1521367313646" expanded="true" signature="5323:5329" ph="&amp;nbsp;" />
-                <marker date="1521367313646" expanded="true" signature="5345:5351" ph="&amp;nbsp;" />
+                <marker date="1521367416912" expanded="true" signature="5309:5315" ph="&amp;nbsp;" />
+                <marker date="1521367416912" expanded="true" signature="5331:5337" ph="&amp;nbsp;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="48" column="112" lean-forward="false" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="112" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="73" column="95" lean-forward="true" selection-start-line="73" selection-start-column="95" selection-end-line="73" selection-end-column="95" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,28 +154,6 @@
             <state relative-caret-position="330">
               <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/DocDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/docMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="67" />
-              <folding>
-                <marker date="1520945170480" expanded="true" signature="899:1069" ph="insert into doc... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -225,16 +229,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/views/chat.jsp" />
-        <option value="$PROJECT_DIR$/web/views/login.jsp" />
-        <option value="$PROJECT_DIR$/web/views/register.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Model/ShowResponse.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/views/login.jsp" />
-        <option value="$PROJECT_DIR$/web/views/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/docMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/DocBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/PaperAndQuestions.java" />
@@ -242,10 +242,6 @@
         <option value="$PROJECT_DIR$/web/views/admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Add/addQuestions.java" />
         <option value="$PROJECT_DIR$/web/css/loading.css" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
-        <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
@@ -275,6 +271,14 @@
         <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Add/addScore.java" />
         <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
+        <option value="$PROJECT_DIR$/web/views/login.jsp" />
+        <option value="$PROJECT_DIR$/web/views/login.jsp" />
+        <option value="$PROJECT_DIR$/web/views/register.jsp" />
+        <option value="$PROJECT_DIR$/web/views/register.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/views/index.jsp" />
       </list>
     </option>
   </component>
@@ -868,13 +872,6 @@
       <workItem from="1521269953215" duration="5657000" />
       <workItem from="1521350622671" duration="1765000" />
     </task>
-    <task id="LOCAL-00001" summary="UI，API">
-      <created>1516197289719</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1516197289719</updated>
-    </task>
     <task id="LOCAL-00002" summary="数据加载">
       <created>1516267779159</created>
       <option name="number" value="00002" />
@@ -1211,11 +1208,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521363765119</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="试卷系统禁止重复提交同一张试卷">
+      <created>1521367421723</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1521367421725</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426903000" />
+    <option name="totallyTimeSpent" value="427805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1319,7 +1323,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加载题目" />
     <MESSAGE value="发布试题&#10;教师管理界面" />
     <MESSAGE value="管理界面的数据加载" />
     <MESSAGE value="数据可按照类别查询" />
@@ -1344,7 +1347,8 @@
     <MESSAGE value="Fix Bugs" />
     <MESSAGE value="Router" />
     <MESSAGE value="完善试卷UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善试卷UI" />
+    <MESSAGE value="试卷系统禁止重复提交同一张试卷" />
+    <option name="LAST_COMMIT_MESSAGE" value="试卷系统禁止重复提交同一张试卷" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1357,20 +1361,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="9" column="80" lean-forward="false" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Download.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -1479,14 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4549">
           <caret line="186" column="59" lean-forward="false" selection-start-line="186" selection-start-column="53" selection-end-line="186" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="197" column="0" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1894,16 +1876,40 @@
     <entry file="file://$PROJECT_DIR$/web/js/getAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="286" column="14" lean-forward="false" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
+          <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#checkSc#0" expanded="false" />
             <element signature="n#!!block;n#getFbAnswer#0" expanded="false" />
             <element signature="n#!!block;n#checkFb#0" expanded="false" />
             <element signature="n#!!block;n#getTofAnswer#0" expanded="false" />
             <element signature="n#!!block;n#checkTof#0" expanded="false" />
-            <marker date="1521367313646" expanded="true" signature="5323:5329" ph="&amp;nbsp;" />
-            <marker date="1521367313646" expanded="true" signature="5345:5351" ph="&amp;nbsp;" />
+            <marker date="1521367416912" expanded="true" signature="5309:5315" ph="&amp;nbsp;" />
+            <marker date="1521367416912" expanded="true" signature="5331:5337" ph="&amp;nbsp;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="48" column="112" lean-forward="false" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="73" column="95" lean-forward="true" selection-start-line="73" selection-start-column="95" selection-end-line="73" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="291" column="87" lean-forward="false" selection-start-line="291" selection-start-column="87" selection-end-line="291" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>

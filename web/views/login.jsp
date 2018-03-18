@@ -22,6 +22,14 @@
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2397776086444621",
+            enable_page_level_ads: true
+        });
+    </script>
     <title>登陆</title>
     <link rel="icon" href="http://static.iwakeup.cn/airclass.ico" type="image/x-icon">
 

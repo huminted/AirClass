@@ -11,6 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.util.HashMap;
 import java.util.List;
 
 public class ScoreDaoImpl implements ScoreDao {
@@ -56,6 +57,15 @@ public class ScoreDaoImpl implements ScoreDao {
         return score;
 
 
+    }
+
+    @Override
+    public ScoreBean findScoreByUserIdAndPaperId(HashMap map) {
+
+        String statement = "scoreMapper.findScoreByUserIdAndPaperId";
+        ScoreBean score = session.selectOne(statement,map);
+
+        return score;
     }
 
     @Override

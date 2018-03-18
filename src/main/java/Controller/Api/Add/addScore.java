@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 
 @Controller
 public class addScore {
@@ -28,36 +29,16 @@ public class addScore {
 
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/json;charset=utf-8");
+
         String jsonText=request.getParameter("scoretext");
-
-        System.out.println(jsonText.substring(34));
-
-        CookieUtils cookieUtils =new CookieUtils();
-
-        cookieUtils.addCookie(response,"scoretext","aa");
-        Cookie cookietext=cookieUtils.getCookieByName(request,"scoretext");
-
-
-
-
-
         ScoreService service =new ScoreServiceImpl();
 
-        if (jsonText.equals(cookietext.getValue())){
-
-            PrintWriter writer=response.getWriter();
-            writer.print("{ \"state\":\"r\"}");
-            writer.close();
-        }
-        else {
-
-
-
+        CookieUtils cookieUtils =new CookieUtils();
         Cookie cookiename=cookieUtils.getCookieByName(request,"username");
         Cookie cookieid=cookieUtils.getCookieByName(request,"userid");
 
-        jsonText=request.getParameter("scoretext");
-        System.out.println(jsonText);
+
+
 
         JSONObject jsonObject= (JSONObject) JSONObject.parse(jsonText);
 
@@ -67,30 +48,45 @@ public class addScore {
 
         JSONObject detialObj=detialArray.getJSONObject(0);
 
-        ScoreBean scoreBean=new ScoreBean();
-        scoreBean.setPaperid(Integer.parseInt(detialObj.getString("paperid")));
-        scoreBean.setPapertitle(detialObj.getString("papertitle"));
-        scoreBean.setUserid(Integer.parseInt(cookieid.getValue()));
-        scoreBean.setUsername( cookiename.getValue());
-
-        scoreBean.setScore(score);
-        scoreBean.setSinglechoice(String.valueOf(detialObj.getInteger("singlechoice")));
-        scoreBean.setFillblank(String.valueOf(detialObj.getInteger("fillblank")));
-        scoreBean.setTof(String.valueOf(detialObj.getInteger("tof")));
+        HashMap <String ,Integer>hashMap=new HashMap<String ,Integer>();
+        hashMap.put("userid",Integer.parseInt(cookieid.getValue()));
+        hashMap.put("paperid",Integer.parseInt(detialObj.getString("paperid")));
 
 
+        if (service.findScoreByUserIdAndPaperId(hashMap)==null){
 
-        service.addScore(scoreBean);
+            ScoreBean scoreBean=new ScoreBean();
+            scoreBean.setPaperid(Integer.parseInt(detialObj.getString("paperid")));
+            scoreBean.setPapertitle(detialObj.getString("papertitle"));
+            scoreBean.setUserid(Integer.parseInt(cookieid.getValue()));
+            scoreBean.setUsername( cookiename.getValue());
+
+            scoreBean.setScore(score);
+            scoreBean.setSinglechoice(String.valueOf(detialObj.getInteger("singlechoice")));
+            scoreBean.setFillblank(String.valueOf(detialObj.getInteger("fillblank")));
+            scoreBean.setTof(String.valueOf(detialObj.getInteger("tof")));
+
+            service.addScore(scoreBean);
 
 
 
-        PrintWriter writer=response.getWriter();
-        writer.print("{ \"state\":\"ok\"}");
-        writer.close();
+            PrintWriter writer=response.getWriter();
+            writer.print("{ \"state\":\"new\"}");
+            writer.close();
 
-        cookietext.setValue(jsonText);
+
+
+        }else {
+
+            PrintWriter writer=response.getWriter();
+            writer.print("{ \"state\":\"done\"}");
+            writer.close();
 
         }
+
+
+
+
 
     }
 

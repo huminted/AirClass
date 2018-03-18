@@ -285,6 +285,11 @@ function genJson() {
                 var json = JSON.parse(text);
                 json=JSON.stringify(json.state);
 
+               if (json==='"done"'){
+                    console.log(json);
+                   alert("已做过该套试卷，新成绩将不会上传")
+               }
+
 
 
 

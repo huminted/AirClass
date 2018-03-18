@@ -21,6 +21,10 @@
         select * from score where paperid =#{paperid}
     </select>
 
+    <select id="findScoreByUserIdAndPaperId" parameterType="HashMap" resultType="Bean.ScoreBean">
+        select *  from score where userid=#{userid} and paperid=#{paperid}
+    </select>
+
     <insert id="addScore" parameterType="Bean.ScoreBean">
         insert into score (paperid,papertitle,userid,username,singlechoice,fillblank,tof,score)
        values (#{paperid},#{papertitle},#{userid},#{username},#{singlechoice},#{fillblank},#{tof},#{score})

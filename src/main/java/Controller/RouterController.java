@@ -2,6 +2,7 @@ package Controller;
 
 
 
+import Bean.UserBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,8 +18,15 @@ public class RouterController {
     @RequestMapping(value="/index", method=RequestMethod.GET)
     public String index(HttpServletRequest request , ModelMap modelMap){
 
-           return "index";
+        if (UserBean.username.isEmpty()){
 
+
+            return "login";
+        }else {
+
+
+            return "index";
+        }
 
     }
 

@@ -23,7 +23,7 @@ function getAllDoc() {
 
         fly.get('/alldoc')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 var docs=eval(json.doc);
@@ -75,7 +75,7 @@ function getAllDocGroup() {
 
         fly.get('/alldocgroup')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 var docgroups=eval(json.docgroup);
@@ -143,7 +143,7 @@ function getDocByGroupId(groupid,groupname) {
 
         fly.get('/getdocbygroupid?groupid='+groupid)
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 var docs=eval(json.doc);
@@ -200,7 +200,7 @@ function getAllPaper () {
 
         fly.get('/paper')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 var papers=eval(json.paper);
@@ -275,7 +275,7 @@ function getNewestPaper() {
 
         fly.get('/getNewestPaper')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 var paper=eval(json.paper);
@@ -336,7 +336,7 @@ function getAllVideo() {
 
     fly.get('/video')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
@@ -394,7 +394,7 @@ function  getScoreById () {
 
     fly.get('/getscorebyid')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
@@ -438,7 +438,7 @@ function  getAllScore() {
 
     fly.get('/allscore')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
@@ -498,7 +498,7 @@ function getScoreByPaperId(paperid,papername) {
 
     fly.get('/getscorebypaperid?paperid='+paperid)
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
@@ -561,7 +561,7 @@ function getScByPaperId() {
 
         fly.get('/getScByPaperId')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
 
@@ -616,7 +616,7 @@ function getFbByPaperId() {
 
         fly.get('/getFbByPaperId')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
 
@@ -670,7 +670,7 @@ function getTofByPaperId() {
 
         fly.get('/getTofByPaperId')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
 

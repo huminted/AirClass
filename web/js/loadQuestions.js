@@ -26,7 +26,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
     var paperid=GetQueryString("paperid");
     fly.get('/getOnePaper?paperid='+paperid)
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
@@ -69,7 +69,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                     div.setAttribute("class","col s12");
 
                     div.innerHTML =
-                        "<span>"+(i+1)+". "+sc[i].question+"</span>\n" +
+                        "<blockquote>"+(i+1)+". "+sc[i].question+"</blockquote>\n" +
                         "                    <p>\n" +
                         "                        <label>\n" +
                         "                            <input name=\"scradio"+ i+"\" type=\"radio\"  value=\""+sc[i].answer1 +"\"  />\n" +
@@ -115,7 +115,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
                     div2.setAttribute("id", "fb"+j);
                     div2.setAttribute("class","col s12");
                     div2.innerHTML=
-                        "<span>"+(j+1)+". "+fb[j].question+" </span>\n" +
+                        "<blockquote>"+(j+1)+". "+fb[j].question+" </blockquote>\n" +
                         " <div class=\"input-field inline\">\n" +
                         "  <input id=\"fbinput"+j+"\" type=\"text\" class=\"validate\">\n" +
                         "  <label for=\"fbinput"+j+"\">答案填写在此处</label>\n" +
@@ -149,7 +149,7 @@ var fly=require(['../js/fly.js','../js/require.js'],function getVideo () {
 
 
                     div3.innerHTML=
-                        " <span>"+(k+1) +". "+tof[k].question+"</span>\n" +
+                        " <blockquote>"+(k+1) +". "+tof[k].question+"</blockquote>\n" +
                         "                    <p>\n" +
                         "                        <label>\n" +
                         "                            <input name=\"tofradio"+k+"\" type=\"radio\" value='0' />\n" +

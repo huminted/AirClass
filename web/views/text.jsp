@@ -30,16 +30,15 @@
 <div class="container" id="main">
     <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 
+    <h5 class="center-align" id="title"></h5>
     <div class="row" id="row">
 
 
 
         <form  id="form" target="iframe" method="get" action="#">
         <div class="card col  s12 m12 l12" id="SingleChoice">
-        <h3>单项选择</h3>
+        <h3><i class="material-icons small">assignment_turned_in</i> 单项选择</h3>
             <div  id="scform">
-
-
 
             </div>
 
@@ -49,7 +48,7 @@
 
 
         <div class="card col  s12 m12 l12" id="FillBlank">
-            <h3>填空题</h3>
+            <h3><i class="material-icons small">create</i> 填空题</h3>
             <div  id="fbform">
 
 
@@ -58,7 +57,7 @@
 
         </div>
         <div class="card col  s12 m12 l12" id="TOF">
-            <h3>判断题</h3>
+            <h3><i class="material-icons small">done_all</i> 判断题</h3>
             <div  id="tofform">
 
             </div>

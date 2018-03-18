@@ -11,7 +11,7 @@ var fly=require(['../js/fly.js','../js/Chart.min.js','../js/require.js'],functio
 
     fly.get('/video')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
@@ -77,7 +77,7 @@ var fly=require(['../js/fly.js','../js/Chart.min.js','../js/require.js'],functio
 
     fly.get('/paper')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
             var papers=eval(json.paper);
@@ -94,7 +94,7 @@ var fly=require(['../js/fly.js','../js/Chart.min.js','../js/require.js'],functio
                     //设置 div 属性，如 id
                     div.setAttribute("id", "newDiv");
 
-                    div.innerHTML = "<div class=\"col s12 m4\">\n" +
+                    div.innerHTML = "<div class=\"col s12 m4 hoverable\">\n" +
                         "            <div class=\"card horizontal\">\n" +
                         "                <div class=\"card-image\">\n" +
                         "                    <img src=\"http://static.iwakeup.cn/airclasspaper.png\">\n" +
@@ -136,7 +136,7 @@ var fly=require(['../js/fly.js','../js/Chart.min.js','../js/require.js'],functio
 
     fly.get('/alldocgroup')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
             var docgroups=eval(json.docgroup);
@@ -191,7 +191,7 @@ function getAllDoc() {
 
         fly.get('/docbyuserid')
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 var docs=eval(json.doc);
@@ -252,7 +252,7 @@ function getDocByUserIdAndGroupId(groupid,groupname) {
 
         fly.get('/getdocbyuseridandgroupid?groupid='+groupid)
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+              
                 var text= JSON.stringify(response.data);
                 var json = JSON.parse(text);
                 var docs=eval(json.doc);
@@ -318,7 +318,7 @@ function  getScoreById () {
 
     fly.get('/getscorebyid')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
 
@@ -362,7 +362,7 @@ function getMyInfo() {
 
     fly.get('/getMyInfo')
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
+          
             var text= JSON.stringify(response.data);
             var json = JSON.parse(text);
             var user=eval(json.user);

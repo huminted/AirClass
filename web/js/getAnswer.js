@@ -2,6 +2,17 @@
 
 var totalScore=0;
 var flag=0;
+
+
+var fly=require(['../js/fly.js','../js/require.js'],function Sendjson() {});
+
+var  paperid=GetQueryString("paperid");
+var  papertitle=decodeURI(GetQueryString("papertitle"));
+document.getElementById("title").innerText=papertitle;
+
+
+
+
 function getAllAnswer() {
     var  scnum=document.getElementById("scform").getElementsByTagName("div").length;
     var  fbnum=  document.getElementById("fbform").getElementsByTagName("div").length;
@@ -25,11 +36,6 @@ function getAllAnswer() {
 
 
 }
-
-
-
-
-
 
 
 function getScAnswer(scnum)
@@ -248,10 +254,6 @@ function checkTof(TofJson,TofRightAnswer) {
 }
 
 
-var fly=require(['../js/fly.js','../js/require.js'],function Sendjson() {});
-
-var  paperid=GetQueryString("paperid");
-var  papertitle=decodeURI(GetQueryString("papertitle"));
 
 function genJson() {
 

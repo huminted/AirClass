@@ -70,6 +70,7 @@
         <nav class="z-depth-0">
             <div class="nav-wrapper white  s12 ">
                 <ul class="right hide-on-med-and-down">
+                    <li><a class="black-text" id="navusername"></a></li>
                     <li><a onclick="alert('按住Ctrl+F')" target="_blank" class="black-text"><i class="material-icons">search</i></a></li>
                     <li><a href="/chat" target="_blank" class="black-text"><i class="material-icons">comment</i></a></li>
                     <li><a onclick=" window.location.reload();"  class="black-text"><i class="material-icons">refresh</i></a></li>

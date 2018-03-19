@@ -77,6 +77,20 @@ function  setBadge(id,text) {
 
 }
 
+document.getElementById("navusername").innerText=getCookie("username");
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+
+    if(arr=document.cookie.match(reg))
+
+
+        return unescape(arr[2]);
+    else
+        return null;
+}
+
+
 
 function reUlSize(total,min,id) {
 

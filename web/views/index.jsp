@@ -118,7 +118,7 @@
                 2.点击右下角图标上传文档
             </blockquote>
             <blockquote>
-                3.请将.dox转换成.doxc格式  .doc格式只支持预览，.doxc支持预览和编辑
+                3.请将.dox转换成.doxc格式  .doc格式只支持预览，.doxc支持预览和编辑<a target="_blank" href="https://jingyan.baidu.com/article/c85b7a644f3195003bac9592.html"> (如何转换)</a>
             </blockquote>
             <div class="col s12 m12  ">
 

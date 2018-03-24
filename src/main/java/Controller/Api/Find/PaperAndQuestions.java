@@ -113,10 +113,7 @@ public class PaperAndQuestions {
         List<FillBlank>  list= service.findFbById(Integer.parseInt(request.getParameter("paperid")));
 
 
-
         return list;
-
-
 
     }
 

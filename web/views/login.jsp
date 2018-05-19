@@ -23,18 +23,25 @@
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-2397776086444621",
-            enable_page_level_ads: true
-        });
-    </script>
+
     <title>登陆</title>
-    <link rel="icon" href="http://static.iwakeup.cn/airclass.ico" type="image/x-icon">
+    <link rel="icon" href="${pageContext.request.contextPath}/images/airclass.ico" type="image/x-icon">
+
+    <style type="text/css">
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px white inset;
+        }
+    </style>
+
 
 </head>
+
+
+
+
 <body>
+
+
 
 <div  style="background-image:  url(https://picsum.photos/1980/1080/?random); width: 100%;height: 100%">
 <div style="height: 30%"></div>
@@ -50,7 +57,7 @@
         <div class="col s12 m12 offset-s11" >
             <div class="card-panel hoverable">
                 <div class="row">
-                    <form class="col s12" action="home" method="post" onsubmit="check()" >
+                    <form class="col s12" action="home" method="post" onsubmit="check()"  >
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">looks_one</i>
@@ -103,10 +110,12 @@
     }
 
 
+
 </script>
 
 <script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
+
 </body>
 </html>

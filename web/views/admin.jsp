@@ -24,7 +24,7 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/materialize.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" href="http://static.iwakeup.cn/airclassadmin.ico" type="image/x-icon">
+    <link rel="icon" href="${pageContext.request.contextPath}/images/airclassadmin.ico" type="image/x-icon">
     <title>管理系统</title>
 </head>
 <body onload="initAdmin();">

@@ -10,7 +10,6 @@ import java.util.List;
 @Repository
 public interface DocDao {
 
-
      List<DocBean> findFileByUserId(int userid); //查询
      List<DocBean> findAllFile();
 

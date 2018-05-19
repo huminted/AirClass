@@ -15,6 +15,7 @@
     <mvc:resources location="/fonts/" mapping="/fonts/**" cache-period="604800"/>
     <mvc:resources location="/js/" mapping="/js/**" cache-period="604800"/>
     <mvc:resources location="/css/" mapping="/css/**" cache-period="604800"/>
+    <mvc:resources location="/images/" mapping="/images/**" cache-period="604800"/>
 
 
 

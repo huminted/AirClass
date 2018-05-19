@@ -19,7 +19,6 @@ function closediv(obj) {
 
 
 
-
 function initAdmin() {
     var elem = document.querySelector('.tabs');
     var instance = M.Tabs.init(elem, 4);

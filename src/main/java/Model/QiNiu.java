@@ -17,12 +17,11 @@ public class QiNiu {
 
 
     public static void main(String arg[]){
-
-        test();
+        upload("a","F:\\AirClass\\src\\main\\java\\Model\\QiNiu.java");
     }
 
 
-    public  void upload(String fileName,String filePath){
+    public static void upload(String fileName, String filePath){
 
 
         //构造一个带指定Zone对象的配置类

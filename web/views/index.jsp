@@ -25,7 +25,7 @@
 
     <!--Let browser know website is optimized for mobile-->
 
-    <link rel="icon" href="http://static.iwakeup.cn/airclass.ico" type="image/x-icon">
+    <link rel="icon" href="${pageContext.request.contextPath}/images/airclass.ico" type="image/x-icon">
     <title>在线学习平台</title>
 </head>
 

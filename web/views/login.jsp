@@ -25,7 +25,7 @@
 
 
     <title>登陆</title>
-    <link rel="icon" href="${pageContext.request.contextPath}/images/airclass.ico" type="image/x-icon">
+    <link rel="icon" href="https://raw.githubusercontent.com/huminted/AirClass/master/web/images/airclass.ico" type="image/x-icon">
 
     <style type="text/css">
         input:-webkit-autofill {

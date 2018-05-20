@@ -26,7 +26,7 @@
     <!-- End Google Analytics -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8 ">
     <title>注册</title>
-    <link rel="icon" href="${pageContext.request.contextPath}/images/airclass.ico" type="image/x-icon">
+    <link rel="icon" href="https://raw.githubusercontent.com/huminted/AirClass/master/web/images/airclass.ico" type="image/x-icon">
 </head>
 <body onload="$(document).ready(function() {$('select').material_select();});">
 

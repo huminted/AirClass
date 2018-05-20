@@ -52,7 +52,7 @@ function getScAnswer(scnum)
         {
             if(arr[i].checked)
             {
-                console.log(arr[i].value);
+                // console.log(arr[i].value);
 
                 ScCheckedTotal++;
 
@@ -129,7 +129,7 @@ function getFbAnswer (fbnum) {
 
 
         if (arr.value!==""){
-            console.log(arr.value);
+            // console.log(arr.value);
             FbFilledTotal++;
 
             FbJson["fb"].push({
@@ -195,7 +195,7 @@ function getTofAnswer(tofnum) {
             if(arr[i].checked)
             {
                 TofCheckedTotal++;
-                console.log(arr[i].value);
+                // console.log(arr[i].value);
 
                 TofJson["tof"].push({
                     "number":num,"answer":arr[i].value

@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="" />
+    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/getAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/getAnswer.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +43,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="924">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changYan.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/changYan.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="getAnswer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/getAnswer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="207" column="34" lean-forward="true" selection-start-line="207" selection-start-column="34" selection-end-line="207" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -153,7 +170,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="32d75cdbbe49a12683d60a275394149d794f8dff" />
+        <entry key="$PROJECT_DIR$" value="1" />
       </map>
     </option>
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
@@ -193,10 +210,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Service/ScoreService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/ScoreServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/ScoreDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
-        <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Add/addScore.java" />
-        <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
         <option value="$PROJECT_DIR$/web/views/register.jsp" />
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
         <option value="$PROJECT_DIR$/web/js/loadData.js" />
@@ -220,6 +234,9 @@
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
+        <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
+        <option value="$PROJECT_DIR$/web/js/getAnswer.js" />
       </list>
     </option>
   </component>
@@ -654,13 +671,6 @@
       <workItem from="1526629062513" duration="113000" />
       <workItem from="1526737262641" duration="1996000" />
     </task>
-    <task id="LOCAL-00013" summary="答题系统">
-      <created>1517147174794</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1517147174794</updated>
-    </task>
     <task id="LOCAL-00014" summary="畅言评论系统">
       <created>1517233466473</created>
       <option name="number" value="00014" />
@@ -997,11 +1007,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526797094401</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="ico">
+      <created>1526797285800</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1526797285800</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446478000" />
+    <option name="totallyTimeSpent" value="446778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1144,17 +1161,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/QiNiu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-          <folding>
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Api/Find/PaperAndQuestions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1201,13 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/getAnswer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3696">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1476,8 +1475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="924">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1516,6 +1515,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/changYan.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/getAnswer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="207" column="34" lean-forward="true" selection-start-line="207" selection-start-column="34" selection-end-line="207" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1609,7 +1618,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -33,7 +33,7 @@
 
 
 
-<iframe id="id_iframe" name="iframe" style="Kdisplay:none;"></iframe>
+<iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 
 
 <nav class="white">

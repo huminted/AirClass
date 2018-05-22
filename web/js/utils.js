@@ -58,6 +58,13 @@ function initIndex() {
     var elem3 = document.querySelectorAll('.collapsible');
     var instance3 = M.Collapsible.init(elem3,4);
 
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tap-target');
+        var instances = M.TapTarget.init(elems, options);
+        var instance = M.TapTarget.getInstance(elem);
+        instance.next();
+    });
+
 
 }
 

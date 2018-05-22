@@ -7,8 +7,6 @@
 
 <head>
 
-
-
     <!-- Google Analytics -->
     <script async>
         window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -46,7 +44,6 @@
             <div class="nav-wrapper white s12 col ">
 
                 &nbsp; &nbsp; &nbsp;&nbsp;<a href="/index" class="brand-logo   black-text"> &nbsp;<i class="large material-icons">import_contacts</i>AirClass </a>
-
 
             </div>
 
@@ -87,13 +84,26 @@
 
 </nav>
 
+
 <div class="row s12  " id="content"  style="display: none">
-    <div class="  black  black-text z-depth-1">
 
+    <div class="container ">
+        <ul class="collapsible col  s12" data-collapsible="accordion">
+            <li>&nbsp;
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i>
+                    在同一台电脑登陆多个账号请先点击&nbsp;&nbsp;<span style="color: #0D47A1">右上角图标</span>&nbsp;&nbsp;退出当前账号, 如遇见其他问题联系微信:13183776830.
+                    <span class=" new  badge">Notice</span></div>
 
+            </li>
+
+        </ul>
     </div>
 
+
+
     <div id="itemVideo" class="row s12  " >
+
         <%--视频卡片区域--%>
 
         <div id="row" class="row"></div>
@@ -277,12 +287,14 @@
 
 
         </div>
+
     </div>
 
 
 
 
 </div>
+
 
 
 

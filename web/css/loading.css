@@ -8,6 +8,11 @@
     align-items: center;
     justify-content: center;
 }
+.center2{
+
+    position: absolute;
+    background-color: #0f9d58;
+}
 
 
 .ResizeContainer {

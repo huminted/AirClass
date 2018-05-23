@@ -6,18 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/css/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/errorpages/phone.html" afterDir="false" />
+    <list default="true" id="cb531f1a-ac94-46a1-ae48-87bda2cb2a17" name="Default" comment="拦截手机端,注册验证">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/errorpages/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/errorpages/500.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/500.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/500.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/QR.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginAndRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginAndRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/loading.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/chat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/chat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/text.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/text.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/errorpages/phone.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,15 +52,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="utils.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loading.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/loading.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <folding>
+                <element signature="e#12#160#0" />
+                <element signature="e#180#330#0" />
+                <element signature="e#340#417#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="145">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="n#style#0;n#embed#0;n#div#0;n#center#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="404.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/errorpages/404.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="500.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/errorpages/500.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -138,15 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/js/loadAdminData.js" />
-        <option value="$PROJECT_DIR$/web/js/loadQuestions.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/UserBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/CheckAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/CookieUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/Doc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/Score.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Find/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/Api/Update/UpdateUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Upload.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/RouterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/CodeBean.java" />
@@ -188,7 +229,16 @@
         <option value="$PROJECT_DIR$/web/views/text.jsp" />
         <option value="$PROJECT_DIR$/web/views/errorpages/phone.html" />
         <option value="$PROJECT_DIR$/web/css/phone.svg" />
+        <option value="$PROJECT_DIR$/web/css/loading.css" />
+        <option value="$PROJECT_DIR$/web/views/errorpages/404.html" />
+        <option value="$PROJECT_DIR$/web/views/errorpages/500.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/errorpages/500.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/errorpages/404.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/errorpages/jsp.html" />
         <option value="$PROJECT_DIR$/web/js/utils.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/errorpages/500.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/errorpages/404.jsp" />
       </list>
     </option>
   </component>
@@ -219,8 +269,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="537" />
-    <option name="y" value="136" />
+    <option name="x" value="112" />
+    <option name="y" value="447" />
     <option name="width" value="1540" />
     <option name="height" value="665" />
   </component>
@@ -362,7 +412,20 @@
               <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="AirClass" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirClass" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="errorpages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,14 +449,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3492647" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\AirClass\web\WEB-INF" />
       <recent name="F:\AirClass\web\css" />
       <recent name="F:\AirClass\web\images" />
       <recent name="F:\AirClass\web\js" />
-      <recent name="F:\AirClass\web\WEB-INF" />
       <recent name="F:\AirClass\web\views" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -403,11 +466,11 @@
       <recent name="Controller.Update" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\AirClass\web\css" />
       <recent name="F:\AirClass\web\images" />
       <recent name="F:\AirClass\web\js" />
       <recent name="F:\AirClass\src\main\resources" />
       <recent name="F:\AirClass\src\main\java\Service" />
-      <recent name="F:\AirClass\src\main\java\Dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -477,6 +540,44 @@
       <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+    </configuration>
+    <configuration name="404.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/errorpages/404.html" />
+      <deployment>
+        <artifact name="AirClass:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="404_html_AirClass" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="AirClass:war" />
+        </option>
+      </method>
     </configuration>
     <configuration name="v0.9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -565,7 +666,13 @@
     <list>
       <item itemvalue="Application.QiNiu" />
       <item itemvalue="Tomcat Server.v0.9" />
+      <item itemvalue="Tomcat Server.404.html" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Tomcat Server.404.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -639,14 +746,7 @@
       <workItem from="1526629062513" duration="113000" />
       <workItem from="1526737262641" duration="1996000" />
       <workItem from="1526993043030" duration="5590000" />
-      <workItem from="1527057529618" duration="9200000" />
-    </task>
-    <task id="LOCAL-00018" summary="Chart.js">
-      <created>1517423619591</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1517423619592</updated>
+      <workItem from="1527057529618" duration="14505000" />
     </task>
     <task id="LOCAL-00019" summary="Footer links">
       <created>1517650881619</created>
@@ -984,11 +1084,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526999432052</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="拦截手机端,注册验证">
+      <created>1527066891428</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1527066891429</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462556000" />
+    <option name="totallyTimeSpent" value="467861000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1013,7 +1120,7 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32896653" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5991254" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37026238" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.32944608" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32944608" />
       <window_info id="Designer" order="4" />
@@ -1081,7 +1188,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="转移Chat" />
     <MESSAGE value="Chart.js" />
     <MESSAGE value="Footer links" />
     <MESSAGE value="修复无法上传大文件，以及注册页面icon" />
@@ -1106,7 +1212,8 @@
     <MESSAGE value="ico" />
     <MESSAGE value="ico 图床" />
     <MESSAGE value="错误提示" />
-    <option name="LAST_COMMIT_MESSAGE" value="错误提示" />
+    <MESSAGE value="拦截手机端,注册验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="拦截手机端,注册验证" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1118,34 +1225,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/views/chat.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="10" column="109" selection-start-line="10" selection-start-column="109" selection-end-line="10" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="27" column="109" selection-start-line="27" selection-start-column="109" selection-end-line="27" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/text.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/DocDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1411,20 +1490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/errorpages/phone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/text.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/getAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-798">
@@ -1475,13 +1540,65 @@
     <entry file="file://$PROJECT_DIR$/web/css/phone.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/404.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/text.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/loading.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="e#12#160#0" />
+            <element signature="e#180#330#0" />
+            <element signature="e#340#417#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        <state relative-caret-position="145">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="n#style#0;n#embed#0;n#div#0;n#center#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/errorpages/500.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/errorpages/404.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

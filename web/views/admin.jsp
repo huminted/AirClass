@@ -36,7 +36,10 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="/"  target="_blank" class="black-text"><i class="material-icons">home</i></a></li>
             <li><a onclick=" window.location.reload(); "  class="black-text"><i class="material-icons">refresh</i></a></li>
-            <li><a href="http://weibo.com/win8humin" target="_blank" class="black-text"><i class="material-icons">more_vert</i></a></li>
+            <li><a onclick="alert('按住Ctrl+F')" target="_blank" class="black-text"><i class="material-icons">search</i></a></li>
+            <li><a href="/chat" target="_blank" class="black-text"><i class="material-icons">comment</i></a></li>
+
+
         </ul>
     </div>
 

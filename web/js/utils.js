@@ -14,12 +14,19 @@ function closediv(obj) {
 
 
 
-
-
-
+window.addEventListener('DOMContentLoaded', function() {
+    if (((/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i).test(navigator.userAgent))) {
+        document.documentElement.innerHTML = "<center><div class='container'><embed src=\"../css/phone.svg\" style='height: 200px;width: 300px' type=\"image/svg+xml\" >" +
+            "<br><span>为了更好的体验，请使用PC端打开</span></div></center>";
+    }
+});
 
 
 function initAdmin() {
+
+
+
+
     var elem = document.querySelector('.tabs');
     var instance = M.Tabs.init(elem, 4);
 

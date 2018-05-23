@@ -8,8 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <!-- Google Analytics -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-113330665-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     <link rel="icon" href="https://raw.githubusercontent.com/huminted/AirClass/master/web/images/airclass.ico" type="image/x-icon">
-
     <title>学习讨论</title>
 </head>
 <body>

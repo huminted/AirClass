@@ -46,7 +46,7 @@
                                     <label for="username">姓名</label>
                                 </div>
                                 <div class="input-field col s12">
-                                    <i class="material-icons prefix">looks_one</i>
+                                    <i id="idicon" class="material-icons prefix">looks_one</i>
                                     <input  name ="userid" id="userid"  type="text" class="validate" minlength="10" maxlength="10" required>
                                     <label for="userid" id="idlable">学号</label>
                                 </div>
@@ -91,6 +91,6 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/Register.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/LoginAndRegister.js"></script>
 </body>
 </html>

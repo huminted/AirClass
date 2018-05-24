@@ -48,10 +48,6 @@
 <iframe id="id_iframe" name="iframe" style="display:none;"></iframe>
 <div class="container "  >
 
-
-
-
-
     <!-- Page Content goes here -->
     <div class="row push-s7"  >
         <div class="col s12 m12 offset-s11" >
@@ -60,21 +56,21 @@
                     <form class="col s12" action="home" method="post" onsubmit="check()"  >
                         <div class="row">
                             <div class="input-field col s12">
-                                <i class="material-icons prefix">looks_one</i>
-                                <input  name ="userid" id="userid"  type="text" class="validate"  maxlength="10" required>
-                                <label for="userid">学号</label>
+                                <i class="material-icons prefix" id="idicon">looks_one</i>
+                                <input onblur="LoginCheckUserId();" name ="userid" id="userid"  type="text" class="validate" minlength="10" maxlength="10" required>
+                                <label for="userid" id="idlable">学号</label>
                             </div>
                             <div class="input-field col s12">
-                                <i class="material-icons prefix">lock_outline</i>
-                                <input name ="password" id="password" type="password" class="validate" required>
-                                <label for="password">密码</label>
+                                <i class="material-icons prefix" id="pwicon">lock_outline</i>
+                                <input onblur="LoginCheckPW();" name ="password" id="password" type="password" minlength="1" class="validate" required>
+                                <label for="password" id="pwlable">密码</label>
 
                             </div>
 
 
                         </div>
                         <center>
-                            <button type="submit"  class="waves-effect waves-light btn" onclick="check()">登陆</button>
+                            <button id="loginbtn" type="submit"  class="waves-effect waves-light btn" >登陆</button>
                             <button type="button" onClick="location.href='/register'"  class="waves-effect waves-light btn">注册</button>
                         </center>
 
@@ -89,33 +85,11 @@
 
 
 
-<script>
-
-
-    function check() {
-
-        var username=document.getElementById("username").value;
-        var password=document.getElementById("password").value;
-
-
-        if (username==" " ||password==" " ){
-
-            return false;
-
-        }
-        else {
-            return true;
-        }
-
-    }
-
-
-
-</script>
-
-<script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/fly.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/require.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/LoginAndRegister.js"></script>
 
 </body>
 </html>

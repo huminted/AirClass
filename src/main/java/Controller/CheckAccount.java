@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,8 +22,10 @@ public class CheckAccount {
 
 
     @RequestMapping(value = "/home")
-    public String Check(ModelMap modelMap, HttpServletRequest request, HttpServletResponse response, UserBean User){
+    public String Check(ModelMap modelMap, HttpServletRequest request, HttpServletResponse response, UserBean User) throws IOException {
 
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/json; charset=UTF-8");
         UserService service = new UserServiceImpl();
 
 
@@ -56,17 +60,23 @@ public class CheckAccount {
                 cookieUtils.addCookie(response,"userid", String.valueOf(User.getUserid()));
 
 
-
-
                 return "redirect:index";
 
             }
 
             else {
 
-                System.out.println("用户名错误1"+User.getPassword());
+                Map<String ,Object> fileMap=new HashMap<String ,Object>();
+                fileMap.put("state",200);
+                fileMap.put("msg","密码错误");
+                fileMap.put("code",1);
 
-                return "login";
+                String jsonText= JSONArray.toJSONString(fileMap,true);
+                PrintWriter print=response.getWriter();
+                print.print(jsonText);
+                print.close();
+
+                return null;
 
             }
 
@@ -74,10 +84,17 @@ public class CheckAccount {
         else{
 
 
-            System.out.println("未输入");
+            Map<String ,Object> fileMap=new HashMap<String ,Object>();
+            fileMap.put("state",200);
+            fileMap.put("msg","未注册");
+            fileMap.put("code",2);
 
-            request.setAttribute("toast","fail");
-            return "login";
+            String jsonText= JSONArray.toJSONString(fileMap,true);
+            PrintWriter print=response.getWriter();
+            print.print(jsonText);
+            print.close();
+
+            return null;
         }
 
 
